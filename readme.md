@@ -1,6 +1,12 @@
 # Battlegrounds simulator
-This projects 
-is an implementation of Hearthstone Battlegrounds in C++ with the use of Cython.
+This is code accompanying the diploma thesis "Hearthstone Battlegrounds Card Game Simulator" by Dávid Ruják - it is an implementation of Hearthstone Battlegrounds in C++ with the use of Cython.
+
+The thesis is available at https://projects.fit.cvut.cz/theses/4753.
+
+The rights and obligations regarding the commercialization of computer programs or other copyrighted works are regulated by https://courses.fit.cvut.cz/SZZ//files/internal/Smernice-dekana-37-2019_licence.pdf.
+
+
+
 
 ## Directory Structure
 
