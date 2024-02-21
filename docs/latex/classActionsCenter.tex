@@ -1,0 +1,114 @@
+\hypertarget{classActionsCenter}{}\doxysection{Actions\+Center Class Reference}
+\label{classActionsCenter}\index{ActionsCenter@{ActionsCenter}}
+
+
+The \mbox{\hyperlink{classActionsCenter}{Actions\+Center}} class This class is used to store the triggers and the minions that are subscribed to them.  
+
+
+
+
+{\ttfamily \#include $<$Actions\+Center.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classActionsCenter_a98ef3d96b6d14d30e6856cc2ff2c3c20}{subscribe}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion)
+\begin{DoxyCompactList}\small\item\em This method is used to subscribe a minion to a trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classActionsCenter_ade7887c16c2ecf29ec2b2958e4594ac3}{unsubscribe}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion)
+\begin{DoxyCompactList}\small\item\em This method is used to unsubscribe a minion from a trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classActionsCenter_ac8829ebbd585850afad9c88f504792cf}{subscribe\+Effect}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \&aura\+Effect)
+\begin{DoxyCompactList}\small\item\em This method is used to subscribe a minion with an aura effect to a trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classActionsCenter_a8d9430f6982fcaf7c9d2b11000e51917}{unsubscribe\+Effect}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \&aura\+Effect)
+\begin{DoxyCompactList}\small\item\em This method is used to unsubscribe a minion with an aura effect from a trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classActionsCenter_a5cd50002895f84511200f40675af7566}{print}} ()
+\item 
+std\+::map$<$ \mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}}, std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $\ast$ $>$ $>$ \& \mbox{\hyperlink{classActionsCenter_a622ac2620a68c6486ed6dd8471b782a7}{get\+Actions\+Map}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classActionsCenter}{Actions\+Center}} class This class is used to store the triggers and the minions that are subscribed to them. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classActionsCenter_a622ac2620a68c6486ed6dd8471b782a7}\label{classActionsCenter_a622ac2620a68c6486ed6dd8471b782a7}} 
+\index{ActionsCenter@{ActionsCenter}!getActionsMap@{getActionsMap}}
+\index{getActionsMap@{getActionsMap}!ActionsCenter@{ActionsCenter}}
+\doxysubsubsection{\texorpdfstring{getActionsMap()}{getActionsMap()}}
+{\footnotesize\ttfamily std\+::map$<$ \mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}}, std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $\ast$ $>$ $>$ \& Actions\+Center\+::get\+Actions\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classActionsCenter_a5cd50002895f84511200f40675af7566}\label{classActionsCenter_a5cd50002895f84511200f40675af7566}} 
+\index{ActionsCenter@{ActionsCenter}!print@{print}}
+\index{print@{print}!ActionsCenter@{ActionsCenter}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Actions\+Center\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classActionsCenter_a98ef3d96b6d14d30e6856cc2ff2c3c20}\label{classActionsCenter_a98ef3d96b6d14d30e6856cc2ff2c3c20}} 
+\index{ActionsCenter@{ActionsCenter}!subscribe@{subscribe}}
+\index{subscribe@{subscribe}!ActionsCenter@{ActionsCenter}}
+\doxysubsubsection{\texorpdfstring{subscribe()}{subscribe()}}
+{\footnotesize\ttfamily void Actions\+Center\+::subscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion }\end{DoxyParamCaption})}
+
+
+
+This method is used to subscribe a minion to a trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classActionsCenter_ac8829ebbd585850afad9c88f504792cf}\label{classActionsCenter_ac8829ebbd585850afad9c88f504792cf}} 
+\index{ActionsCenter@{ActionsCenter}!subscribeEffect@{subscribeEffect}}
+\index{subscribeEffect@{subscribeEffect}!ActionsCenter@{ActionsCenter}}
+\doxysubsubsection{\texorpdfstring{subscribeEffect()}{subscribeEffect()}}
+{\footnotesize\ttfamily void Actions\+Center\+::subscribe\+Effect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \&}]{aura\+Effect }\end{DoxyParamCaption})}
+
+
+
+This method is used to subscribe a minion with an aura effect to a trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+{\em aura\+Effect} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classActionsCenter_ade7887c16c2ecf29ec2b2958e4594ac3}\label{classActionsCenter_ade7887c16c2ecf29ec2b2958e4594ac3}} 
+\index{ActionsCenter@{ActionsCenter}!unsubscribe@{unsubscribe}}
+\index{unsubscribe@{unsubscribe}!ActionsCenter@{ActionsCenter}}
+\doxysubsubsection{\texorpdfstring{unsubscribe()}{unsubscribe()}}
+{\footnotesize\ttfamily void Actions\+Center\+::unsubscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion }\end{DoxyParamCaption})}
+
+
+
+This method is used to unsubscribe a minion from a trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classActionsCenter_a8d9430f6982fcaf7c9d2b11000e51917}\label{classActionsCenter_a8d9430f6982fcaf7c9d2b11000e51917}} 
+\index{ActionsCenter@{ActionsCenter}!unsubscribeEffect@{unsubscribeEffect}}
+\index{unsubscribeEffect@{unsubscribeEffect}!ActionsCenter@{ActionsCenter}}
+\doxysubsubsection{\texorpdfstring{unsubscribeEffect()}{unsubscribeEffect()}}
+{\footnotesize\ttfamily void Actions\+Center\+::unsubscribe\+Effect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \&}]{aura\+Effect }\end{DoxyParamCaption})}
+
+
+
+This method is used to unsubscribe a minion with an aura effect from a trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+{\em aura\+Effect} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/messaging/\mbox{\hyperlink{ActionsCenter_8h}{Actions\+Center.\+h}}\item 
+cpp\+\_\+library/src/sources/messaging/\mbox{\hyperlink{NotificationCenter_8cpp}{Notification\+Center.\+cpp}}\end{DoxyCompactItemize}

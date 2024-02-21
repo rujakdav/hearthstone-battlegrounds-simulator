@@ -1,0 +1,11 @@
+<map id="cpp_library/src/headers/mechanics/battlecries/IBattlecry.h" name="cpp_library/src/headers/mechanics/battlecries/IBattlecry.h">
+<area shape="rect" id="node1" title=" " alt="" coords="102,5,276,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="58,206,117,233"/>
+<area shape="rect" id="node3" title=" " alt="" coords="24,117,87,143"/>
+<area shape="rect" id="node4" title=" " alt="" coords="417,288,494,315"/>
+<area shape="rect" id="node5" href="$BattlecryTargetCriterias_8h.html" title=" " alt="" coords="414,109,657,151"/>
+<area shape="rect" id="node9" href="$IOwned_8h.html" title=" " alt="" coords="111,117,267,143"/>
+<area shape="rect" id="node6" href="$RandomTargets_8h.html" title=" " alt="" coords="343,206,478,233"/>
+<area shape="rect" id="node7" href="$IFilter_8h.html" title=" " alt="" coords="502,199,713,240"/>
+<area shape="rect" id="node8" href="$battlecryTargets_8h.html" title=" " alt="" coords="737,199,950,240"/>
+</map>

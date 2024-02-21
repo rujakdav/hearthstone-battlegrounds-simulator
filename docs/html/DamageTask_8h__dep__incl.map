@@ -1,0 +1,11 @@
+<map id="cpp_library/src/headers/tasks/DamageTask.h" name="cpp_library/src/headers/tasks/DamageTask.h">
+<area shape="rect" id="node1" title=" " alt="" coords="603,5,777,47"/>
+<area shape="rect" id="node2" href="$DamageEffectData_8h.html" title=" " alt="" coords="389,95,580,151"/>
+<area shape="rect" id="node8" href="$AttackTask_8cpp.html" title=" " alt="" coords="605,102,775,143"/>
+<area shape="rect" id="node9" href="$DamageTask_8cpp.html" title=" " alt="" coords="799,102,975,143"/>
+<area shape="rect" id="node3" href="$DamageEffect_8h.html" title=" " alt="" coords="236,206,488,247"/>
+<area shape="rect" id="node7" href="$DamageTaskData_8cpp.html" title=" " alt="" coords="512,199,703,255"/>
+<area shape="rect" id="node4" href="$MinionBuilder_8cpp.html" title=" " alt="" coords="5,303,204,344"/>
+<area shape="rect" id="node5" href="$DamageEffect_8cpp.html" title=" " alt="" coords="229,303,495,344"/>
+<area shape="rect" id="node6" href="$NotificationCenter_8cpp.html" title=" " alt="" coords="519,303,765,344"/>
+</map>

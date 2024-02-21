@@ -1,0 +1,174 @@
+\hypertarget{classIBattlecry}{}\doxysection{IBattlecry Class Reference}
+\label{classIBattlecry}\index{IBattlecry@{IBattlecry}}
+
+
+The \mbox{\hyperlink{classIBattlecry}{IBattlecry}} class This class is used to represent a battlecry.  
+
+
+
+
+{\ttfamily \#include $<$IBattlecry.\+h$>$}
+
+
+
+Inheritance diagram for IBattlecry\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classIBattlecry__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIBattlecry_a83a8e44b4ffe1228d7c0a56a45b44e4f}{IBattlecry}} (const std\+::string \&description, const \mbox{\hyperlink{classBattlecryTargetCriteria}{Battlecry\+Target\+Criteria}} \&target\+Criteria)
+\item 
+const \mbox{\hyperlink{classBattlecryTargetCriteria}{Battlecry\+Target\+Criteria}} \& \mbox{\hyperlink{classIBattlecry_a4ff85a9948b5f7117f13a6582d8adb6e}{get\+Target\+Criteria}} () const
+\item 
+\mbox{\hyperlink{classBattlecryTargetCriteria}{Battlecry\+Target\+Criteria}} \& \mbox{\hyperlink{classIBattlecry_a424a3aeb411034959b7125716151cf2a}{get\+Target\+Criteria}} ()
+\item 
+virtual void \mbox{\hyperlink{classIBattlecry_a3036d10e8d56fea6446fcdaf87aa31b6}{execute}} (\mbox{\hyperlink{classRecruitPhaseController}{Recruit\+Phase\+Controller}} $\ast$game)=0
+\begin{DoxyCompactList}\small\item\em Executes the battlecry. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIBattlecry}{IBattlecry}} $>$ \mbox{\hyperlink{classIBattlecry_ae362fb061ac974aac8a4a07c4821ec45}{clone}} ()=0
+\begin{DoxyCompactList}\small\item\em Clones the battlecry. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIBattlecry_a649aaacebebe89941c1fd9e74d22a79a}{set\+Targets}} (std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $\ast$ $>$ targets)=0
+\begin{DoxyCompactList}\small\item\em Sets the minion targets. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIBattlecry_a09ffb76cfd3d78cfa33d999a0a2037d3}{set\+Targets}} (\mbox{\hyperlink{classPlayer}{Player}} $\ast$player)=0
+\begin{DoxyCompactList}\small\item\em Sets the player targets. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classIBattlecry_a88882a143cdc00dd2ba263c2b6089b6c}{$\sim$\+IBattlecry}} ()=default
+\item 
+const std\+::string \& \mbox{\hyperlink{classIBattlecry_a010632dc6c5b0c405797b2dfa8bcaa8e}{get\+Description}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classIBattlecry_aac44ac7f06f9b15f282ac69face21a1f}{targets\+Set}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classIBattlecry}{IBattlecry}} class This class is used to represent a battlecry. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIBattlecry_a83a8e44b4ffe1228d7c0a56a45b44e4f}\label{classIBattlecry_a83a8e44b4ffe1228d7c0a56a45b44e4f}} 
+\index{IBattlecry@{IBattlecry}!IBattlecry@{IBattlecry}}
+\index{IBattlecry@{IBattlecry}!IBattlecry@{IBattlecry}}
+\doxysubsubsection{\texorpdfstring{IBattlecry()}{IBattlecry()}}
+{\footnotesize\ttfamily IBattlecry\+::\+IBattlecry (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{description,  }\item[{const \mbox{\hyperlink{classBattlecryTargetCriteria}{Battlecry\+Target\+Criteria}} \&}]{target\+Criteria }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIBattlecry_a88882a143cdc00dd2ba263c2b6089b6c}\label{classIBattlecry_a88882a143cdc00dd2ba263c2b6089b6c}} 
+\index{IBattlecry@{IBattlecry}!````~IBattlecry@{$\sim$IBattlecry}}
+\index{````~IBattlecry@{$\sim$IBattlecry}!IBattlecry@{IBattlecry}}
+\doxysubsubsection{\texorpdfstring{$\sim$IBattlecry()}{~IBattlecry()}}
+{\footnotesize\ttfamily virtual IBattlecry\+::$\sim$\+IBattlecry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIBattlecry_ae362fb061ac974aac8a4a07c4821ec45}\label{classIBattlecry_ae362fb061ac974aac8a4a07c4821ec45}} 
+\index{IBattlecry@{IBattlecry}!clone@{clone}}
+\index{clone@{clone}!IBattlecry@{IBattlecry}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classIBattlecry}{IBattlecry}}$>$ IBattlecry\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Clones the battlecry. 
+
+\begin{DoxyReturn}{Returns}
+std\+::unique\+\_\+ptr$<$\+IBattlecry$>$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classEnchantmentBattlecry_ae84304028ee4a9ebd55f5b621f8e052e}{Enchantment\+Battlecry}}, and \mbox{\hyperlink{classDecreaseLeveLUpCostBattlecry_aa68768d33a2998e062559494b6ed0b55}{Decrease\+Leve\+LUp\+Cost\+Battlecry}}.
+
+\mbox{\Hypertarget{classIBattlecry_a3036d10e8d56fea6446fcdaf87aa31b6}\label{classIBattlecry_a3036d10e8d56fea6446fcdaf87aa31b6}} 
+\index{IBattlecry@{IBattlecry}!execute@{execute}}
+\index{execute@{execute}!IBattlecry@{IBattlecry}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual void IBattlecry\+::execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRecruitPhaseController}{Recruit\+Phase\+Controller}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Executes the battlecry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEnchantmentBattlecry_acc82148fe2a5d67c717b438e4f38b3d7}{Enchantment\+Battlecry}}, and \mbox{\hyperlink{classDecreaseLeveLUpCostBattlecry_ade660447f518ca51393bd66132f7f424}{Decrease\+Leve\+LUp\+Cost\+Battlecry}}.
+
+\mbox{\Hypertarget{classIBattlecry_a010632dc6c5b0c405797b2dfa8bcaa8e}\label{classIBattlecry_a010632dc6c5b0c405797b2dfa8bcaa8e}} 
+\index{IBattlecry@{IBattlecry}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!IBattlecry@{IBattlecry}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily const std\+::string \& IBattlecry\+::get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classIBattlecry_a424a3aeb411034959b7125716151cf2a}\label{classIBattlecry_a424a3aeb411034959b7125716151cf2a}} 
+\index{IBattlecry@{IBattlecry}!getTargetCriteria@{getTargetCriteria}}
+\index{getTargetCriteria@{getTargetCriteria}!IBattlecry@{IBattlecry}}
+\doxysubsubsection{\texorpdfstring{getTargetCriteria()}{getTargetCriteria()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBattlecryTargetCriteria}{Battlecry\+Target\+Criteria}} \& IBattlecry\+::get\+Target\+Criteria (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIBattlecry_a4ff85a9948b5f7117f13a6582d8adb6e}\label{classIBattlecry_a4ff85a9948b5f7117f13a6582d8adb6e}} 
+\index{IBattlecry@{IBattlecry}!getTargetCriteria@{getTargetCriteria}}
+\index{getTargetCriteria@{getTargetCriteria}!IBattlecry@{IBattlecry}}
+\doxysubsubsection{\texorpdfstring{getTargetCriteria()}{getTargetCriteria()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classBattlecryTargetCriteria}{Battlecry\+Target\+Criteria}} \& IBattlecry\+::get\+Target\+Criteria (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classIBattlecry_a09ffb76cfd3d78cfa33d999a0a2037d3}\label{classIBattlecry_a09ffb76cfd3d78cfa33d999a0a2037d3}} 
+\index{IBattlecry@{IBattlecry}!setTargets@{setTargets}}
+\index{setTargets@{setTargets}!IBattlecry@{IBattlecry}}
+\doxysubsubsection{\texorpdfstring{setTargets()}{setTargets()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void IBattlecry\+::set\+Targets (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the player targets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEnchantmentBattlecry_aa04eab28281f38bdd5b1ec5af1b0871a}{Enchantment\+Battlecry}}, and \mbox{\hyperlink{classDecreaseLeveLUpCostBattlecry_a5ae03c511be60233bbfec8f9db02b4a6}{Decrease\+Leve\+LUp\+Cost\+Battlecry}}.
+
+\mbox{\Hypertarget{classIBattlecry_a649aaacebebe89941c1fd9e74d22a79a}\label{classIBattlecry_a649aaacebebe89941c1fd9e74d22a79a}} 
+\index{IBattlecry@{IBattlecry}!setTargets@{setTargets}}
+\index{setTargets@{setTargets}!IBattlecry@{IBattlecry}}
+\doxysubsubsection{\texorpdfstring{setTargets()}{setTargets()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void IBattlecry\+::set\+Targets (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $\ast$ $>$}]{targets }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the minion targets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em targets} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEnchantmentBattlecry_a38a379ceb0048932b5c0f1f4563f74da}{Enchantment\+Battlecry}}, and \mbox{\hyperlink{classDecreaseLeveLUpCostBattlecry_a6cacd78f55505518d982448754ac0f1d}{Decrease\+Leve\+LUp\+Cost\+Battlecry}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classIBattlecry_aac44ac7f06f9b15f282ac69face21a1f}\label{classIBattlecry_aac44ac7f06f9b15f282ac69face21a1f}} 
+\index{IBattlecry@{IBattlecry}!targetsSet@{targetsSet}}
+\index{targetsSet@{targetsSet}!IBattlecry@{IBattlecry}}
+\doxysubsubsection{\texorpdfstring{targetsSet}{targetsSet}}
+{\footnotesize\ttfamily bool IBattlecry\+::targets\+Set = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Indicates if the targets have been set 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/mechanics/battlecries/\mbox{\hyperlink{IBattlecry_8h}{IBattlecry.\+h}}\item 
+cpp\+\_\+library/src/sources/mechanics/battlecries/\mbox{\hyperlink{IBattlecry_8cpp}{IBattlecry.\+cpp}}\end{DoxyCompactItemize}

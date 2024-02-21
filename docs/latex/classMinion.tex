@@ -1,0 +1,419 @@
+\hypertarget{classMinion}{}\doxysection{Minion Class Reference}
+\label{classMinion}\index{Minion@{Minion}}
+
+
+{\ttfamily \#include $<$Minion.\+h$>$}
+
+
+
+Inheritance diagram for Minion\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMinion__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Minion\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMinion__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMinion_aaf13400638955a101b4b37781a275beb}{set\+Sell\+Cost}} (int sell\+Cost)
+\item 
+int \mbox{\hyperlink{classMinion_acf398ac625faf6c1a8ec64bfc856a2e8}{get\+Sell\+Cost}} () const
+\item 
+int \mbox{\hyperlink{classMinion_af22d362c89e7e6516f63651c5a3e23fb}{get\+Tavern\+Tier}} () const
+\item 
+const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIBattlecry}{IBattlecry}} $>$ $>$ \& \mbox{\hyperlink{classMinion_a3b0735ed98c848c0f1e11c384a15a550}{get\+Battlecries}} () const
+\item 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIBattlecry}{IBattlecry}} $>$ $>$ \& \mbox{\hyperlink{classMinion_a19d03b5eb259100e8a6101212477deea}{get\+Battlecries}} ()
+\item 
+bool \mbox{\hyperlink{classMinion_a5346e9c91c21f4de8376c55985b890a0}{is\+Poisonous}} () const
+\item 
+void \mbox{\hyperlink{classMinion_a1cea349c6c1a459869b548a9a6c60901}{set\+Poisonous}} (bool poisonous)
+\item 
+void \mbox{\hyperlink{classMinion_a0bd416b4cb1e4cb2c36d74c912971d87}{add\+Battlecry}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIBattlecry}{IBattlecry}} $>$ \&battlecry)
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{classAura}{Aura}} $>$ \& \mbox{\hyperlink{classMinion_a2c7d3d0caa197eb3c936d575c98d51b3}{get\+Auras}} () const
+\item 
+bool \mbox{\hyperlink{classMinion_a4fe76c75c21ebe2fd016d419449500c7}{has\+Taunt}} () const
+\item 
+void \mbox{\hyperlink{classMinion_a3b95c3f30f6bb82243a9e9bd4d53d354}{add\+Aura}} (\mbox{\hyperlink{classAura}{Aura}} aura\+To\+Add)
+\item 
+const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classEnchantment}{Enchantment}} $>$ $>$ \& \mbox{\hyperlink{classMinion_afa41abfe990fbc9aaf7e66047bae0370}{get\+Enchantments}} () const
+\item 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classEnchantment}{Enchantment}} $>$ $>$ \& \mbox{\hyperlink{classMinion_a119c9d8b09884f6b6da1d70f0300970d}{get\+Enchantments}} ()
+\item 
+const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ $>$ \& \mbox{\hyperlink{classMinion_ab8240becc4b58ead9467296678184c49}{get\+Effects}} () const
+\item 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ $>$ \& \mbox{\hyperlink{classMinion_a39191226dc2fd9d2a644b8343af3f69a}{get\+Effects}} ()
+\item 
+void \mbox{\hyperlink{classMinion_a80a55877df5cd6c9b074db0c92310309}{add\+Taunt}} ()
+\item 
+const std\+::string \& \mbox{\hyperlink{classMinion_a0e595f18becf97464bd5132015aa9b40}{get\+Owner\+Id}} () const
+\item 
+void \mbox{\hyperlink{classMinion_aab8c92916272ae47f633842048fb213c}{add\+Enchantment}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classEnchantment}{Enchantment}} $>$ enchantment)
+\item 
+int \mbox{\hyperlink{classMinion_a39e47bbd9563ffa3e4809b5bbfc15fec}{get\+Total\+Attack\+Increase}} () const
+\item 
+int \mbox{\hyperlink{classMinion_a0e2ea3492fd6b2ad74afc7b79d8e51cc}{get\+Total\+Health\+Increase}} () const
+\item 
+void \mbox{\hyperlink{classMinion_a2fa149008df6143f59620191ee131969}{register\+Observer}} (\mbox{\hyperlink{classPlayerObserver}{Player\+Observer}} $\ast$observer) override
+\begin{DoxyCompactList}\small\item\em This method is used to register an observer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMinion_a4228132a38916559e9d53631a531c98e}{unregister\+Observer}} (\mbox{\hyperlink{classPlayerObserver}{Player\+Observer}} $\ast$observer) override
+\begin{DoxyCompactList}\small\item\em This method is used to unregister an observer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMinion_af0b86f8dbbf63b45c9edf8ab6a6e2635}{notify\+Observers}} (\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}} trigger\+Type) override
+\begin{DoxyCompactList}\small\item\em This method is used to notify the observers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMinion_ad4b9ace8ceafb3acbbbea6e1ab4e36bf}{$\sim$\+Minion}} ()=default
+\item 
+\mbox{\hyperlink{classMinion_ad5f0bf640eae31f453f00fb9c88c9bc9}{Minion}} (const \mbox{\hyperlink{classMinion}{Minion}} \&other)
+\item 
+\mbox{\hyperlink{minionType_8h_ab076d75dd251fea18d48b2d6b246f298}{Minion\+Type}} \mbox{\hyperlink{classMinion_ac2ea0b7e86b1144ccbf815d36da2b257}{get\+Type}} () const
+\item 
+void \mbox{\hyperlink{classMinion_accb1c22f9e1933a38bd81f05ca30fffe}{heal}} (int amount) override
+\begin{DoxyCompactList}\small\item\em Heals the entity with the given amount. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMinion_a9852409c8208644f5e0bec74b36bb9e8}{set\+Owner\+Id}} (const std\+::string \&owner\+Id)
+\item 
+\mbox{\hyperlink{classMinion_a18b51fa53b0954b608da5183dbcabe9d}{Minion}} (const std\+::string \&name, const std\+::string \&card\+Key, int attack, int health, \mbox{\hyperlink{minionType_8h_ab076d75dd251fea18d48b2d6b246f298}{Minion\+Type}} type, int tavern\+Tier, bool collectible, \mbox{\hyperlink{rarity_8h_a6c4fc244cdc975f7fd572fa614617600}{Rarity}} rarity)
+\item 
+void \mbox{\hyperlink{classMinion_a5f64d57d6fc18352b39b8ef7febed6ec}{add\+Effect}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ effect)
+\item 
+void \mbox{\hyperlink{classMinion_aadcfd7d32ce9c944845e04d5e5214f73}{print}} () const
+\item 
+void \mbox{\hyperlink{classMinion_a747e2742f2ee64fbe11ce759b80c15e9}{take\+Damage}} (\mbox{\hyperlink{classDamage}{Damage}} \&damage) override
+\begin{DoxyCompactList}\small\item\em Takes damage from the given damage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMinion_ab5c0bebe3221dc7cc57366c604e57540}{add\+Divine\+Shield}} ()
+\item 
+int \mbox{\hyperlink{classMinion_aa75551c07dcf0c815490ede9053e484b}{get\+Attack}} () const override
+\item 
+int \mbox{\hyperlink{classMinion_a67dd7e1530eda3e3829a2832992c496c}{get\+Health\+Points}} () const override
+\item 
+int \mbox{\hyperlink{classMinion_ac3b982d2170eb3afca4d01d0ce305569}{get\+Max\+Health\+Points}} () const override
+\item 
+\mbox{\hyperlink{classMinion}{Minion}} \& \mbox{\hyperlink{classMinion_aa5924123c11df85012ecfa8e7c2d0dac}{operator=}} (const \mbox{\hyperlink{classMinion}{Minion}} \&other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMinion_ad4b9ace8ceafb3acbbbea6e1ab4e36bf}\label{classMinion_ad4b9ace8ceafb3acbbbea6e1ab4e36bf}} 
+\index{Minion@{Minion}!````~Minion@{$\sim$Minion}}
+\index{````~Minion@{$\sim$Minion}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{$\sim$Minion()}{~Minion()}}
+{\footnotesize\ttfamily Minion\+::$\sim$\+Minion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classMinion_ad5f0bf640eae31f453f00fb9c88c9bc9}\label{classMinion_ad5f0bf640eae31f453f00fb9c88c9bc9}} 
+\index{Minion@{Minion}!Minion@{Minion}}
+\index{Minion@{Minion}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{Minion()}{Minion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Minion\+::\+Minion (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMinion}{Minion}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMinion_a18b51fa53b0954b608da5183dbcabe9d}\label{classMinion_a18b51fa53b0954b608da5183dbcabe9d}} 
+\index{Minion@{Minion}!Minion@{Minion}}
+\index{Minion@{Minion}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{Minion()}{Minion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Minion\+::\+Minion (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{card\+Key,  }\item[{int}]{attack,  }\item[{int}]{health,  }\item[{\mbox{\hyperlink{minionType_8h_ab076d75dd251fea18d48b2d6b246f298}{Minion\+Type}}}]{type,  }\item[{int}]{tavern\+Tier,  }\item[{bool}]{collectible,  }\item[{\mbox{\hyperlink{rarity_8h_a6c4fc244cdc975f7fd572fa614617600}{Rarity}}}]{rarity }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMinion_a3b95c3f30f6bb82243a9e9bd4d53d354}\label{classMinion_a3b95c3f30f6bb82243a9e9bd4d53d354}} 
+\index{Minion@{Minion}!addAura@{addAura}}
+\index{addAura@{addAura}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{addAura()}{addAura()}}
+{\footnotesize\ttfamily void Minion\+::add\+Aura (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAura}{Aura}}}]{aura\+To\+Add }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMinion_a0bd416b4cb1e4cb2c36d74c912971d87}\label{classMinion_a0bd416b4cb1e4cb2c36d74c912971d87}} 
+\index{Minion@{Minion}!addBattlecry@{addBattlecry}}
+\index{addBattlecry@{addBattlecry}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{addBattlecry()}{addBattlecry()}}
+{\footnotesize\ttfamily void Minion\+::add\+Battlecry (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIBattlecry}{IBattlecry}} $>$ \&}]{battlecry }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMinion_ab5c0bebe3221dc7cc57366c604e57540}\label{classMinion_ab5c0bebe3221dc7cc57366c604e57540}} 
+\index{Minion@{Minion}!addDivineShield@{addDivineShield}}
+\index{addDivineShield@{addDivineShield}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{addDivineShield()}{addDivineShield()}}
+{\footnotesize\ttfamily void Minion\+::add\+Divine\+Shield (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMinion_a5f64d57d6fc18352b39b8ef7febed6ec}\label{classMinion_a5f64d57d6fc18352b39b8ef7febed6ec}} 
+\index{Minion@{Minion}!addEffect@{addEffect}}
+\index{addEffect@{addEffect}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{addEffect()}{addEffect()}}
+{\footnotesize\ttfamily void Minion\+::add\+Effect (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$}]{effect }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMinion_aab8c92916272ae47f633842048fb213c}\label{classMinion_aab8c92916272ae47f633842048fb213c}} 
+\index{Minion@{Minion}!addEnchantment@{addEnchantment}}
+\index{addEnchantment@{addEnchantment}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{addEnchantment()}{addEnchantment()}}
+{\footnotesize\ttfamily void Minion\+::add\+Enchantment (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classEnchantment}{Enchantment}} $>$}]{enchantment }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMinion_a80a55877df5cd6c9b074db0c92310309}\label{classMinion_a80a55877df5cd6c9b074db0c92310309}} 
+\index{Minion@{Minion}!addTaunt@{addTaunt}}
+\index{addTaunt@{addTaunt}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{addTaunt()}{addTaunt()}}
+{\footnotesize\ttfamily void Minion\+::add\+Taunt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMinion_aa75551c07dcf0c815490ede9053e484b}\label{classMinion_aa75551c07dcf0c815490ede9053e484b}} 
+\index{Minion@{Minion}!getAttack@{getAttack}}
+\index{getAttack@{getAttack}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{getAttack()}{getAttack()}}
+{\footnotesize\ttfamily int Minion\+::get\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classICombative_a30c86655f75053f395391002066def72}{ICombative}}.
+
+\mbox{\Hypertarget{classMinion_a2c7d3d0caa197eb3c936d575c98d51b3}\label{classMinion_a2c7d3d0caa197eb3c936d575c98d51b3}} 
+\index{Minion@{Minion}!getAuras@{getAuras}}
+\index{getAuras@{getAuras}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{getAuras()}{getAuras()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{classAura}{Aura}} $>$ \& Minion\+::get\+Auras (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classMinion_a19d03b5eb259100e8a6101212477deea}\label{classMinion_a19d03b5eb259100e8a6101212477deea}} 
+\index{Minion@{Minion}!getBattlecries@{getBattlecries}}
+\index{getBattlecries@{getBattlecries}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{getBattlecries()}{getBattlecries()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIBattlecry}{IBattlecry}} $>$ $>$ \& Minion\+::get\+Battlecries (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMinion_a3b0735ed98c848c0f1e11c384a15a550}\label{classMinion_a3b0735ed98c848c0f1e11c384a15a550}} 
+\index{Minion@{Minion}!getBattlecries@{getBattlecries}}
+\index{getBattlecries@{getBattlecries}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{getBattlecries()}{getBattlecries()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIBattlecry}{IBattlecry}} $>$ $>$ \& Minion\+::get\+Battlecries (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classMinion_a39191226dc2fd9d2a644b8343af3f69a}\label{classMinion_a39191226dc2fd9d2a644b8343af3f69a}} 
+\index{Minion@{Minion}!getEffects@{getEffects}}
+\index{getEffects@{getEffects}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{getEffects()}{getEffects()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ $>$ \& Minion\+::get\+Effects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMinion_ab8240becc4b58ead9467296678184c49}\label{classMinion_ab8240becc4b58ead9467296678184c49}} 
+\index{Minion@{Minion}!getEffects@{getEffects}}
+\index{getEffects@{getEffects}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{getEffects()}{getEffects()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ $>$ \& Minion\+::get\+Effects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classMinion_a119c9d8b09884f6b6da1d70f0300970d}\label{classMinion_a119c9d8b09884f6b6da1d70f0300970d}} 
+\index{Minion@{Minion}!getEnchantments@{getEnchantments}}
+\index{getEnchantments@{getEnchantments}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{getEnchantments()}{getEnchantments()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classEnchantment}{Enchantment}} $>$ $>$ \& Minion\+::get\+Enchantments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMinion_afa41abfe990fbc9aaf7e66047bae0370}\label{classMinion_afa41abfe990fbc9aaf7e66047bae0370}} 
+\index{Minion@{Minion}!getEnchantments@{getEnchantments}}
+\index{getEnchantments@{getEnchantments}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{getEnchantments()}{getEnchantments()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classEnchantment}{Enchantment}} $>$ $>$ \& Minion\+::get\+Enchantments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classMinion_a67dd7e1530eda3e3829a2832992c496c}\label{classMinion_a67dd7e1530eda3e3829a2832992c496c}} 
+\index{Minion@{Minion}!getHealthPoints@{getHealthPoints}}
+\index{getHealthPoints@{getHealthPoints}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{getHealthPoints()}{getHealthPoints()}}
+{\footnotesize\ttfamily int Minion\+::get\+Health\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classIDestructible_a16256bce1880ade66ac5a9466ec0fe20}{IDestructible}}.
+
+\mbox{\Hypertarget{classMinion_ac3b982d2170eb3afca4d01d0ce305569}\label{classMinion_ac3b982d2170eb3afca4d01d0ce305569}} 
+\index{Minion@{Minion}!getMaxHealthPoints@{getMaxHealthPoints}}
+\index{getMaxHealthPoints@{getMaxHealthPoints}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{getMaxHealthPoints()}{getMaxHealthPoints()}}
+{\footnotesize\ttfamily int Minion\+::get\+Max\+Health\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classIDestructible_aec5bba812395602d0ff675a06489ffd3}{IDestructible}}.
+
+\mbox{\Hypertarget{classMinion_a0e595f18becf97464bd5132015aa9b40}\label{classMinion_a0e595f18becf97464bd5132015aa9b40}} 
+\index{Minion@{Minion}!getOwnerId@{getOwnerId}}
+\index{getOwnerId@{getOwnerId}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{getOwnerId()}{getOwnerId()}}
+{\footnotesize\ttfamily const std\+::string \& Minion\+::get\+Owner\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classMinion_acf398ac625faf6c1a8ec64bfc856a2e8}\label{classMinion_acf398ac625faf6c1a8ec64bfc856a2e8}} 
+\index{Minion@{Minion}!getSellCost@{getSellCost}}
+\index{getSellCost@{getSellCost}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{getSellCost()}{getSellCost()}}
+{\footnotesize\ttfamily int Minion\+::get\+Sell\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classMinion_af22d362c89e7e6516f63651c5a3e23fb}\label{classMinion_af22d362c89e7e6516f63651c5a3e23fb}} 
+\index{Minion@{Minion}!getTavernTier@{getTavernTier}}
+\index{getTavernTier@{getTavernTier}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{getTavernTier()}{getTavernTier()}}
+{\footnotesize\ttfamily int Minion\+::get\+Tavern\+Tier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classMinion_a39e47bbd9563ffa3e4809b5bbfc15fec}\label{classMinion_a39e47bbd9563ffa3e4809b5bbfc15fec}} 
+\index{Minion@{Minion}!getTotalAttackIncrease@{getTotalAttackIncrease}}
+\index{getTotalAttackIncrease@{getTotalAttackIncrease}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{getTotalAttackIncrease()}{getTotalAttackIncrease()}}
+{\footnotesize\ttfamily int Minion\+::get\+Total\+Attack\+Increase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+@\+Brief Gets the total attack increase from enchantments \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMinion_a0e2ea3492fd6b2ad74afc7b79d8e51cc}\label{classMinion_a0e2ea3492fd6b2ad74afc7b79d8e51cc}} 
+\index{Minion@{Minion}!getTotalHealthIncrease@{getTotalHealthIncrease}}
+\index{getTotalHealthIncrease@{getTotalHealthIncrease}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{getTotalHealthIncrease()}{getTotalHealthIncrease()}}
+{\footnotesize\ttfamily int Minion\+::get\+Total\+Health\+Increase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+@\+Brief Gets the total health increase from enchantments \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMinion_ac2ea0b7e86b1144ccbf815d36da2b257}\label{classMinion_ac2ea0b7e86b1144ccbf815d36da2b257}} 
+\index{Minion@{Minion}!getType@{getType}}
+\index{getType@{getType}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{minionType_8h_ab076d75dd251fea18d48b2d6b246f298}{Minion\+Type}} Minion\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classMinion_a4fe76c75c21ebe2fd016d419449500c7}\label{classMinion_a4fe76c75c21ebe2fd016d419449500c7}} 
+\index{Minion@{Minion}!hasTaunt@{hasTaunt}}
+\index{hasTaunt@{hasTaunt}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{hasTaunt()}{hasTaunt()}}
+{\footnotesize\ttfamily bool Minion\+::has\+Taunt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classMinion_accb1c22f9e1933a38bd81f05ca30fffe}\label{classMinion_accb1c22f9e1933a38bd81f05ca30fffe}} 
+\index{Minion@{Minion}!heal@{heal}}
+\index{heal@{heal}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{heal()}{heal()}}
+{\footnotesize\ttfamily void Minion\+::heal (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Heals the entity with the given amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIDestructible_ab6ef59a4cc4ea5c3c474a425faa1cf9c}{IDestructible}}.
+
+\mbox{\Hypertarget{classMinion_a5346e9c91c21f4de8376c55985b890a0}\label{classMinion_a5346e9c91c21f4de8376c55985b890a0}} 
+\index{Minion@{Minion}!isPoisonous@{isPoisonous}}
+\index{isPoisonous@{isPoisonous}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{isPoisonous()}{isPoisonous()}}
+{\footnotesize\ttfamily bool Minion\+::is\+Poisonous (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classMinion_af0b86f8dbbf63b45c9edf8ab6a6e2635}\label{classMinion_af0b86f8dbbf63b45c9edf8ab6a6e2635}} 
+\index{Minion@{Minion}!notifyObservers@{notifyObservers}}
+\index{notifyObservers@{notifyObservers}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{notifyObservers()}{notifyObservers()}}
+{\footnotesize\ttfamily void Minion\+::notify\+Observers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}}}]{trigger\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method is used to notify the observers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger\+Type} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMinionSubject_aa402ca7317bcc34aaa64c0d238d7263e}{Minion\+Subject}}.
+
+\mbox{\Hypertarget{classMinion_aa5924123c11df85012ecfa8e7c2d0dac}\label{classMinion_aa5924123c11df85012ecfa8e7c2d0dac}} 
+\index{Minion@{Minion}!operator=@{operator=}}
+\index{operator=@{operator=}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMinion}{Minion}} \& Minion\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMinion}{Minion}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMinion_aadcfd7d32ce9c944845e04d5e5214f73}\label{classMinion_aadcfd7d32ce9c944845e04d5e5214f73}} 
+\index{Minion@{Minion}!print@{print}}
+\index{print@{print}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Minion\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classMinion_a2fa149008df6143f59620191ee131969}\label{classMinion_a2fa149008df6143f59620191ee131969}} 
+\index{Minion@{Minion}!registerObserver@{registerObserver}}
+\index{registerObserver@{registerObserver}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{registerObserver()}{registerObserver()}}
+{\footnotesize\ttfamily void Minion\+::register\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayerObserver}{Player\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method is used to register an observer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMinionSubject_a45a1d6a82c5768a673569ab6a7af2d82}{Minion\+Subject}}.
+
+\mbox{\Hypertarget{classMinion_a9852409c8208644f5e0bec74b36bb9e8}\label{classMinion_a9852409c8208644f5e0bec74b36bb9e8}} 
+\index{Minion@{Minion}!setOwnerId@{setOwnerId}}
+\index{setOwnerId@{setOwnerId}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{setOwnerId()}{setOwnerId()}}
+{\footnotesize\ttfamily void Minion\+::set\+Owner\+Id (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{owner\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMinion_a1cea349c6c1a459869b548a9a6c60901}\label{classMinion_a1cea349c6c1a459869b548a9a6c60901}} 
+\index{Minion@{Minion}!setPoisonous@{setPoisonous}}
+\index{setPoisonous@{setPoisonous}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{setPoisonous()}{setPoisonous()}}
+{\footnotesize\ttfamily void Minion\+::set\+Poisonous (\begin{DoxyParamCaption}\item[{bool}]{poisonous }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMinion_aaf13400638955a101b4b37781a275beb}\label{classMinion_aaf13400638955a101b4b37781a275beb}} 
+\index{Minion@{Minion}!setSellCost@{setSellCost}}
+\index{setSellCost@{setSellCost}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{setSellCost()}{setSellCost()}}
+{\footnotesize\ttfamily void Minion\+::set\+Sell\+Cost (\begin{DoxyParamCaption}\item[{int}]{sell\+Cost }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMinion_a747e2742f2ee64fbe11ce759b80c15e9}\label{classMinion_a747e2742f2ee64fbe11ce759b80c15e9}} 
+\index{Minion@{Minion}!takeDamage@{takeDamage}}
+\index{takeDamage@{takeDamage}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
+{\footnotesize\ttfamily void Minion\+::take\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDamage}{Damage}} \&}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Takes damage from the given damage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIDestructible_a11396344692eee205b81a9492a21a529}{IDestructible}}.
+
+\mbox{\Hypertarget{classMinion_a4228132a38916559e9d53631a531c98e}\label{classMinion_a4228132a38916559e9d53631a531c98e}} 
+\index{Minion@{Minion}!unregisterObserver@{unregisterObserver}}
+\index{unregisterObserver@{unregisterObserver}!Minion@{Minion}}
+\doxysubsubsection{\texorpdfstring{unregisterObserver()}{unregisterObserver()}}
+{\footnotesize\ttfamily void Minion\+::unregister\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayerObserver}{Player\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method is used to unregister an observer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMinionSubject_afb0e2f901f191c3143cf10ba06a4f0ad}{Minion\+Subject}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/entities/\mbox{\hyperlink{Minion_8h}{Minion.\+h}}\item 
+cpp\+\_\+library/src/sources/entities/\mbox{\hyperlink{Minion_8cpp}{Minion.\+cpp}}\end{DoxyCompactItemize}

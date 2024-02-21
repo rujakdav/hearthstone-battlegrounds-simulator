@@ -1,0 +1,125 @@
+\hypertarget{classCombatPhaseView}{}\doxysection{Combat\+Phase\+View Class Reference}
+\label{classCombatPhaseView}\index{CombatPhaseView@{CombatPhaseView}}
+
+
+The \mbox{\hyperlink{classCombatPhaseView}{Combat\+Phase\+View}} class This class is used to represent the combat phase view.  
+
+
+
+
+{\ttfamily \#include $<$Combat\+Phase\+View.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classCombatPhaseView_a3b697773f605f7fa37cc033b98f280c4}{set\+Print\+Mode}} (\mbox{\hyperlink{printMode_8h_a8fcc700aeeee633213b4e5f433e5e12e}{Print\+Mode}} print\+Mode)
+\item 
+void \mbox{\hyperlink{classCombatPhaseView_a65254fdd3354e40d690b885e9d5747c8}{display\+Players}} (\mbox{\hyperlink{classPlayer}{Player}} $\ast$player1, \mbox{\hyperlink{classPlayer}{Player}} $\ast$player2)
+\begin{DoxyCompactList}\small\item\em display\+Players This method is used to display the basic information of the players \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCombatPhaseView_a667b5a401221dffcba1961b7d562508c}{display\+Attacking\+Minion}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$attacking\+Minion)
+\begin{DoxyCompactList}\small\item\em Display the attacking minion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCombatPhaseView_af3cd440e08944230c5dd3306a95fe471}{display\+Defending\+Minion}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$defending\+Minion)
+\begin{DoxyCompactList}\small\item\em Display the defending minion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCombatPhaseView_aa5ef1de2a7b3c598f414706dad80ac78}{display\+Attacking\+Player}} (\mbox{\hyperlink{classPlayer}{Player}} $\ast$attacking\+Player)
+\begin{DoxyCompactList}\small\item\em Display the attacking player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCombatPhaseView_addd627109dca4f84f4f55a92485bc320}{display\+Combat\+Result}} (\mbox{\hyperlink{classPlayer}{Player}} $\ast$winner, \mbox{\hyperlink{classPlayer}{Player}} $\ast$loser, bool is\+Draw)
+\begin{DoxyCompactList}\small\item\em Display the combat result. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classCombatPhaseView}{Combat\+Phase\+View}} class This class is used to represent the combat phase view. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCombatPhaseView_a667b5a401221dffcba1961b7d562508c}\label{classCombatPhaseView_a667b5a401221dffcba1961b7d562508c}} 
+\index{CombatPhaseView@{CombatPhaseView}!displayAttackingMinion@{displayAttackingMinion}}
+\index{displayAttackingMinion@{displayAttackingMinion}!CombatPhaseView@{CombatPhaseView}}
+\doxysubsubsection{\texorpdfstring{displayAttackingMinion()}{displayAttackingMinion()}}
+{\footnotesize\ttfamily void Combat\+Phase\+View\+::display\+Attacking\+Minion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{attacking\+Minion }\end{DoxyParamCaption})}
+
+
+
+Display the attacking minion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attacking\+Minion} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCombatPhaseView_aa5ef1de2a7b3c598f414706dad80ac78}\label{classCombatPhaseView_aa5ef1de2a7b3c598f414706dad80ac78}} 
+\index{CombatPhaseView@{CombatPhaseView}!displayAttackingPlayer@{displayAttackingPlayer}}
+\index{displayAttackingPlayer@{displayAttackingPlayer}!CombatPhaseView@{CombatPhaseView}}
+\doxysubsubsection{\texorpdfstring{displayAttackingPlayer()}{displayAttackingPlayer()}}
+{\footnotesize\ttfamily void Combat\+Phase\+View\+::display\+Attacking\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{attacking\+Player }\end{DoxyParamCaption})}
+
+
+
+Display the attacking player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attacking\+Player} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCombatPhaseView_addd627109dca4f84f4f55a92485bc320}\label{classCombatPhaseView_addd627109dca4f84f4f55a92485bc320}} 
+\index{CombatPhaseView@{CombatPhaseView}!displayCombatResult@{displayCombatResult}}
+\index{displayCombatResult@{displayCombatResult}!CombatPhaseView@{CombatPhaseView}}
+\doxysubsubsection{\texorpdfstring{displayCombatResult()}{displayCombatResult()}}
+{\footnotesize\ttfamily void Combat\+Phase\+View\+::display\+Combat\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{winner,  }\item[{\mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{loser,  }\item[{bool}]{is\+Draw }\end{DoxyParamCaption})}
+
+
+
+Display the combat result. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em winner} & \\
+\hline
+{\em loser} & \\
+\hline
+{\em is\+Draw} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCombatPhaseView_af3cd440e08944230c5dd3306a95fe471}\label{classCombatPhaseView_af3cd440e08944230c5dd3306a95fe471}} 
+\index{CombatPhaseView@{CombatPhaseView}!displayDefendingMinion@{displayDefendingMinion}}
+\index{displayDefendingMinion@{displayDefendingMinion}!CombatPhaseView@{CombatPhaseView}}
+\doxysubsubsection{\texorpdfstring{displayDefendingMinion()}{displayDefendingMinion()}}
+{\footnotesize\ttfamily void Combat\+Phase\+View\+::display\+Defending\+Minion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{defending\+Minion }\end{DoxyParamCaption})}
+
+
+
+Display the defending minion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attacking\+Minion} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCombatPhaseView_a65254fdd3354e40d690b885e9d5747c8}\label{classCombatPhaseView_a65254fdd3354e40d690b885e9d5747c8}} 
+\index{CombatPhaseView@{CombatPhaseView}!displayPlayers@{displayPlayers}}
+\index{displayPlayers@{displayPlayers}!CombatPhaseView@{CombatPhaseView}}
+\doxysubsubsection{\texorpdfstring{displayPlayers()}{displayPlayers()}}
+{\footnotesize\ttfamily void Combat\+Phase\+View\+::display\+Players (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{player1,  }\item[{\mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{player2 }\end{DoxyParamCaption})}
+
+
+
+display\+Players This method is used to display the basic information of the players 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player1} & \\
+\hline
+{\em player2} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCombatPhaseView_a3b697773f605f7fa37cc033b98f280c4}\label{classCombatPhaseView_a3b697773f605f7fa37cc033b98f280c4}} 
+\index{CombatPhaseView@{CombatPhaseView}!setPrintMode@{setPrintMode}}
+\index{setPrintMode@{setPrintMode}!CombatPhaseView@{CombatPhaseView}}
+\doxysubsubsection{\texorpdfstring{setPrintMode()}{setPrintMode()}}
+{\footnotesize\ttfamily void Combat\+Phase\+View\+::set\+Print\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{printMode_8h_a8fcc700aeeee633213b4e5f433e5e12e}{Print\+Mode}}}]{print\+Mode }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/views/\mbox{\hyperlink{CombatPhaseView_8h}{Combat\+Phase\+View.\+h}}\item 
+cpp\+\_\+library/src/sources/views/\mbox{\hyperlink{CombatPhaseView_8cpp}{Combat\+Phase\+View.\+cpp}}\end{DoxyCompactItemize}

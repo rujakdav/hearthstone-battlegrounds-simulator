@@ -1,0 +1,4 @@
+<map id="Enchantment" name="Enchantment">
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,113,107"/>
+<area shape="rect" id="node2" href="$classIOwned.html" title="The IOwned class This class is used to store data about the owner of a card." alt="" coords="24,5,95,32"/>
+</map>

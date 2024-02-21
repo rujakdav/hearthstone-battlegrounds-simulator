@@ -1,0 +1,148 @@
+\hypertarget{classIDestructible}{}\doxysection{IDestructible Class Reference}
+\label{classIDestructible}\index{IDestructible@{IDestructible}}
+
+
+The \mbox{\hyperlink{classIDestructible}{IDestructible}} class This class is used to represent an entity that can take damage.  
+
+
+
+
+{\ttfamily \#include $<$IDestructible.\+h$>$}
+
+
+
+Inheritance diagram for IDestructible\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classIDestructible__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classIDestructible_a16256bce1880ade66ac5a9466ec0fe20}{get\+Health\+Points}} () const
+\item 
+void \mbox{\hyperlink{classIDestructible_a86034908a15bd3a7c1f398ce0782f1e8}{set\+Health\+Points}} (int health\+Points)
+\item 
+virtual int \mbox{\hyperlink{classIDestructible_aec5bba812395602d0ff675a06489ffd3}{get\+Max\+Health\+Points}} () const
+\item 
+void \mbox{\hyperlink{classIDestructible_a635e02c02705417fcc96106adbee4fa7}{set\+Max\+Health\+Points}} (int max\+Health\+Points)
+\item 
+virtual void \mbox{\hyperlink{classIDestructible_a11396344692eee205b81a9492a21a529}{take\+Damage}} (\mbox{\hyperlink{classDamage}{Damage}} \&damage)=0
+\begin{DoxyCompactList}\small\item\em Takes damage from the given damage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIDestructible_a643eabefeea1d02c77c4e851cd49813e}{take\+Damage}} (int amount)
+\begin{DoxyCompactList}\small\item\em Takes damage from the given amount. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIDestructible_ab6ef59a4cc4ea5c3c474a425faa1cf9c}{heal}} (int amount)
+\begin{DoxyCompactList}\small\item\em Heals the entity with the given amount. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIDestructible_a9f9dffcfac218afe2a1d82912bdb2aae}{IDestructible}} (int health\+Points, int max\+Health\+Points)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classIDestructible}{IDestructible}} class This class is used to represent an entity that can take damage. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIDestructible_a9f9dffcfac218afe2a1d82912bdb2aae}\label{classIDestructible_a9f9dffcfac218afe2a1d82912bdb2aae}} 
+\index{IDestructible@{IDestructible}!IDestructible@{IDestructible}}
+\index{IDestructible@{IDestructible}!IDestructible@{IDestructible}}
+\doxysubsubsection{\texorpdfstring{IDestructible()}{IDestructible()}}
+{\footnotesize\ttfamily IDestructible\+::\+IDestructible (\begin{DoxyParamCaption}\item[{int}]{health\+Points,  }\item[{int}]{max\+Health\+Points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIDestructible_a16256bce1880ade66ac5a9466ec0fe20}\label{classIDestructible_a16256bce1880ade66ac5a9466ec0fe20}} 
+\index{IDestructible@{IDestructible}!getHealthPoints@{getHealthPoints}}
+\index{getHealthPoints@{getHealthPoints}!IDestructible@{IDestructible}}
+\doxysubsubsection{\texorpdfstring{getHealthPoints()}{getHealthPoints()}}
+{\footnotesize\ttfamily int IDestructible\+::get\+Health\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classMinion_a67dd7e1530eda3e3829a2832992c496c}{Minion}}.
+
+\mbox{\Hypertarget{classIDestructible_aec5bba812395602d0ff675a06489ffd3}\label{classIDestructible_aec5bba812395602d0ff675a06489ffd3}} 
+\index{IDestructible@{IDestructible}!getMaxHealthPoints@{getMaxHealthPoints}}
+\index{getMaxHealthPoints@{getMaxHealthPoints}!IDestructible@{IDestructible}}
+\doxysubsubsection{\texorpdfstring{getMaxHealthPoints()}{getMaxHealthPoints()}}
+{\footnotesize\ttfamily int IDestructible\+::get\+Max\+Health\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classMinion_ac3b982d2170eb3afca4d01d0ce305569}{Minion}}.
+
+\mbox{\Hypertarget{classIDestructible_ab6ef59a4cc4ea5c3c474a425faa1cf9c}\label{classIDestructible_ab6ef59a4cc4ea5c3c474a425faa1cf9c}} 
+\index{IDestructible@{IDestructible}!heal@{heal}}
+\index{heal@{heal}!IDestructible@{IDestructible}}
+\doxysubsubsection{\texorpdfstring{heal()}{heal()}}
+{\footnotesize\ttfamily void IDestructible\+::heal (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Heals the entity with the given amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classMinion_accb1c22f9e1933a38bd81f05ca30fffe}{Minion}}.
+
+\mbox{\Hypertarget{classIDestructible_a86034908a15bd3a7c1f398ce0782f1e8}\label{classIDestructible_a86034908a15bd3a7c1f398ce0782f1e8}} 
+\index{IDestructible@{IDestructible}!setHealthPoints@{setHealthPoints}}
+\index{setHealthPoints@{setHealthPoints}!IDestructible@{IDestructible}}
+\doxysubsubsection{\texorpdfstring{setHealthPoints()}{setHealthPoints()}}
+{\footnotesize\ttfamily void IDestructible\+::set\+Health\+Points (\begin{DoxyParamCaption}\item[{int}]{health\+Points }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIDestructible_a635e02c02705417fcc96106adbee4fa7}\label{classIDestructible_a635e02c02705417fcc96106adbee4fa7}} 
+\index{IDestructible@{IDestructible}!setMaxHealthPoints@{setMaxHealthPoints}}
+\index{setMaxHealthPoints@{setMaxHealthPoints}!IDestructible@{IDestructible}}
+\doxysubsubsection{\texorpdfstring{setMaxHealthPoints()}{setMaxHealthPoints()}}
+{\footnotesize\ttfamily void IDestructible\+::set\+Max\+Health\+Points (\begin{DoxyParamCaption}\item[{int}]{max\+Health\+Points }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIDestructible_a11396344692eee205b81a9492a21a529}\label{classIDestructible_a11396344692eee205b81a9492a21a529}} 
+\index{IDestructible@{IDestructible}!takeDamage@{takeDamage}}
+\index{takeDamage@{takeDamage}!IDestructible@{IDestructible}}
+\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void IDestructible\+::take\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDamage}{Damage}} \&}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Takes damage from the given damage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classPlayer_aedf65d1cd20d9e656f03e58177f0a36a}{Player}}, and \mbox{\hyperlink{classMinion_a747e2742f2ee64fbe11ce759b80c15e9}{Minion}}.
+
+\mbox{\Hypertarget{classIDestructible_a643eabefeea1d02c77c4e851cd49813e}\label{classIDestructible_a643eabefeea1d02c77c4e851cd49813e}} 
+\index{IDestructible@{IDestructible}!takeDamage@{takeDamage}}
+\index{takeDamage@{takeDamage}!IDestructible@{IDestructible}}
+\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void IDestructible\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Takes damage from the given amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/components/\mbox{\hyperlink{IDestructible_8h}{IDestructible.\+h}}\item 
+cpp\+\_\+library/src/sources/components/\mbox{\hyperlink{IDestructible_8cpp}{IDestructible.\+cpp}}\end{DoxyCompactItemize}

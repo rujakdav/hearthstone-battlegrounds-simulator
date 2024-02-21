@@ -1,0 +1,95 @@
+\hypertarget{classHealTask}{}\doxysection{Heal\+Task Class Reference}
+\label{classHealTask}\index{HealTask@{HealTask}}
+
+
+The \mbox{\hyperlink{classHealTask}{Heal\+Task}} class This class is used to represent a heal task.  
+
+
+
+
+{\ttfamily \#include $<$Heal\+Task.\+h$>$}
+
+
+
+Inheritance diagram for Heal\+Task\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{classHealTask__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Heal\+Task\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{classHealTask__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{classIDestructible}{IDestructible}} $\ast$ $>$ \& \mbox{\hyperlink{classHealTask_afea1e8b4d3d43901ceaa0e22814bd9cc}{get\+Targets}} () const
+\item 
+int \mbox{\hyperlink{classHealTask_aa9d153a59d39293c1c9878ced8a83e7d}{get\+Amount}} () const
+\item 
+\mbox{\hyperlink{classHealTask_a5bd672bc9afcee5cff3bec77664aa903}{Heal\+Task}} (\mbox{\hyperlink{classIDestructible}{IDestructible}} $\ast$target, int amount)
+\item 
+\mbox{\hyperlink{classHealTask_adbdc59efbd5bfc120e3f34450df16af2}{Heal\+Task}} (const std\+::vector$<$ \mbox{\hyperlink{classIDestructible}{IDestructible}} $\ast$ $>$ \&targets, int amount)
+\item 
+void \mbox{\hyperlink{classHealTask_a6d1347cde1b9153f59398c03425a3c32}{execute}} () override
+\begin{DoxyCompactList}\small\item\em This method is used to execute the task. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classHealTask}{Heal\+Task}} class This class is used to represent a heal task. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHealTask_a5bd672bc9afcee5cff3bec77664aa903}\label{classHealTask_a5bd672bc9afcee5cff3bec77664aa903}} 
+\index{HealTask@{HealTask}!HealTask@{HealTask}}
+\index{HealTask@{HealTask}!HealTask@{HealTask}}
+\doxysubsubsection{\texorpdfstring{HealTask()}{HealTask()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Heal\+Task\+::\+Heal\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIDestructible}{IDestructible}} $\ast$}]{target,  }\item[{int}]{amount }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHealTask_adbdc59efbd5bfc120e3f34450df16af2}\label{classHealTask_adbdc59efbd5bfc120e3f34450df16af2}} 
+\index{HealTask@{HealTask}!HealTask@{HealTask}}
+\index{HealTask@{HealTask}!HealTask@{HealTask}}
+\doxysubsubsection{\texorpdfstring{HealTask()}{HealTask()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Heal\+Task\+::\+Heal\+Task (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classIDestructible}{IDestructible}} $\ast$ $>$ \&}]{targets,  }\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHealTask_a6d1347cde1b9153f59398c03425a3c32}\label{classHealTask_a6d1347cde1b9153f59398c03425a3c32}} 
+\index{HealTask@{HealTask}!execute@{execute}}
+\index{execute@{execute}!HealTask@{HealTask}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Heal\+Task\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method is used to execute the task. 
+
+
+
+Implements \mbox{\hyperlink{classITask_ab06c42f4b0417bb6d4531566476027cc}{ITask}}.
+
+\mbox{\Hypertarget{classHealTask_aa9d153a59d39293c1c9878ced8a83e7d}\label{classHealTask_aa9d153a59d39293c1c9878ced8a83e7d}} 
+\index{HealTask@{HealTask}!getAmount@{getAmount}}
+\index{getAmount@{getAmount}!HealTask@{HealTask}}
+\doxysubsubsection{\texorpdfstring{getAmount()}{getAmount()}}
+{\footnotesize\ttfamily int Heal\+Task\+::get\+Amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classHealTask_afea1e8b4d3d43901ceaa0e22814bd9cc}\label{classHealTask_afea1e8b4d3d43901ceaa0e22814bd9cc}} 
+\index{HealTask@{HealTask}!getTargets@{getTargets}}
+\index{getTargets@{getTargets}!HealTask@{HealTask}}
+\doxysubsubsection{\texorpdfstring{getTargets()}{getTargets()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{classIDestructible}{IDestructible}} $\ast$ $>$ \& Heal\+Task\+::get\+Targets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/tasks/\mbox{\hyperlink{HealTask_8h}{Heal\+Task.\+h}}\item 
+cpp\+\_\+library/src/sources/tasks/\mbox{\hyperlink{HealTask_8cpp}{Heal\+Task.\+cpp}}\end{DoxyCompactItemize}

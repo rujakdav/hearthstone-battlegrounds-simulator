@@ -1,0 +1,113 @@
+\hypertarget{classICombative}{}\doxysection{ICombative Class Reference}
+\label{classICombative}\index{ICombative@{ICombative}}
+
+
+The \mbox{\hyperlink{classICombative}{ICombative}} class This class is used to represent the combative behavior of entities.  
+
+
+
+
+{\ttfamily \#include $<$ICombative.\+h$>$}
+
+
+
+Inheritance diagram for ICombative\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=153pt]{classICombative__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classICombative_a30c86655f75053f395391002066def72}{get\+Attack}} () const
+\item 
+bool \mbox{\hyperlink{classICombative_aae414c69319c9523f1239eb143e678a5}{is\+Has\+Attacked}} () const
+\item 
+void \mbox{\hyperlink{classICombative_aa09555ace301f3178e0015e8bf4c1197}{set\+Remaining\+Attacks}} (int remaining\+Attacks)
+\item 
+void \mbox{\hyperlink{classICombative_ab74dbe06281a4f53edf162d1a4cbc09a}{change\+Has\+Attacked}} ()
+\begin{DoxyCompactList}\small\item\em Changes the has\+Attacked to opposite. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classICombative_aca4725915748f389443b01539212e544}{get\+Remaining\+Attacks}} () const
+\item 
+void \mbox{\hyperlink{classICombative_ae4341854c32b463e1f4e5cb240457442}{reduce\+Remaining\+Attacks}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classICombative_adf80114ae55a7fec8a749f97a3ea4c7b}{ICombative}} (int attack, int remaining\+Attacks)
+\item 
+virtual \mbox{\hyperlink{classICombative_a7d24b8fe3c2b149d09c652fa61750762}{$\sim$\+ICombative}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classICombative}{ICombative}} class This class is used to represent the combative behavior of entities. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classICombative_adf80114ae55a7fec8a749f97a3ea4c7b}\label{classICombative_adf80114ae55a7fec8a749f97a3ea4c7b}} 
+\index{ICombative@{ICombative}!ICombative@{ICombative}}
+\index{ICombative@{ICombative}!ICombative@{ICombative}}
+\doxysubsubsection{\texorpdfstring{ICombative()}{ICombative()}}
+{\footnotesize\ttfamily ICombative\+::\+ICombative (\begin{DoxyParamCaption}\item[{int}]{attack,  }\item[{int}]{remaining\+Attacks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classICombative_a7d24b8fe3c2b149d09c652fa61750762}\label{classICombative_a7d24b8fe3c2b149d09c652fa61750762}} 
+\index{ICombative@{ICombative}!````~ICombative@{$\sim$ICombative}}
+\index{````~ICombative@{$\sim$ICombative}!ICombative@{ICombative}}
+\doxysubsubsection{\texorpdfstring{$\sim$ICombative()}{~ICombative()}}
+{\footnotesize\ttfamily virtual ICombative\+::$\sim$\+ICombative (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classICombative_ab74dbe06281a4f53edf162d1a4cbc09a}\label{classICombative_ab74dbe06281a4f53edf162d1a4cbc09a}} 
+\index{ICombative@{ICombative}!changeHasAttacked@{changeHasAttacked}}
+\index{changeHasAttacked@{changeHasAttacked}!ICombative@{ICombative}}
+\doxysubsubsection{\texorpdfstring{changeHasAttacked()}{changeHasAttacked()}}
+{\footnotesize\ttfamily void ICombative\+::change\+Has\+Attacked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Changes the has\+Attacked to opposite. 
+
+\mbox{\Hypertarget{classICombative_a30c86655f75053f395391002066def72}\label{classICombative_a30c86655f75053f395391002066def72}} 
+\index{ICombative@{ICombative}!getAttack@{getAttack}}
+\index{getAttack@{getAttack}!ICombative@{ICombative}}
+\doxysubsubsection{\texorpdfstring{getAttack()}{getAttack()}}
+{\footnotesize\ttfamily int ICombative\+::get\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classMinion_aa75551c07dcf0c815490ede9053e484b}{Minion}}.
+
+\mbox{\Hypertarget{classICombative_aca4725915748f389443b01539212e544}\label{classICombative_aca4725915748f389443b01539212e544}} 
+\index{ICombative@{ICombative}!getRemainingAttacks@{getRemainingAttacks}}
+\index{getRemainingAttacks@{getRemainingAttacks}!ICombative@{ICombative}}
+\doxysubsubsection{\texorpdfstring{getRemainingAttacks()}{getRemainingAttacks()}}
+{\footnotesize\ttfamily int ICombative\+::get\+Remaining\+Attacks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classICombative_aae414c69319c9523f1239eb143e678a5}\label{classICombative_aae414c69319c9523f1239eb143e678a5}} 
+\index{ICombative@{ICombative}!isHasAttacked@{isHasAttacked}}
+\index{isHasAttacked@{isHasAttacked}!ICombative@{ICombative}}
+\doxysubsubsection{\texorpdfstring{isHasAttacked()}{isHasAttacked()}}
+{\footnotesize\ttfamily bool ICombative\+::is\+Has\+Attacked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classICombative_ae4341854c32b463e1f4e5cb240457442}\label{classICombative_ae4341854c32b463e1f4e5cb240457442}} 
+\index{ICombative@{ICombative}!reduceRemainingAttacks@{reduceRemainingAttacks}}
+\index{reduceRemainingAttacks@{reduceRemainingAttacks}!ICombative@{ICombative}}
+\doxysubsubsection{\texorpdfstring{reduceRemainingAttacks()}{reduceRemainingAttacks()}}
+{\footnotesize\ttfamily void ICombative\+::reduce\+Remaining\+Attacks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classICombative_aa09555ace301f3178e0015e8bf4c1197}\label{classICombative_aa09555ace301f3178e0015e8bf4c1197}} 
+\index{ICombative@{ICombative}!setRemainingAttacks@{setRemainingAttacks}}
+\index{setRemainingAttacks@{setRemainingAttacks}!ICombative@{ICombative}}
+\doxysubsubsection{\texorpdfstring{setRemainingAttacks()}{setRemainingAttacks()}}
+{\footnotesize\ttfamily void ICombative\+::set\+Remaining\+Attacks (\begin{DoxyParamCaption}\item[{int}]{remaining\+Attacks }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/components/\mbox{\hyperlink{ICombative_8h}{ICombative.\+h}}\item 
+cpp\+\_\+library/src/sources/components/\mbox{\hyperlink{ICombative_8cpp}{ICombative.\+cpp}}\end{DoxyCompactItemize}

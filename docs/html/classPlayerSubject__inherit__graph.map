@@ -1,0 +1,4 @@
+<map id="PlayerSubject" name="PlayerSubject">
+<area shape="rect" id="node1" title="The PlayerSubject class This class is used to implement the observer pattern between players and game..." alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node2" href="$classPlayer.html" title="The Player class represents a player in the game." alt="" coords="29,80,92,107"/>
+</map>

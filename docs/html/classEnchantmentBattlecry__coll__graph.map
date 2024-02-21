@@ -1,0 +1,4 @@
+<map id="EnchantmentBattlecry" name="EnchantmentBattlecry">
+<area shape="rect" id="node1" title="The EnchantmentBattlecry class This class is used to represent an enchantment battlecry." alt="" coords="5,80,172,107"/>
+<area shape="rect" id="node2" href="$classIBattlecry.html" title="The IBattlecry class This class is used to represent a battlecry." alt="" coords="46,5,131,32"/>
+</map>

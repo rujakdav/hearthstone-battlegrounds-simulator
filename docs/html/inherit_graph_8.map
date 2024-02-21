@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classGameObserver.html" title=" " alt="" coords="8,5,128,32"/>
+<area shape="rect" id="node2" href="$classCombatPhaseController.html" title="The CombatPhaseController class This class is used to control the combat phase." alt="" coords="179,5,355,32"/>
+<area shape="rect" id="node3" href="$classRecruitPhaseController.html" title="The RecruitPhaseController class This class is used to control the recruit phase." alt="" coords="181,56,352,83"/>
+<area shape="rect" id="node4" href="$classPhaseController.html" title="The PhaseController class This class is used to control the phases." alt="" coords="5,56,131,83"/>
+</map>

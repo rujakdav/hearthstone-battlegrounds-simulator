@@ -1,0 +1,181 @@
+\hypertarget{classPlayerSubject}{}\doxysection{Player\+Subject Class Reference}
+\label{classPlayerSubject}\index{PlayerSubject@{PlayerSubject}}
+
+
+The \mbox{\hyperlink{classPlayerSubject}{Player\+Subject}} class This class is used to implement the observer pattern between players and game.  
+
+
+
+
+{\ttfamily \#include $<$Player\+Subject.\+h$>$}
+
+
+
+Inheritance diagram for Player\+Subject\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classPlayerSubject__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classPlayerSubject_a59a9380b473743fbc617952ba438b69b}{register\+Observer}} (\mbox{\hyperlink{classGameObserver}{Game\+Observer}} $\ast$observer)=0
+\begin{DoxyCompactList}\small\item\em This method is used to register an observer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPlayerSubject_a5f7cf85972a82da0dcf53475356c3068}{unregister\+Observer}} (\mbox{\hyperlink{classGameObserver}{Game\+Observer}} $\ast$observer)=0
+\begin{DoxyCompactList}\small\item\em This method is used to unregister an observer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPlayerSubject_aa5fb1a5b68e2f048afb554a0d13df27e}{notify\+Observers}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, \mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}} trigger\+Type)=0
+\begin{DoxyCompactList}\small\item\em This method is used to notify the observers. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPlayerSubject_a79b74bdb1e3dbf651e6a1c141f4d625b}{subscribe\+Minion}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion)=0
+\begin{DoxyCompactList}\small\item\em Subscribe a minion to the actions center. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPlayerSubject_ab42202f297b3f2cf141d605ec7c3cb6f}{unsubscribe\+Minion}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion)=0
+\begin{DoxyCompactList}\small\item\em Unsubscribe a minion from the actions center. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPlayerSubject_a315d0855833a6dde015b2ce6bb9a4a77}{subscribe\+Minion\+Effect}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \&aura\+Effect)=0
+\begin{DoxyCompactList}\small\item\em Subscribe a minion effect to the actions center. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPlayerSubject_abd5580d902041d9eba8c863203200d3d}{unsubscribe\+Minion\+Effect}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \&aura\+Effect)=0
+\begin{DoxyCompactList}\small\item\em Unsubscribes a minion effect from the actions center. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPlayerSubject}{Player\+Subject}} class This class is used to implement the observer pattern between players and game. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlayerSubject_aa5fb1a5b68e2f048afb554a0d13df27e}\label{classPlayerSubject_aa5fb1a5b68e2f048afb554a0d13df27e}} 
+\index{PlayerSubject@{PlayerSubject}!notifyObservers@{notifyObservers}}
+\index{notifyObservers@{notifyObservers}!PlayerSubject@{PlayerSubject}}
+\doxysubsubsection{\texorpdfstring{notifyObservers()}{notifyObservers()}}
+{\footnotesize\ttfamily virtual void Player\+Subject\+::notify\+Observers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}}}]{trigger\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This method is used to notify the observers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger\+Type} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classPlayer_aba780381600a1001d045d009b7204ed2}{Player}}.
+
+\mbox{\Hypertarget{classPlayerSubject_a59a9380b473743fbc617952ba438b69b}\label{classPlayerSubject_a59a9380b473743fbc617952ba438b69b}} 
+\index{PlayerSubject@{PlayerSubject}!registerObserver@{registerObserver}}
+\index{registerObserver@{registerObserver}!PlayerSubject@{PlayerSubject}}
+\doxysubsubsection{\texorpdfstring{registerObserver()}{registerObserver()}}
+{\footnotesize\ttfamily virtual void Player\+Subject\+::register\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGameObserver}{Game\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This method is used to register an observer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classPlayer_a653c85200f669f61b7a3e8894ae96ecd}{Player}}.
+
+\mbox{\Hypertarget{classPlayerSubject_a79b74bdb1e3dbf651e6a1c141f4d625b}\label{classPlayerSubject_a79b74bdb1e3dbf651e6a1c141f4d625b}} 
+\index{PlayerSubject@{PlayerSubject}!subscribeMinion@{subscribeMinion}}
+\index{subscribeMinion@{subscribeMinion}!PlayerSubject@{PlayerSubject}}
+\doxysubsubsection{\texorpdfstring{subscribeMinion()}{subscribeMinion()}}
+{\footnotesize\ttfamily virtual void Player\+Subject\+::subscribe\+Minion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Subscribe a minion to the actions center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classPlayer_ac28e6e55d68095d0fd71658c98ab50ab}{Player}}.
+
+\mbox{\Hypertarget{classPlayerSubject_a315d0855833a6dde015b2ce6bb9a4a77}\label{classPlayerSubject_a315d0855833a6dde015b2ce6bb9a4a77}} 
+\index{PlayerSubject@{PlayerSubject}!subscribeMinionEffect@{subscribeMinionEffect}}
+\index{subscribeMinionEffect@{subscribeMinionEffect}!PlayerSubject@{PlayerSubject}}
+\doxysubsubsection{\texorpdfstring{subscribeMinionEffect()}{subscribeMinionEffect()}}
+{\footnotesize\ttfamily virtual void Player\+Subject\+::subscribe\+Minion\+Effect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \&}]{aura\+Effect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Subscribe a minion effect to the actions center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classPlayer_a853092f1cfbb1210fc5d56c806b6de8b}{Player}}.
+
+\mbox{\Hypertarget{classPlayerSubject_a5f7cf85972a82da0dcf53475356c3068}\label{classPlayerSubject_a5f7cf85972a82da0dcf53475356c3068}} 
+\index{PlayerSubject@{PlayerSubject}!unregisterObserver@{unregisterObserver}}
+\index{unregisterObserver@{unregisterObserver}!PlayerSubject@{PlayerSubject}}
+\doxysubsubsection{\texorpdfstring{unregisterObserver()}{unregisterObserver()}}
+{\footnotesize\ttfamily virtual void Player\+Subject\+::unregister\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGameObserver}{Game\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This method is used to unregister an observer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classPlayer_ae646753762f437385f2ab4d5bf958f37}{Player}}.
+
+\mbox{\Hypertarget{classPlayerSubject_ab42202f297b3f2cf141d605ec7c3cb6f}\label{classPlayerSubject_ab42202f297b3f2cf141d605ec7c3cb6f}} 
+\index{PlayerSubject@{PlayerSubject}!unsubscribeMinion@{unsubscribeMinion}}
+\index{unsubscribeMinion@{unsubscribeMinion}!PlayerSubject@{PlayerSubject}}
+\doxysubsubsection{\texorpdfstring{unsubscribeMinion()}{unsubscribeMinion()}}
+{\footnotesize\ttfamily virtual void Player\+Subject\+::unsubscribe\+Minion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Unsubscribe a minion from the actions center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classPlayer_ad355e8bf0478436cc9ee3499260d78a0}{Player}}.
+
+\mbox{\Hypertarget{classPlayerSubject_abd5580d902041d9eba8c863203200d3d}\label{classPlayerSubject_abd5580d902041d9eba8c863203200d3d}} 
+\index{PlayerSubject@{PlayerSubject}!unsubscribeMinionEffect@{unsubscribeMinionEffect}}
+\index{unsubscribeMinionEffect@{unsubscribeMinionEffect}!PlayerSubject@{PlayerSubject}}
+\doxysubsubsection{\texorpdfstring{unsubscribeMinionEffect()}{unsubscribeMinionEffect()}}
+{\footnotesize\ttfamily virtual void Player\+Subject\+::unsubscribe\+Minion\+Effect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \&}]{aura\+Effect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Unsubscribes a minion effect from the actions center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classPlayer_a116b4fe297bc1efee38022908b379cb3}{Player}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/messaging/observer/\mbox{\hyperlink{PlayerSubject_8h}{Player\+Subject.\+h}}\end{DoxyCompactItemize}

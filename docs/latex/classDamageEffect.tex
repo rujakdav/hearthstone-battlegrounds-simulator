@@ -1,0 +1,71 @@
+\hypertarget{classDamageEffect}{}\doxysection{Damage\+Effect Class Reference}
+\label{classDamageEffect}\index{DamageEffect@{DamageEffect}}
+
+
+{\ttfamily \#include $<$Damage\+Effect.\+h$>$}
+
+
+
+Inheritance diagram for Damage\+Effect\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classDamageEffect__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Damage\+Effect\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classDamageEffect__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDamageEffect_a34436cd22a2ff4477028b24c2dac82a5}{Damage\+Effect}} (const std\+::string \&description, \mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}} trigger\+Type, \mbox{\hyperlink{classSourceCriteria}{Source\+Criteria}} source\+Criteria, const \mbox{\hyperlink{classDamageEffectData}{Damage\+Effect\+Data}} \&damage\+Effect\+Data)
+\item 
+void \mbox{\hyperlink{classDamageEffect_a96ea0faa6261df89445852c0d74bdef0}{execute}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, \mbox{\hyperlink{classPhaseController}{Phase\+Controller}} $\ast$game) override
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \mbox{\hyperlink{classDamageEffect_ab849c7f271f3a89e448600deab9f8928}{clone}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDamageEffect_a34436cd22a2ff4477028b24c2dac82a5}\label{classDamageEffect_a34436cd22a2ff4477028b24c2dac82a5}} 
+\index{DamageEffect@{DamageEffect}!DamageEffect@{DamageEffect}}
+\index{DamageEffect@{DamageEffect}!DamageEffect@{DamageEffect}}
+\doxysubsubsection{\texorpdfstring{DamageEffect()}{DamageEffect()}}
+{\footnotesize\ttfamily Damage\+Effect\+::\+Damage\+Effect (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{description,  }\item[{\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}}}]{trigger\+Type,  }\item[{\mbox{\hyperlink{classSourceCriteria}{Source\+Criteria}}}]{source\+Criteria,  }\item[{const \mbox{\hyperlink{classDamageEffectData}{Damage\+Effect\+Data}} \&}]{damage\+Effect\+Data }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDamageEffect_ab849c7f271f3a89e448600deab9f8928}\label{classDamageEffect_ab849c7f271f3a89e448600deab9f8928}} 
+\index{DamageEffect@{DamageEffect}!clone@{clone}}
+\index{clone@{clone}!DamageEffect@{DamageEffect}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ Damage\+Effect\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIEffect_a1510e0d622d19d6fbbf8adad35da2788}{IEffect}}.
+
+\mbox{\Hypertarget{classDamageEffect_a96ea0faa6261df89445852c0d74bdef0}\label{classDamageEffect_a96ea0faa6261df89445852c0d74bdef0}} 
+\index{DamageEffect@{DamageEffect}!execute@{execute}}
+\index{execute@{execute}!DamageEffect@{DamageEffect}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Damage\+Effect\+::execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{\mbox{\hyperlink{classPhaseController}{Phase\+Controller}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIEffect_ab01895fcb62da53fc71c1fc238eb319e}{IEffect}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/mechanics/effects/\mbox{\hyperlink{DamageEffect_8h}{Damage\+Effect.\+h}}\item 
+cpp\+\_\+library/src/sources/mechanics/effects/\mbox{\hyperlink{DamageEffect_8cpp}{Damage\+Effect.\+cpp}}\end{DoxyCompactItemize}

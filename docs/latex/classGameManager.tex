@@ -1,0 +1,170 @@
+\hypertarget{classGameManager}{}\doxysection{Game\+Manager Class Reference}
+\label{classGameManager}\index{GameManager@{GameManager}}
+
+
+The \mbox{\hyperlink{classGameManager}{Game\+Manager}} class This class is used to represent the game manager.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGameManager_aa0e2424dc1a39d380e5b6605b179bf05}{Game\+Manager}} ()
+\item 
+void \mbox{\hyperlink{classGameManager_a54bbb855ba85292a474ab06e39e5dbdf}{add\+Player}} (\mbox{\hyperlink{classPlayer}{Player}} $\ast$player)
+\begin{DoxyCompactList}\small\item\em Adds a player to alive players. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classGameManager_ade4365b9b055dcc87288cf921b4b5946}{add\+Player}} (const std\+::string \&player\+Key)
+\begin{DoxyCompactList}\small\item\em Add a player to alive players. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameManager_adfc2e8e5d0ffe6379398afd3c867cf7b}{move\+Player\+To\+Dead}} (const std\+::string \&player\+Id)
+\begin{DoxyCompactList}\small\item\em Moves a player with player\+Id to dead players. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameManager_ae272eb0bf4e4987797fcff97723819cc}{start\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Starts the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameManager_ae238bd148c14a5be840f8dfad5142633}{start\+Combat\+Phase}} (const std\+::string \&player\+Id1, const std\+::string \&player\+Id2)
+\begin{DoxyCompactList}\small\item\em Starts the combat phase of game with players with player\+Ids. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameManager_a78d901518f50af09cbcb9129e4fd7cce}{start\+Recruit\+Phase}} (const std\+::string \&player\+Id)
+\begin{DoxyCompactList}\small\item\em Starts the recruit phase of game with players with player\+Ids. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameManager_af11986494eab4957576bf35ab126efba}{execute\+Single\+Combat}} (const std\+::string \&player\+Id1, const std\+::vector$<$ std\+::string $>$ \&minion\+Ids1, const std\+::string \&player\+Id2, const std\+::vector$<$ std\+::string $>$ \&minion\+Ids2, bool is\+Print=true)
+\begin{DoxyCompactList}\small\item\em Executes a single combat between players with player\+Ids and minions with minion\+Ids. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGameManager_aaae63e38e358379c1fe507c5197a8435}{$\sim$\+Game\+Manager}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classGameManager}{Game\+Manager}} class This class is used to represent the game manager. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGameManager_aa0e2424dc1a39d380e5b6605b179bf05}\label{classGameManager_aa0e2424dc1a39d380e5b6605b179bf05}} 
+\index{GameManager@{GameManager}!GameManager@{GameManager}}
+\index{GameManager@{GameManager}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{GameManager()}{GameManager()}}
+{\footnotesize\ttfamily Game\+Manager\+::\+Game\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGameManager_aaae63e38e358379c1fe507c5197a8435}\label{classGameManager_aaae63e38e358379c1fe507c5197a8435}} 
+\index{GameManager@{GameManager}!````~GameManager@{$\sim$GameManager}}
+\index{````~GameManager@{$\sim$GameManager}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$GameManager()}{~GameManager()}}
+{\footnotesize\ttfamily Game\+Manager\+::$\sim$\+Game\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGameManager_ade4365b9b055dcc87288cf921b4b5946}\label{classGameManager_ade4365b9b055dcc87288cf921b4b5946}} 
+\index{GameManager@{GameManager}!addPlayer@{addPlayer}}
+\index{addPlayer@{addPlayer}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{addPlayer()}{addPlayer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string Game\+Manager\+::add\+Player (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{player\+Key }\end{DoxyParamCaption})}
+
+
+
+Add a player to alive players. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The player id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGameManager_a54bbb855ba85292a474ab06e39e5dbdf}\label{classGameManager_a54bbb855ba85292a474ab06e39e5dbdf}} 
+\index{GameManager@{GameManager}!addPlayer@{addPlayer}}
+\index{addPlayer@{addPlayer}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{addPlayer()}{addPlayer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Game\+Manager\+::add\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+
+
+Adds a player to alive players. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGameManager_af11986494eab4957576bf35ab126efba}\label{classGameManager_af11986494eab4957576bf35ab126efba}} 
+\index{GameManager@{GameManager}!executeSingleCombat@{executeSingleCombat}}
+\index{executeSingleCombat@{executeSingleCombat}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{executeSingleCombat()}{executeSingleCombat()}}
+{\footnotesize\ttfamily void Game\+Manager\+::execute\+Single\+Combat (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{player\+Id1,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{minion\+Ids1,  }\item[{const std\+::string \&}]{player\+Id2,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{minion\+Ids2,  }\item[{bool}]{is\+Print = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Executes a single combat between players with player\+Ids and minions with minion\+Ids. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Id1} & \\
+\hline
+{\em minion\+Ids1} & \\
+\hline
+{\em player\+Id2} & \\
+\hline
+{\em minion\+Ids2} & \\
+\hline
+{\em is\+Print} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGameManager_adfc2e8e5d0ffe6379398afd3c867cf7b}\label{classGameManager_adfc2e8e5d0ffe6379398afd3c867cf7b}} 
+\index{GameManager@{GameManager}!movePlayerToDead@{movePlayerToDead}}
+\index{movePlayerToDead@{movePlayerToDead}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{movePlayerToDead()}{movePlayerToDead()}}
+{\footnotesize\ttfamily void Game\+Manager\+::move\+Player\+To\+Dead (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{player\+Id }\end{DoxyParamCaption})}
+
+
+
+Moves a player with player\+Id to dead players. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGameManager_ae238bd148c14a5be840f8dfad5142633}\label{classGameManager_ae238bd148c14a5be840f8dfad5142633}} 
+\index{GameManager@{GameManager}!startCombatPhase@{startCombatPhase}}
+\index{startCombatPhase@{startCombatPhase}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{startCombatPhase()}{startCombatPhase()}}
+{\footnotesize\ttfamily void Game\+Manager\+::start\+Combat\+Phase (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{player\+Id1,  }\item[{const std\+::string \&}]{player\+Id2 }\end{DoxyParamCaption})}
+
+
+
+Starts the combat phase of game with players with player\+Ids. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Ids} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGameManager_ae272eb0bf4e4987797fcff97723819cc}\label{classGameManager_ae272eb0bf4e4987797fcff97723819cc}} 
+\index{GameManager@{GameManager}!startGame@{startGame}}
+\index{startGame@{startGame}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{startGame()}{startGame()}}
+{\footnotesize\ttfamily void Game\+Manager\+::start\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the game. 
+
+\mbox{\Hypertarget{classGameManager_a78d901518f50af09cbcb9129e4fd7cce}\label{classGameManager_a78d901518f50af09cbcb9129e4fd7cce}} 
+\index{GameManager@{GameManager}!startRecruitPhase@{startRecruitPhase}}
+\index{startRecruitPhase@{startRecruitPhase}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{startRecruitPhase()}{startRecruitPhase()}}
+{\footnotesize\ttfamily void Game\+Manager\+::start\+Recruit\+Phase (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{player\+Id }\end{DoxyParamCaption})}
+
+
+
+Starts the recruit phase of game with players with player\+Ids. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Ids} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/\mbox{\hyperlink{GameManager_8h}{Game\+Manager.\+h}}\item 
+cpp\+\_\+library/src/sources/\mbox{\hyperlink{GameManager_8cpp}{Game\+Manager.\+cpp}}\end{DoxyCompactItemize}

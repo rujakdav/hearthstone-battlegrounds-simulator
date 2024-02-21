@@ -1,0 +1,97 @@
+\hypertarget{classMinionSubject}{}\doxysection{Minion\+Subject Class Reference}
+\label{classMinionSubject}\index{MinionSubject@{MinionSubject}}
+
+
+The \mbox{\hyperlink{classMinionSubject}{Minion\+Subject}} class This class is used to implement the observer pattern between minions and players.  
+
+
+
+
+{\ttfamily \#include $<$Minion\+Subject.\+h$>$}
+
+
+
+Inheritance diagram for Minion\+Subject\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classMinionSubject__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classMinionSubject_a45a1d6a82c5768a673569ab6a7af2d82}{register\+Observer}} (\mbox{\hyperlink{classPlayerObserver}{Player\+Observer}} $\ast$observer)=0
+\begin{DoxyCompactList}\small\item\em This method is used to register an observer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classMinionSubject_afb0e2f901f191c3143cf10ba06a4f0ad}{unregister\+Observer}} (\mbox{\hyperlink{classPlayerObserver}{Player\+Observer}} $\ast$observer)=0
+\begin{DoxyCompactList}\small\item\em This method is used to unregister an observer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classMinionSubject_aa402ca7317bcc34aaa64c0d238d7263e}{notify\+Observers}} (\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}} trigger\+Type)=0
+\begin{DoxyCompactList}\small\item\em This method is used to notify the observers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classMinionSubject}{Minion\+Subject}} class This class is used to implement the observer pattern between minions and players. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMinionSubject_aa402ca7317bcc34aaa64c0d238d7263e}\label{classMinionSubject_aa402ca7317bcc34aaa64c0d238d7263e}} 
+\index{MinionSubject@{MinionSubject}!notifyObservers@{notifyObservers}}
+\index{notifyObservers@{notifyObservers}!MinionSubject@{MinionSubject}}
+\doxysubsubsection{\texorpdfstring{notifyObservers()}{notifyObservers()}}
+{\footnotesize\ttfamily virtual void Minion\+Subject\+::notify\+Observers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}}}]{trigger\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This method is used to notify the observers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger\+Type} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classMinion_af0b86f8dbbf63b45c9edf8ab6a6e2635}{Minion}}.
+
+\mbox{\Hypertarget{classMinionSubject_a45a1d6a82c5768a673569ab6a7af2d82}\label{classMinionSubject_a45a1d6a82c5768a673569ab6a7af2d82}} 
+\index{MinionSubject@{MinionSubject}!registerObserver@{registerObserver}}
+\index{registerObserver@{registerObserver}!MinionSubject@{MinionSubject}}
+\doxysubsubsection{\texorpdfstring{registerObserver()}{registerObserver()}}
+{\footnotesize\ttfamily virtual void Minion\+Subject\+::register\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayerObserver}{Player\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This method is used to register an observer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classMinion_a2fa149008df6143f59620191ee131969}{Minion}}.
+
+\mbox{\Hypertarget{classMinionSubject_afb0e2f901f191c3143cf10ba06a4f0ad}\label{classMinionSubject_afb0e2f901f191c3143cf10ba06a4f0ad}} 
+\index{MinionSubject@{MinionSubject}!unregisterObserver@{unregisterObserver}}
+\index{unregisterObserver@{unregisterObserver}!MinionSubject@{MinionSubject}}
+\doxysubsubsection{\texorpdfstring{unregisterObserver()}{unregisterObserver()}}
+{\footnotesize\ttfamily virtual void Minion\+Subject\+::unregister\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayerObserver}{Player\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This method is used to unregister an observer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classMinion_a4228132a38916559e9d53631a531c98e}{Minion}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/messaging/observer/\mbox{\hyperlink{MinionSubject_8h}{Minion\+Subject.\+h}}\end{DoxyCompactItemize}

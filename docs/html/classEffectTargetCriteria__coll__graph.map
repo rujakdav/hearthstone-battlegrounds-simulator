@@ -1,0 +1,4 @@
+<map id="EffectTargetCriteria" name="EffectTargetCriteria">
+<area shape="rect" id="node1" title="The EffectTargetCriteria class This class is used to filter effect targets." alt="" coords="5,80,152,107"/>
+<area shape="rect" id="node2" href="$classRandomTargets.html" title="The RandomTargets class This class is used to determine if a target is random or not." alt="" coords="17,5,140,32"/>
+</map>

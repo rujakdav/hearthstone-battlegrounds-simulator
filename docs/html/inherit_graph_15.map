@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classITask.html" title="The ITask class This class is used to represent a task." alt="" coords="5,107,60,133"/>
+<area shape="rect" id="node2" href="$classAttackTask.html" title="The AttackTask class This class is used to represent an attack task." alt="" coords="130,5,223,32"/>
+<area shape="rect" id="node3" href="$classDamageTask.html" title="The DamageTask class This class is used to represent a damage task." alt="" coords="123,56,230,83"/>
+<area shape="rect" id="node4" href="$classEnchantmentTask.html" title="The EnchantmentTask class This class is used to represent an enchantment task." alt="" coords="108,107,245,133"/>
+<area shape="rect" id="node5" href="$classHealTask.html" title="The HealTask class This class is used to represent a heal task." alt="" coords="136,157,217,184"/>
+<area shape="rect" id="node6" href="$classSummonTask.html" title="The SummonTask class This class is used to represent a summon task." alt="" coords="122,208,231,235"/>
+</map>

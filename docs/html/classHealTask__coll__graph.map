@@ -1,0 +1,4 @@
+<map id="HealTask" name="HealTask">
+<area shape="rect" id="node1" title="The HealTask class This class is used to represent a heal task." alt="" coords="5,80,87,107"/>
+<area shape="rect" id="node2" href="$classITask.html" title="The ITask class This class is used to represent a task." alt="" coords="19,5,73,32"/>
+</map>

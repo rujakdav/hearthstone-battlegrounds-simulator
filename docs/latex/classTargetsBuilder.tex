@@ -1,0 +1,125 @@
+\hypertarget{classTargetsBuilder}{}\doxysection{Targets\+Builder Class Reference}
+\label{classTargetsBuilder}\index{TargetsBuilder@{TargetsBuilder}}
+
+
+The \mbox{\hyperlink{classTargetsBuilder}{Targets\+Builder}} class This class is used to build targets for effects.  
+
+
+
+
+{\ttfamily \#include $<$Targets\+Builder.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTargetsBuilder_af6cf341152ece6e1d61c1e24642fd4d5}{Targets\+Builder}} (\mbox{\hyperlink{classEffectTargetCriteria}{Effect\+Target\+Criteria}} \&targets\+Model)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classIDestructible}{IDestructible}} $\ast$ $>$ \mbox{\hyperlink{classTargetsBuilder_a91d2d545e65216d2c5772dd6448944a8}{get\+IDestructible}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, \mbox{\hyperlink{classPhaseController}{Phase\+Controller}} $\ast$phase\+Controller)
+\begin{DoxyCompactList}\small\item\em This method returns instances of \mbox{\hyperlink{classIDestructible}{IDestructible}} targets. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classIArmored}{IArmored}} $\ast$ $>$ \mbox{\hyperlink{classTargetsBuilder_a2fbf6884267d8bc7e174a0c80a1b84a3}{get\+IArmored}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, \mbox{\hyperlink{classPhaseController}{Phase\+Controller}} $\ast$phase\+Controller)
+\begin{DoxyCompactList}\small\item\em This method returns instances of \mbox{\hyperlink{classIArmored}{IArmored}} targets. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $\ast$ $>$ \mbox{\hyperlink{classTargetsBuilder_a267ae4bc8393e45199c436ee3830bc7d}{get\+Minions}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, \mbox{\hyperlink{classPhaseController}{Phase\+Controller}} $\ast$phase\+Controller)
+\begin{DoxyCompactList}\small\item\em This method returns instances of IHealable targets. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classPlayer}{Player}} $\ast$ $>$ \mbox{\hyperlink{classTargetsBuilder_a728c9ef11219a735af57e1661e8e5aa0}{get\+Players}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, \mbox{\hyperlink{classPhaseController}{Phase\+Controller}} $\ast$phase\+Controller)
+\begin{DoxyCompactList}\small\item\em This method returns instances of \mbox{\hyperlink{classPlayer}{Player}} targets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classTargetsBuilder}{Targets\+Builder}} class This class is used to build targets for effects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTargetsBuilder_af6cf341152ece6e1d61c1e24642fd4d5}\label{classTargetsBuilder_af6cf341152ece6e1d61c1e24642fd4d5}} 
+\index{TargetsBuilder@{TargetsBuilder}!TargetsBuilder@{TargetsBuilder}}
+\index{TargetsBuilder@{TargetsBuilder}!TargetsBuilder@{TargetsBuilder}}
+\doxysubsubsection{\texorpdfstring{TargetsBuilder()}{TargetsBuilder()}}
+{\footnotesize\ttfamily Targets\+Builder\+::\+Targets\+Builder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEffectTargetCriteria}{Effect\+Target\+Criteria}} \&}]{targets\+Model }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTargetsBuilder_a2fbf6884267d8bc7e174a0c80a1b84a3}\label{classTargetsBuilder_a2fbf6884267d8bc7e174a0c80a1b84a3}} 
+\index{TargetsBuilder@{TargetsBuilder}!getIArmored@{getIArmored}}
+\index{getIArmored@{getIArmored}!TargetsBuilder@{TargetsBuilder}}
+\doxysubsubsection{\texorpdfstring{getIArmored()}{getIArmored()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classIArmored}{IArmored}} $\ast$ $>$ Targets\+Builder\+::get\+IArmored (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{\mbox{\hyperlink{classPhaseController}{Phase\+Controller}} $\ast$}]{phase\+Controller }\end{DoxyParamCaption})}
+
+
+
+This method returns instances of \mbox{\hyperlink{classIArmored}{IArmored}} targets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+{\em phase\+Controller} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTargetsBuilder_a91d2d545e65216d2c5772dd6448944a8}\label{classTargetsBuilder_a91d2d545e65216d2c5772dd6448944a8}} 
+\index{TargetsBuilder@{TargetsBuilder}!getIDestructible@{getIDestructible}}
+\index{getIDestructible@{getIDestructible}!TargetsBuilder@{TargetsBuilder}}
+\doxysubsubsection{\texorpdfstring{getIDestructible()}{getIDestructible()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classIDestructible}{IDestructible}} $\ast$ $>$ Targets\+Builder\+::get\+IDestructible (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{\mbox{\hyperlink{classPhaseController}{Phase\+Controller}} $\ast$}]{phase\+Controller }\end{DoxyParamCaption})}
+
+
+
+This method returns instances of \mbox{\hyperlink{classIDestructible}{IDestructible}} targets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+{\em phase\+Controller} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTargetsBuilder_a267ae4bc8393e45199c436ee3830bc7d}\label{classTargetsBuilder_a267ae4bc8393e45199c436ee3830bc7d}} 
+\index{TargetsBuilder@{TargetsBuilder}!getMinions@{getMinions}}
+\index{getMinions@{getMinions}!TargetsBuilder@{TargetsBuilder}}
+\doxysubsubsection{\texorpdfstring{getMinions()}{getMinions()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $\ast$ $>$ Targets\+Builder\+::get\+Minions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{\mbox{\hyperlink{classPhaseController}{Phase\+Controller}} $\ast$}]{phase\+Controller }\end{DoxyParamCaption})}
+
+
+
+This method returns instances of IHealable targets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+{\em phase\+Controller} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTargetsBuilder_a728c9ef11219a735af57e1661e8e5aa0}\label{classTargetsBuilder_a728c9ef11219a735af57e1661e8e5aa0}} 
+\index{TargetsBuilder@{TargetsBuilder}!getPlayers@{getPlayers}}
+\index{getPlayers@{getPlayers}!TargetsBuilder@{TargetsBuilder}}
+\doxysubsubsection{\texorpdfstring{getPlayers()}{getPlayers()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classPlayer}{Player}} $\ast$ $>$ Targets\+Builder\+::get\+Players (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{\mbox{\hyperlink{classPhaseController}{Phase\+Controller}} $\ast$}]{phase\+Controller }\end{DoxyParamCaption})}
+
+
+
+This method returns instances of \mbox{\hyperlink{classPlayer}{Player}} targets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+{\em phase\+Controller} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/mechanics/common/\mbox{\hyperlink{TargetsBuilder_8h}{Targets\+Builder.\+h}}\item 
+cpp\+\_\+library/src/sources/mechanics/common/\mbox{\hyperlink{TargetsBuilder_8cpp}{Targets\+Builder.\+cpp}}\end{DoxyCompactItemize}

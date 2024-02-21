@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['randomtargets_340',['RandomTargets',['../classRandomTargets.html',1,'RandomTargets'],['../classRandomTargets.html#a53aed7c19a9592083abebce76652eec5',1,'RandomTargets::RandomTargets()']]],
+  ['randomtargets_2ecpp_341',['RandomTargets.cpp',['../RandomTargets_8cpp.html',1,'']]],
+  ['randomtargets_2eh_342',['RandomTargets.h',['../RandomTargets_8h.html',1,'']]],
+  ['rare_343',['rare',['../rarity_8h.html#a6c4fc244cdc975f7fd572fa614617600a9ddad7d1c9a4f4e57d18bfe1ec4c8038',1,'rarity.h']]],
+  ['rarity_344',['Rarity',['../rarity_8h.html#a6c4fc244cdc975f7fd572fa614617600',1,'rarity.h']]],
+  ['rarity_2eh_345',['rarity.h',['../rarity_8h.html',1,'']]],
+  ['recruitphasecontroller_346',['RecruitPhaseController',['../classRecruitPhaseController.html',1,'RecruitPhaseController'],['../classRecruitPhaseController.html#a6676caea8473415d073cf21c8defdded',1,'RecruitPhaseController::RecruitPhaseController()']]],
+  ['recruitphasecontroller_2ecpp_347',['RecruitPhaseController.cpp',['../RecruitPhaseController_8cpp.html',1,'']]],
+  ['recruitphasecontroller_2eh_348',['RecruitPhaseController.h',['../RecruitPhaseController_8h.html',1,'']]],
+  ['recruitphaseview_349',['RecruitPhaseView',['../classRecruitPhaseView.html',1,'']]],
+  ['recruitphaseview_2ecpp_350',['RecruitPhaseView.cpp',['../RecruitPhaseView_8cpp.html',1,'']]],
+  ['recruitphaseview_2eh_351',['RecruitPhaseView.h',['../RecruitPhaseView_8h.html',1,'']]],
+  ['reduceremainingattacks_352',['reduceRemainingAttacks',['../classICombative.html#ae4341854c32b463e1f4e5cb240457442',1,'ICombative']]],
+  ['registerobserver_353',['registerObserver',['../classMinion.html#a2fa149008df6143f59620191ee131969',1,'Minion::registerObserver()'],['../classPlayer.html#a653c85200f669f61b7a3e8894ae96ecd',1,'Player::registerObserver()'],['../classMinionSubject.html#a45a1d6a82c5768a673569ab6a7af2d82',1,'MinionSubject::registerObserver()'],['../classPlayerSubject.html#a59a9380b473743fbc617952ba438b69b',1,'PlayerSubject::registerObserver()']]],
+  ['removeminion_354',['removeMinion',['../classMinionPool.html#abc1696d724690413bc3b1a378f38ec11',1,'MinionPool']]],
+  ['removeminionfromboardbyid_355',['removeMinionFromBoardById',['../classPlayer.html#ab4bdc5e5b27e92425ec9da8529bb4333',1,'Player']]],
+  ['removeminionfromboardbyindex_356',['removeMinionFromBoardByIndex',['../classPlayer.html#af96126997baae47f93b7a1299dc8d3e5',1,'Player']]],
+  ['removeminionfromhand_357',['removeMinionFromHand',['../classPlayer.html#a177a19010c609fe83a66c3e2519c4fda',1,'Player']]],
+  ['root_358',['root',['../classPhaseController.html#ab89770444eb12e4c1763beccad8af93f',1,'PhaseController']]]
+];

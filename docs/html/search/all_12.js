@@ -1,0 +1,16 @@
+var searchData=
+[
+  ['undead_416',['undead',['../minionType_8h.html#ab076d75dd251fea18d48b2d6b246f298adf0329c27f5bca551fee45753ef3ed08',1,'minionType.h']]],
+  ['unregisterobserver_417',['unregisterObserver',['../classMinion.html#a4228132a38916559e9d53631a531c98e',1,'Minion::unregisterObserver()'],['../classPlayer.html#ae646753762f437385f2ab4d5bf958f37',1,'Player::unregisterObserver()'],['../classMinionSubject.html#afb0e2f901f191c3143cf10ba06a4f0ad',1,'MinionSubject::unregisterObserver()'],['../classPlayerSubject.html#a5f7cf85972a82da0dcf53475356c3068',1,'PlayerSubject::unregisterObserver()']]],
+  ['unsubscribe_418',['unsubscribe',['../classActionsCenter.html#ade7887c16c2ecf29ec2b2958e4594ac3',1,'ActionsCenter']]],
+  ['unsubscribeeffect_419',['unsubscribeEffect',['../classActionsCenter.html#a8d9430f6982fcaf7c9d2b11000e51917',1,'ActionsCenter']]],
+  ['unsubscribeminion_420',['unsubscribeMinion',['../classPlayer.html#ad355e8bf0478436cc9ee3499260d78a0',1,'Player::unsubscribeMinion()'],['../classPlayerSubject.html#ab42202f297b3f2cf141d605ec7c3cb6f',1,'PlayerSubject::unsubscribeMinion()'],['../classGameObserver.html#aa46caf28fe940d84f11eff5725b4f25c',1,'GameObserver::unsubscribeMinion()'],['../classRecruitPhaseController.html#ad8bb19f49052329808ae192e3b5acb9c',1,'RecruitPhaseController::unsubscribeMinion()'],['../classCombatPhaseController.html#ab429f1c24b09d2df8e3c940771035d6c',1,'CombatPhaseController::unsubscribeMinion(Minion *minion) override']]],
+  ['unsubscribeminioneffect_421',['unsubscribeMinionEffect',['../classCombatPhaseController.html#aba118b3b1067d154e4c9967d7b5ee4da',1,'CombatPhaseController::unsubscribeMinionEffect()'],['../classPlayer.html#a116b4fe297bc1efee38022908b379cb3',1,'Player::unsubscribeMinionEffect()'],['../classGameObserver.html#ae67818733e0cf5858e7a707034992dbb',1,'GameObserver::unsubscribeMinionEffect()'],['../classPlayerSubject.html#abd5580d902041d9eba8c863203200d3d',1,'PlayerSubject::unsubscribeMinionEffect()']]],
+  ['update_422',['update',['../classPlayerObserver.html#a78859c1ddbc794d0adbbfe37fefea113',1,'PlayerObserver::update()'],['../classGameObserver.html#a129e0880982e61047cf15af689b66a53',1,'GameObserver::update()'],['../classPlayer.html#ae819a578e23623bd1b806511eeeaa758',1,'Player::update()'],['../classCombatPhaseController.html#a1df403a1c4118912bd135e87bc4a40c7',1,'CombatPhaseController::update(TriggerType triggerType)'],['../classCombatPhaseController.html#abaec52a34059f922b64724288c49d6fc',1,'CombatPhaseController::update(Minion *minion, TriggerType triggerType, Player *player) override'],['../classRecruitPhaseController.html#a90a00ed88707d068495300d2d0d6f578',1,'RecruitPhaseController::update(TriggerType triggerType)'],['../classRecruitPhaseController.html#a95b71d55348556e57ca6ca892b6a739c',1,'RecruitPhaseController::update(Minion *minion, TriggerType triggerType, Player *player) override']]],
+  ['userinputcontroller_423',['UserInputController',['../classUserInputController.html',1,'']]],
+  ['userinputcontroller_2ecpp_424',['UserInputController.cpp',['../UserInputController_8cpp.html',1,'']]],
+  ['userinputcontroller_2eh_425',['UserInputController.h',['../UserInputController_8h.html',1,'']]],
+  ['utils_426',['Utils',['../classUtils.html',1,'']]],
+  ['utils_2ecpp_427',['Utils.cpp',['../Utils_8cpp.html',1,'']]],
+  ['utils_2eh_428',['Utils.h',['../Utils_8h.html',1,'']]]
+];

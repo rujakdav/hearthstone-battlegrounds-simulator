@@ -1,0 +1,5 @@
+<map id="DamageTask" name="DamageTask">
+<area shape="rect" id="node1" title="The DamageTask class This class is used to represent a damage task." alt="" coords="25,95,131,121"/>
+<area shape="rect" id="node2" href="$classITask.html" title="The ITask class This class is used to represent a task." alt="" coords="5,5,60,32"/>
+<area shape="rect" id="node3" href="$classDamage.html" title="The Damage class This class is used to store data about damage." alt="" coords="85,5,162,32"/>
+</map>

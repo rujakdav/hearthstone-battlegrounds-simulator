@@ -1,0 +1,5 @@
+<map id="DamageEffect" name="DamageEffect">
+<area shape="rect" id="node1" title=" " alt="" coords="5,155,120,181"/>
+<area shape="rect" id="node2" href="$classIEffect.html" title=" " alt="" coords="31,80,94,107"/>
+<area shape="rect" id="node3" href="$classIOwned.html" title="The IOwned class This class is used to store data about the owner of a card." alt="" coords="27,5,98,32"/>
+</map>

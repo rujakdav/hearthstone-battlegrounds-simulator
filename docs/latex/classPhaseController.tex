@@ -1,0 +1,186 @@
+\hypertarget{classPhaseController}{}\doxysection{Phase\+Controller Class Reference}
+\label{classPhaseController}\index{PhaseController@{PhaseController}}
+
+
+The \mbox{\hyperlink{classPhaseController}{Phase\+Controller}} class This class is used to control the phases.  
+
+
+
+
+{\ttfamily \#include $<$Phase\+Controller.\+h$>$}
+
+
+
+Inheritance diagram for Phase\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPhaseController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Phase\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classPhaseController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classPlayer}{Player}} $\ast$ \mbox{\hyperlink{classPhaseController_a3799aac4d9c64d9c65989e4f98540cdb}{get\+Friendly\+Player}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion)=0
+\begin{DoxyCompactList}\small\item\em Returns the friendly player of the given minion. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPlayer}{Player}} $\ast$ \mbox{\hyperlink{classPhaseController_a492d0142359a88efd03d5b8a2f49b360}{get\+Enemy\+Player}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion)=0
+\begin{DoxyCompactList}\small\item\em Returns the enemy player of the given minion. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPhaseController_a83cabfa8add7e2c09dd35b8c07c6b258}{init}} ()=0
+\item 
+void \mbox{\hyperlink{classPhaseController_a4992a5047ee25880fad57ff5e9c779a0}{traverse}} (\mbox{\hyperlink{classTreeNode}{Tree\+Node}} $\ast$node)
+\begin{DoxyCompactList}\small\item\em Traverses the action tree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPhaseController_a29a8e656bfae2a2c74159ecbe7166e20}{$\sim$\+Phase\+Controller}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classActionsCenter}{Actions\+Center}} $>$ \mbox{\hyperlink{classPhaseController_aced9ab870b22b988872139075bc79b6d}{actions\+Center}}
+\item 
+int \mbox{\hyperlink{classPhaseController_aeb99f0d4ce8cd40262788b355c74b4fa}{total\+Nodes}} = 0
+\item 
+int \mbox{\hyperlink{classPhaseController_aa372fa535f6740b348560b166767c1ea}{visited\+Nodes}} = 0
+\item 
+int \mbox{\hyperlink{classPhaseController_af17575c06af3f32c146252a59e83d521}{max\+Nodes}} = 250
+\item 
+\mbox{\hyperlink{classTreeNode}{Tree\+Node}} $\ast$ \mbox{\hyperlink{classPhaseController_ab89770444eb12e4c1763beccad8af93f}{root}} = nullptr
+\item 
+\mbox{\hyperlink{classTreeNode}{Tree\+Node}} $\ast$ \mbox{\hyperlink{classPhaseController_ab256403600080e39aca6e66a3c6fea52}{last\+Node}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPhaseController}{Phase\+Controller}} class This class is used to control the phases. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPhaseController_a29a8e656bfae2a2c74159ecbe7166e20}\label{classPhaseController_a29a8e656bfae2a2c74159ecbe7166e20}} 
+\index{PhaseController@{PhaseController}!````~PhaseController@{$\sim$PhaseController}}
+\index{````~PhaseController@{$\sim$PhaseController}!PhaseController@{PhaseController}}
+\doxysubsubsection{\texorpdfstring{$\sim$PhaseController()}{~PhaseController()}}
+{\footnotesize\ttfamily Phase\+Controller\+::$\sim$\+Phase\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPhaseController_a492d0142359a88efd03d5b8a2f49b360}\label{classPhaseController_a492d0142359a88efd03d5b8a2f49b360}} 
+\index{PhaseController@{PhaseController}!getEnemyPlayer@{getEnemyPlayer}}
+\index{getEnemyPlayer@{getEnemyPlayer}!PhaseController@{PhaseController}}
+\doxysubsubsection{\texorpdfstring{getEnemyPlayer()}{getEnemyPlayer()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPlayer}{Player}}$\ast$ Phase\+Controller\+::get\+Enemy\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the enemy player of the given minion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Player$\ast$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classRecruitPhaseController_a802666e451e8d781e0c36a3d482d2f95}{Recruit\+Phase\+Controller}}, and \mbox{\hyperlink{classCombatPhaseController_a8291fcf92b7b431c4fce2d65044a02e2}{Combat\+Phase\+Controller}}.
+
+\mbox{\Hypertarget{classPhaseController_a3799aac4d9c64d9c65989e4f98540cdb}\label{classPhaseController_a3799aac4d9c64d9c65989e4f98540cdb}} 
+\index{PhaseController@{PhaseController}!getFriendlyPlayer@{getFriendlyPlayer}}
+\index{getFriendlyPlayer@{getFriendlyPlayer}!PhaseController@{PhaseController}}
+\doxysubsubsection{\texorpdfstring{getFriendlyPlayer()}{getFriendlyPlayer()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPlayer}{Player}}$\ast$ Phase\+Controller\+::get\+Friendly\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the friendly player of the given minion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Player$\ast$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classRecruitPhaseController_afbcc0de8718591ee2837965c8d84dc5e}{Recruit\+Phase\+Controller}}, and \mbox{\hyperlink{classCombatPhaseController_a12dc4d4342282aff443d66c9d3717ac3}{Combat\+Phase\+Controller}}.
+
+\mbox{\Hypertarget{classPhaseController_a83cabfa8add7e2c09dd35b8c07c6b258}\label{classPhaseController_a83cabfa8add7e2c09dd35b8c07c6b258}} 
+\index{PhaseController@{PhaseController}!init@{init}}
+\index{init@{init}!PhaseController@{PhaseController}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual void Phase\+Controller\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classRecruitPhaseController_a00e5407ade7e21b77af6df415edcacaf}{Recruit\+Phase\+Controller}}, and \mbox{\hyperlink{classCombatPhaseController_a6ce43806708d1b9ea28aa4912e74f501}{Combat\+Phase\+Controller}}.
+
+\mbox{\Hypertarget{classPhaseController_a4992a5047ee25880fad57ff5e9c779a0}\label{classPhaseController_a4992a5047ee25880fad57ff5e9c779a0}} 
+\index{PhaseController@{PhaseController}!traverse@{traverse}}
+\index{traverse@{traverse}!PhaseController@{PhaseController}}
+\doxysubsubsection{\texorpdfstring{traverse()}{traverse()}}
+{\footnotesize\ttfamily void Phase\+Controller\+::traverse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTreeNode}{Tree\+Node}} $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Traverses the action tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classPhaseController_aced9ab870b22b988872139075bc79b6d}\label{classPhaseController_aced9ab870b22b988872139075bc79b6d}} 
+\index{PhaseController@{PhaseController}!actionsCenter@{actionsCenter}}
+\index{actionsCenter@{actionsCenter}!PhaseController@{PhaseController}}
+\doxysubsubsection{\texorpdfstring{actionsCenter}{actionsCenter}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classActionsCenter}{Actions\+Center}}$>$ Phase\+Controller\+::actions\+Center\hspace{0.3cm}{\ttfamily [protected]}}
+
+The actions center \mbox{\Hypertarget{classPhaseController_ab256403600080e39aca6e66a3c6fea52}\label{classPhaseController_ab256403600080e39aca6e66a3c6fea52}} 
+\index{PhaseController@{PhaseController}!lastNode@{lastNode}}
+\index{lastNode@{lastNode}!PhaseController@{PhaseController}}
+\doxysubsubsection{\texorpdfstring{lastNode}{lastNode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTreeNode}{Tree\+Node}}$\ast$ Phase\+Controller\+::last\+Node = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+The last node of the action tree \mbox{\Hypertarget{classPhaseController_af17575c06af3f32c146252a59e83d521}\label{classPhaseController_af17575c06af3f32c146252a59e83d521}} 
+\index{PhaseController@{PhaseController}!maxNodes@{maxNodes}}
+\index{maxNodes@{maxNodes}!PhaseController@{PhaseController}}
+\doxysubsubsection{\texorpdfstring{maxNodes}{maxNodes}}
+{\footnotesize\ttfamily int Phase\+Controller\+::max\+Nodes = 250\hspace{0.3cm}{\ttfamily [protected]}}
+
+The maximum number of nodes of action tree \mbox{\Hypertarget{classPhaseController_ab89770444eb12e4c1763beccad8af93f}\label{classPhaseController_ab89770444eb12e4c1763beccad8af93f}} 
+\index{PhaseController@{PhaseController}!root@{root}}
+\index{root@{root}!PhaseController@{PhaseController}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTreeNode}{Tree\+Node}}$\ast$ Phase\+Controller\+::root = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+The root of the action tree \mbox{\Hypertarget{classPhaseController_aeb99f0d4ce8cd40262788b355c74b4fa}\label{classPhaseController_aeb99f0d4ce8cd40262788b355c74b4fa}} 
+\index{PhaseController@{PhaseController}!totalNodes@{totalNodes}}
+\index{totalNodes@{totalNodes}!PhaseController@{PhaseController}}
+\doxysubsubsection{\texorpdfstring{totalNodes}{totalNodes}}
+{\footnotesize\ttfamily int Phase\+Controller\+::total\+Nodes = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+The total number of nodes of action tree \mbox{\Hypertarget{classPhaseController_aa372fa535f6740b348560b166767c1ea}\label{classPhaseController_aa372fa535f6740b348560b166767c1ea}} 
+\index{PhaseController@{PhaseController}!visitedNodes@{visitedNodes}}
+\index{visitedNodes@{visitedNodes}!PhaseController@{PhaseController}}
+\doxysubsubsection{\texorpdfstring{visitedNodes}{visitedNodes}}
+{\footnotesize\ttfamily int Phase\+Controller\+::visited\+Nodes = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+The number of visited nodes action tree 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/controllers/phases/\mbox{\hyperlink{PhaseController_8h}{Phase\+Controller.\+h}}\item 
+cpp\+\_\+library/src/sources/controllers/phases/\mbox{\hyperlink{PhaseController_8cpp}{Phase\+Controller.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,138 @@
+\hypertarget{classDecreaseLeveLUpCostBattlecry}{}\doxysection{Decrease\+Leve\+LUp\+Cost\+Battlecry Class Reference}
+\label{classDecreaseLeveLUpCostBattlecry}\index{DecreaseLeveLUpCostBattlecry@{DecreaseLeveLUpCostBattlecry}}
+
+
+The \mbox{\hyperlink{classDecreaseLeveLUpCostBattlecry}{Decrease\+Leve\+LUp\+Cost\+Battlecry}} class This class is used to represent a battlecry that decreases the level up cost of a player.  
+
+
+
+
+{\ttfamily \#include $<$Decrease\+Leve\+LUp\+Cost\+Battlecry.\+h$>$}
+
+
+
+Inheritance diagram for Decrease\+Leve\+LUp\+Cost\+Battlecry\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classDecreaseLeveLUpCostBattlecry__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Decrease\+Leve\+LUp\+Cost\+Battlecry\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classDecreaseLeveLUpCostBattlecry__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDecreaseLeveLUpCostBattlecry_a03abb9c33c9ae62c3e447d058978675f}{Decrease\+Leve\+LUp\+Cost\+Battlecry}} (const std\+::string \&description, const \mbox{\hyperlink{classBattlecryTargetCriteria}{Battlecry\+Target\+Criteria}} \&target\+Criteria, int amount)
+\item 
+void \mbox{\hyperlink{classDecreaseLeveLUpCostBattlecry_ade660447f518ca51393bd66132f7f424}{execute}} (\mbox{\hyperlink{classRecruitPhaseController}{Recruit\+Phase\+Controller}} $\ast$game) override
+\begin{DoxyCompactList}\small\item\em Executes the battlecry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDecreaseLeveLUpCostBattlecry_a6cacd78f55505518d982448754ac0f1d}{set\+Targets}} (std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $\ast$ $>$ targets) override
+\begin{DoxyCompactList}\small\item\em Sets the minion targets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDecreaseLeveLUpCostBattlecry_a5ae03c511be60233bbfec8f9db02b4a6}{set\+Targets}} (\mbox{\hyperlink{classPlayer}{Player}} $\ast$player) override
+\begin{DoxyCompactList}\small\item\em Sets the player targets. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIBattlecry}{IBattlecry}} $>$ \mbox{\hyperlink{classDecreaseLeveLUpCostBattlecry_aa68768d33a2998e062559494b6ed0b55}{clone}} () override
+\begin{DoxyCompactList}\small\item\em Clones the battlecry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classDecreaseLeveLUpCostBattlecry}{Decrease\+Leve\+LUp\+Cost\+Battlecry}} class This class is used to represent a battlecry that decreases the level up cost of a player. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDecreaseLeveLUpCostBattlecry_a03abb9c33c9ae62c3e447d058978675f}\label{classDecreaseLeveLUpCostBattlecry_a03abb9c33c9ae62c3e447d058978675f}} 
+\index{DecreaseLeveLUpCostBattlecry@{DecreaseLeveLUpCostBattlecry}!DecreaseLeveLUpCostBattlecry@{DecreaseLeveLUpCostBattlecry}}
+\index{DecreaseLeveLUpCostBattlecry@{DecreaseLeveLUpCostBattlecry}!DecreaseLeveLUpCostBattlecry@{DecreaseLeveLUpCostBattlecry}}
+\doxysubsubsection{\texorpdfstring{DecreaseLeveLUpCostBattlecry()}{DecreaseLeveLUpCostBattlecry()}}
+{\footnotesize\ttfamily Decrease\+Leve\+LUp\+Cost\+Battlecry\+::\+Decrease\+Leve\+LUp\+Cost\+Battlecry (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{description,  }\item[{const \mbox{\hyperlink{classBattlecryTargetCriteria}{Battlecry\+Target\+Criteria}} \&}]{target\+Criteria,  }\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDecreaseLeveLUpCostBattlecry_aa68768d33a2998e062559494b6ed0b55}\label{classDecreaseLeveLUpCostBattlecry_aa68768d33a2998e062559494b6ed0b55}} 
+\index{DecreaseLeveLUpCostBattlecry@{DecreaseLeveLUpCostBattlecry}!clone@{clone}}
+\index{clone@{clone}!DecreaseLeveLUpCostBattlecry@{DecreaseLeveLUpCostBattlecry}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIBattlecry}{IBattlecry}} $>$ Decrease\+Leve\+LUp\+Cost\+Battlecry\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clones the battlecry. 
+
+\begin{DoxyReturn}{Returns}
+std\+::unique\+\_\+ptr$<$\+IBattlecry$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIBattlecry_ae362fb061ac974aac8a4a07c4821ec45}{IBattlecry}}.
+
+\mbox{\Hypertarget{classDecreaseLeveLUpCostBattlecry_ade660447f518ca51393bd66132f7f424}\label{classDecreaseLeveLUpCostBattlecry_ade660447f518ca51393bd66132f7f424}} 
+\index{DecreaseLeveLUpCostBattlecry@{DecreaseLeveLUpCostBattlecry}!execute@{execute}}
+\index{execute@{execute}!DecreaseLeveLUpCostBattlecry@{DecreaseLeveLUpCostBattlecry}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Decrease\+Leve\+LUp\+Cost\+Battlecry\+::execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRecruitPhaseController}{Recruit\+Phase\+Controller}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the battlecry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIBattlecry_a3036d10e8d56fea6446fcdaf87aa31b6}{IBattlecry}}.
+
+\mbox{\Hypertarget{classDecreaseLeveLUpCostBattlecry_a5ae03c511be60233bbfec8f9db02b4a6}\label{classDecreaseLeveLUpCostBattlecry_a5ae03c511be60233bbfec8f9db02b4a6}} 
+\index{DecreaseLeveLUpCostBattlecry@{DecreaseLeveLUpCostBattlecry}!setTargets@{setTargets}}
+\index{setTargets@{setTargets}!DecreaseLeveLUpCostBattlecry@{DecreaseLeveLUpCostBattlecry}}
+\doxysubsubsection{\texorpdfstring{setTargets()}{setTargets()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Decrease\+Leve\+LUp\+Cost\+Battlecry\+::set\+Targets (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the player targets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIBattlecry_a09ffb76cfd3d78cfa33d999a0a2037d3}{IBattlecry}}.
+
+\mbox{\Hypertarget{classDecreaseLeveLUpCostBattlecry_a6cacd78f55505518d982448754ac0f1d}\label{classDecreaseLeveLUpCostBattlecry_a6cacd78f55505518d982448754ac0f1d}} 
+\index{DecreaseLeveLUpCostBattlecry@{DecreaseLeveLUpCostBattlecry}!setTargets@{setTargets}}
+\index{setTargets@{setTargets}!DecreaseLeveLUpCostBattlecry@{DecreaseLeveLUpCostBattlecry}}
+\doxysubsubsection{\texorpdfstring{setTargets()}{setTargets()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Decrease\+Leve\+LUp\+Cost\+Battlecry\+::set\+Targets (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $\ast$ $>$}]{targets }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the minion targets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em targets} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIBattlecry_a649aaacebebe89941c1fd9e74d22a79a}{IBattlecry}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/mechanics/battlecries/\mbox{\hyperlink{DecreaseLeveLUpCostBattlecry_8h}{Decrease\+Leve\+LUp\+Cost\+Battlecry.\+h}}\item 
+cpp\+\_\+library/src/sources/mechanics/battlecries/\mbox{\hyperlink{DecreaseLeveLUpCostBattlecry_8cpp}{Decrease\+Leve\+LUp\+Cost\+Battlecry.\+cpp}}\end{DoxyCompactItemize}

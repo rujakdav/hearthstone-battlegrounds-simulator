@@ -1,0 +1,34 @@
+<map id="cpp_library/src/headers/mechanics/effects/SummonEffect.h" name="cpp_library/src/headers/mechanics/effects/SummonEffect.h">
+<area shape="rect" id="node1" title=" " alt="" coords="188,5,443,47"/>
+<area shape="rect" id="node2" href="$IEffect_8h.html" title=" " alt="" coords="601,266,675,293"/>
+<area shape="rect" id="node5" href="$triggerSource_8h.html" title=" " alt="" coords="399,437,600,479"/>
+<area shape="rect" id="node8" href="$triggerType_8h.html" title=" " alt="" coords="35,437,236,479"/>
+<area shape="rect" id="node12" href="$SummonEffectData_8h.html" title=" " alt="" coords="1087,95,1309,136"/>
+<area shape="rect" id="node3" href="$ITask_8h.html" title=" " alt="" coords="327,355,458,382"/>
+<area shape="rect" id="node4" href="$SourceCriteria_8h.html" title=" " alt="" coords="533,348,743,389"/>
+<area shape="rect" id="node10" href="$IOwned_8h.html" title=" " alt="" coords="1713,445,1869,471"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1819,527,1878,553"/>
+<area shape="rect" id="node6" href="$IFilter_8h.html" title=" " alt="" coords="869,437,1079,479"/>
+<area shape="rect" id="node7" title=" " alt="" coords="2449,527,2526,553"/>
+<area shape="rect" id="node9" title=" " alt="" coords="18,527,98,553"/>
+<area shape="rect" id="node13" href="$EffectTargetCriteria_8h.html" title=" " alt="" coords="1091,348,1305,389"/>
+<area shape="rect" id="node16" href="$Minion_8h.html" title=" " alt="" coords="1840,184,2007,211"/>
+<area shape="rect" id="node14" href="$EffectTargets_8h.html" title=" " alt="" coords="1104,437,1292,479"/>
+<area shape="rect" id="node15" href="$RandomTargets_8h.html" title=" " alt="" coords="1316,445,1451,471"/>
+<area shape="rect" id="node17" href="$minionType_8h.html" title=" " alt="" coords="1891,266,2097,293"/>
+<area shape="rect" id="node18" href="$rarity_8h.html" title=" " alt="" coords="2046,355,2193,382"/>
+<area shape="rect" id="node19" href="$zone_8h.html" title=" " alt="" coords="2217,355,2363,382"/>
+<area shape="rect" id="node20" href="$IDestructible_8h.html" title=" " alt="" coords="2883,266,3100,293"/>
+<area shape="rect" id="node21" href="$Damage_8h.html" title=" " alt="" coords="2825,355,3049,382"/>
+<area shape="rect" id="node22" href="$ICombative_8h.html" title=" " alt="" coords="2223,266,2429,293"/>
+<area shape="rect" id="node23" href="$ICard_8h.html" title=" " alt="" coords="1651,266,1815,293"/>
+<area shape="rect" id="node24" href="$MinionSubject_8h.html" title=" " alt="" coords="85,259,252,300"/>
+<area shape="rect" id="node26" href="$Enchantment_8h.html" title=" " alt="" coords="2387,348,2588,389"/>
+<area shape="rect" id="node27" href="$Aura_8h.html" title=" " alt="" coords="2663,259,2807,300"/>
+<area shape="rect" id="node28" href="$IBattlecry_8h.html" title=" " alt="" coords="1397,259,1575,300"/>
+<area shape="rect" id="node29" title=" " alt="" coords="1908,355,1971,382"/>
+<area shape="rect" id="node32" href="$versions_8h.html" title=" " alt="" coords="2453,266,2639,293"/>
+<area shape="rect" id="node25" href="$PlayerObserver_8h.html" title=" " alt="" coords="69,355,202,382"/>
+<area shape="rect" id="node30" href="$BattlecryTargetCriterias_8h.html" title=" " alt="" coords="1355,348,1598,389"/>
+<area shape="rect" id="node31" href="$battlecryTargets_8h.html" title=" " alt="" coords="1475,437,1689,479"/>
+</map>

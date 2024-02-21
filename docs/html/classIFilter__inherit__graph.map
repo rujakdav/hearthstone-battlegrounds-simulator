@@ -1,0 +1,6 @@
+<map id="IFilter" name="IFilter">
+<area shape="rect" id="node1" title="The IFilter class This class is used to represent a filter." alt="" coords="147,5,205,32"/>
+<area shape="rect" id="node2" href="$classMinionFilter.html" title="The MinionFilter class This class is used to filter minions." alt="" coords="5,80,104,107"/>
+<area shape="rect" id="node3" href="$classMixedFilter.html" title="The MixedFilter class This class is used to filter both minions and players." alt="" coords="129,80,223,107"/>
+<area shape="rect" id="node4" href="$classPlayerFilter.html" title="The PlayerFilter class This class is used to filter players." alt="" coords="248,80,344,107"/>
+</map>

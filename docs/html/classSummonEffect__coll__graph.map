@@ -1,0 +1,5 @@
+<map id="SummonEffect" name="SummonEffect">
+<area shape="rect" id="node1" title=" " alt="" coords="5,155,123,181"/>
+<area shape="rect" id="node2" href="$classIEffect.html" title=" " alt="" coords="33,80,95,107"/>
+<area shape="rect" id="node3" href="$classIOwned.html" title="The IOwned class This class is used to store data about the owner of a card." alt="" coords="29,5,99,32"/>
+</map>

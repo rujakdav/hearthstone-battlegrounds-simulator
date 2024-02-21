@@ -1,0 +1,5 @@
+<map id="HealEffect" name="HealEffect">
+<area shape="rect" id="node1" title=" " alt="" coords="5,155,95,181"/>
+<area shape="rect" id="node2" href="$classIEffect.html" title=" " alt="" coords="19,80,81,107"/>
+<area shape="rect" id="node3" href="$classIOwned.html" title="The IOwned class This class is used to store data about the owner of a card." alt="" coords="15,5,85,32"/>
+</map>

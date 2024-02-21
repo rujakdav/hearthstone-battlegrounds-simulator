@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classIOwned.html" title="The IOwned class This class is used to store data about the owner of a card." alt="" coords="5,56,76,83"/>
+<area shape="rect" id="node2" href="$classEnchantment.html" title=" " alt="" coords="124,31,232,57"/>
+<area shape="rect" id="node3" href="$classIEffect.html" title=" " alt="" coords="147,81,209,108"/>
+<area shape="rect" id="node4" href="$classDamageEffect.html" title=" " alt="" coords="295,5,410,32"/>
+<area shape="rect" id="node5" href="$classEnchantmentEffect.html" title=" " alt="" coords="280,56,425,83"/>
+<area shape="rect" id="node6" href="$classHealEffect.html" title=" " alt="" coords="308,107,397,133"/>
+<area shape="rect" id="node7" href="$classSummonEffect.html" title=" " alt="" coords="294,157,411,184"/>
+</map>

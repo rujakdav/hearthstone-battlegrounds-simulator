@@ -1,0 +1,4 @@
+<map id="AttackTask" name="AttackTask">
+<area shape="rect" id="node1" title="The AttackTask class This class is used to represent an attack task." alt="" coords="5,80,99,107"/>
+<area shape="rect" id="node2" href="$classITask.html" title="The ITask class This class is used to represent a task." alt="" coords="25,5,79,32"/>
+</map>

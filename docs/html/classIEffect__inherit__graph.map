@@ -1,0 +1,8 @@
+<map id="IEffect" name="IEffect">
+<area shape="rect" id="node1" title=" " alt="" coords="257,80,319,107"/>
+<area shape="rect" id="node3" href="$classDamageEffect.html" title=" " alt="" coords="5,155,120,181"/>
+<area shape="rect" id="node4" href="$classEnchantmentEffect.html" title=" " alt="" coords="145,155,290,181"/>
+<area shape="rect" id="node5" href="$classHealEffect.html" title=" " alt="" coords="314,155,403,181"/>
+<area shape="rect" id="node6" href="$classSummonEffect.html" title=" " alt="" coords="428,155,545,181"/>
+<area shape="rect" id="node2" href="$classIOwned.html" title="The IOwned class This class is used to store data about the owner of a card." alt="" coords="253,5,323,32"/>
+</map>

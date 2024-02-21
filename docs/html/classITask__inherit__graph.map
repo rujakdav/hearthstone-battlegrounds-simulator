@@ -1,0 +1,8 @@
+<map id="ITask" name="ITask">
+<area shape="rect" id="node1" title="The ITask class This class is used to represent a task." alt="" coords="295,5,350,32"/>
+<area shape="rect" id="node2" href="$classAttackTask.html" title="The AttackTask class This class is used to represent an attack task." alt="" coords="5,80,99,107"/>
+<area shape="rect" id="node3" href="$classDamageTask.html" title="The DamageTask class This class is used to represent a damage task." alt="" coords="123,80,229,107"/>
+<area shape="rect" id="node4" href="$classEnchantmentTask.html" title="The EnchantmentTask class This class is used to represent an enchantment task." alt="" coords="254,80,391,107"/>
+<area shape="rect" id="node5" href="$classHealTask.html" title="The HealTask class This class is used to represent a heal task." alt="" coords="415,80,497,107"/>
+<area shape="rect" id="node6" href="$classSummonTask.html" title="The SummonTask class This class is used to represent a summon task." alt="" coords="521,80,631,107"/>
+</map>

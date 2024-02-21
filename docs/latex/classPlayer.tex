@@ -1,0 +1,603 @@
+\hypertarget{classPlayer}{}\doxysection{Player Class Reference}
+\label{classPlayer}\index{Player@{Player}}
+
+
+The \mbox{\hyperlink{classPlayer}{Player}} class represents a player in the game.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+
+
+Inheritance diagram for Player\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPlayer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Player\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPlayer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{classPlayer_adcdbde0eea5983a30e28e38f794926fe}{get\+Max\+Minions\+In\+Hand}} () const
+\item 
+int \mbox{\hyperlink{classPlayer_a53311978cf4deaaa286dd2562ea6e52b}{get\+Buy\+Cost}} () const
+\item 
+void \mbox{\hyperlink{classPlayer_ac28e6e55d68095d0fd71658c98ab50ab}{subscribe\+Minion}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion) override
+\begin{DoxyCompactList}\small\item\em Subscribe a minion to the actions center. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_ad355e8bf0478436cc9ee3499260d78a0}{unsubscribe\+Minion}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion) override
+\begin{DoxyCompactList}\small\item\em Unsubscribe a minion from the actions center. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a853092f1cfbb1210fc5d56c806b6de8b}{subscribe\+Minion\+Effect}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \&aura\+Effect) override
+\begin{DoxyCompactList}\small\item\em Subscribe a minion effect to the actions center. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPlayer_a116b4fe297bc1efee38022908b379cb3}{unsubscribe\+Minion\+Effect}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \&aura\+Effect) override
+\begin{DoxyCompactList}\small\item\em Unsubscribes a minion effect from the actions center. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMinion}{Minion}} \& \mbox{\hyperlink{classPlayer_ac4ba21f6a211800dff51bcea7b9e61b3}{get\+Minion\+From\+Graveyard\+By\+Id}} (std\+::string id)
+\item 
+void \mbox{\hyperlink{classPlayer_ab4bdc5e5b27e92425ec9da8529bb4333}{remove\+Minion\+From\+Board\+By\+Id}} (std\+::string minion\+Id)
+\item 
+void \mbox{\hyperlink{classPlayer_aaafa17f4897d57427a92857f018597af}{decrease\+Level\+Up\+Cost}} ()
+\item 
+int \mbox{\hyperlink{classPlayer_a14567328b7eca99577f698642ac0633b}{get\+Level\+Up\+Cost}} () const
+\item 
+int \mbox{\hyperlink{classPlayer_a15b7185dcc10bba4b168fa49033e0ae0}{get\+Refresh\+Cost}} () const
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $>$ \& \mbox{\hyperlink{classPlayer_aa2b3528cf297b3fa9caeb8b754b43ef9}{get\+Hand}} () const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $>$ \& \mbox{\hyperlink{classPlayer_a66a7d78f6a3ef84130b859bc75c74367}{get\+Hand}} ()
+\item 
+\mbox{\hyperlink{classMinion}{Minion}} \& \mbox{\hyperlink{classPlayer_aa286e8f6d09ca47712fe2d28300e4bab}{get\+Minion\+From\+Board\+By\+Id}} (std\+::string id)
+\item 
+\mbox{\hyperlink{classMinion}{Minion}} $\ast$ \mbox{\hyperlink{classPlayer_a9b2bfb6b063fad298bfdeb7ab74e8059}{get\+Minion\+Pointer\+From\+Board\+By\+Id}} (std\+::string id)
+\item 
+void \mbox{\hyperlink{classPlayer_a47431f95d3fa96cf039844bea01ddd6c}{add\+Minion\+To\+Hand}} (\mbox{\hyperlink{classMinion}{Minion}} minion)
+\begin{DoxyCompactList}\small\item\em Adds a minion to the hand. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a177a19010c609fe83a66c3e2519c4fda}{remove\+Minion\+From\+Hand}} (const \mbox{\hyperlink{classMinion}{Minion}} \&minion)
+\begin{DoxyCompactList}\small\item\em Removes a minion from the hand. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPlayer_ae5def1b761bf3ca5d684aebd804031ed}{get\+Start\+Of\+Turn\+Gold}} () const
+\item 
+int \mbox{\hyperlink{classPlayer_a4daa0d548dd6d496deef9ad68fcea83b}{get\+Current\+Gold}} () const
+\item 
+int \mbox{\hyperlink{classPlayer_a9c7fb920a5a244f6ba6d1c3c5e7ceb86}{get\+Max\+Gold}} () const
+\item 
+void \mbox{\hyperlink{classPlayer_af1e73a050f3c53f715ce81afc0c4a5af}{increase\+Start\+Of\+Turn\+Gold}} ()
+\item 
+void \mbox{\hyperlink{classPlayer_ac40c93b81a2f25da6a78cd8040601e4f}{set\+Current\+Gold}} (int current\+Gold)
+\item 
+void \mbox{\hyperlink{classPlayer_ab51a533cae87445668459a8f2dcff460}{add\+Gold}} (int amount)
+\item 
+void \mbox{\hyperlink{classPlayer_a16feb97c8b3d1f56729ed6fd8976f4d1}{spend\+Gold}} (int amount)
+\item 
+bool \mbox{\hyperlink{classPlayer_abda4c0f24a59155522361079dce5d427}{can\+Afford}} (int amount)
+\item 
+void \mbox{\hyperlink{classPlayer_a5bda3bad89f797546360636deb154fbb}{level\+Up}} ()
+\item 
+int \mbox{\hyperlink{classPlayer_a01a629b66ffbf0f4d035fe0924f895c7}{calculate\+Damage\+To\+Deal}} ()
+\item 
+const std\+::string \& \mbox{\hyperlink{classPlayer_a548c3c4307feda9d702f8c4d0d8daa7c}{get\+Name}} () const
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $>$ \& \mbox{\hyperlink{classPlayer_aee8af0a398c6a7875eda27c480c29440}{get\+Graveyard}} () const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $>$ \& \mbox{\hyperlink{classPlayer_acd244685d3918d00e84b3118256116aa}{get\+Graveyard}} ()
+\item 
+const std\+::string \& \mbox{\hyperlink{classPlayer_a45551f0df13ea240816689e980988f50}{get\+Id}} () const
+\item 
+void \mbox{\hyperlink{classPlayer_a653c85200f669f61b7a3e8894ae96ecd}{register\+Observer}} (\mbox{\hyperlink{classGameObserver}{Game\+Observer}} $\ast$observer) override
+\begin{DoxyCompactList}\small\item\em This method is used to register an observer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_ae646753762f437385f2ab4d5bf958f37}{unregister\+Observer}} (\mbox{\hyperlink{classGameObserver}{Game\+Observer}} $\ast$observer) override
+\begin{DoxyCompactList}\small\item\em This method is used to unregister an observer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_aba780381600a1001d045d009b7204ed2}{notify\+Observers}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, \mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}} trigger\+Type) override
+\begin{DoxyCompactList}\small\item\em This method is used to notify the observers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_ae819a578e23623bd1b806511eeeaa758}{update}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, \mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}} trigger\+Type) override
+\begin{DoxyCompactList}\small\item\em This method is used to update the observer. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $>$ \& \mbox{\hyperlink{classPlayer_a8ae79c07291b30ce6cd1d4cba4a310d5}{get\+Board}} ()
+\item 
+\mbox{\hyperlink{classPlayer_a8106a8a175fd1ce1c3788b07883bc9cf}{Player}} (const std\+::string \&name, const std\+::string \&card\+Key)
+\item 
+const int \mbox{\hyperlink{classPlayer_a0b5558fe8c63a9b7c5e3bb0380c8c998}{get\+Max\+Minions\+On\+Board}} () const
+\item 
+\mbox{\hyperlink{classPlayer_a4a8b7f689e924b15a9e6f9888983fb43}{Player}} (const \mbox{\hyperlink{classPlayer}{Player}} \&other)
+\item 
+int \mbox{\hyperlink{classPlayer_a0918097beb6f16d4bc497e0b4960734e}{get\+Tavern\+Tier}} () const
+\item 
+int \mbox{\hyperlink{classPlayer_ab93588cbd83e73b0ae61db4bc08f32d5}{get\+Index\+Of\+Minion\+By\+Id}} (std\+::string minion\+Id)
+\item 
+int \mbox{\hyperlink{classPlayer_a979d029cea0e1986375e21f87496de41}{get\+Max\+Minions\+For\+Tier}} ()
+\begin{DoxyCompactList}\small\item\em Returns the maximum amount of minions to purchase for the given tier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_ae60de3bb969d8a961f84c69491546cd4}{set\+Board}} (std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $>$ minions)
+\item 
+void \mbox{\hyperlink{classPlayer_ab035509e1a035f702694c50f60e06b8c}{print}} () const
+\item 
+void \mbox{\hyperlink{classPlayer_ad83a46fe09beee6d398c8dd3eca0845a}{add\+Minion\+To\+Board}} (\mbox{\hyperlink{classMinion}{Minion}} minion)
+\begin{DoxyCompactList}\small\item\em Adds a minion to the board. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a3678d59ace13d95b7ca91c2ff0edf50e}{aura\+Update}} (const \mbox{\hyperlink{classMinion}{Minion}} \&minion\+With\+Aura)
+\begin{DoxyCompactList}\small\item\em Updates the minions on the board with the given aura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_af96126997baae47f93b7a1299dc8d3e5}{remove\+Minion\+From\+Board\+By\+Index}} (int minion\+To\+Remove\+Index)
+\begin{DoxyCompactList}\small\item\em Removes a minion from the board with the given index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_aedf65d1cd20d9e656f03e58177f0a36a}{take\+Damage}} (\mbox{\hyperlink{classDamage}{Damage}} \&damage) override
+\begin{DoxyCompactList}\small\item\em Takes damage from the given damage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPlayer}{Player}} class represents a player in the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlayer_a8106a8a175fd1ce1c3788b07883bc9cf}\label{classPlayer_a8106a8a175fd1ce1c3788b07883bc9cf}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{card\+Key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_a4a8b7f689e924b15a9e6f9888983fb43}\label{classPlayer_a4a8b7f689e924b15a9e6f9888983fb43}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPlayer}{Player}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlayer_ab51a533cae87445668459a8f2dcff460}\label{classPlayer_ab51a533cae87445668459a8f2dcff460}} 
+\index{Player@{Player}!addGold@{addGold}}
+\index{addGold@{addGold}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addGold()}{addGold()}}
+{\footnotesize\ttfamily void Player\+::add\+Gold (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_ad83a46fe09beee6d398c8dd3eca0845a}\label{classPlayer_ad83a46fe09beee6d398c8dd3eca0845a}} 
+\index{Player@{Player}!addMinionToBoard@{addMinionToBoard}}
+\index{addMinionToBoard@{addMinionToBoard}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addMinionToBoard()}{addMinionToBoard()}}
+{\footnotesize\ttfamily void Player\+::add\+Minion\+To\+Board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}}}]{minion }\end{DoxyParamCaption})}
+
+
+
+Adds a minion to the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayer_a47431f95d3fa96cf039844bea01ddd6c}\label{classPlayer_a47431f95d3fa96cf039844bea01ddd6c}} 
+\index{Player@{Player}!addMinionToHand@{addMinionToHand}}
+\index{addMinionToHand@{addMinionToHand}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addMinionToHand()}{addMinionToHand()}}
+{\footnotesize\ttfamily void Player\+::add\+Minion\+To\+Hand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}}}]{minion }\end{DoxyParamCaption})}
+
+
+
+Adds a minion to the hand. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayer_a3678d59ace13d95b7ca91c2ff0edf50e}\label{classPlayer_a3678d59ace13d95b7ca91c2ff0edf50e}} 
+\index{Player@{Player}!auraUpdate@{auraUpdate}}
+\index{auraUpdate@{auraUpdate}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{auraUpdate()}{auraUpdate()}}
+{\footnotesize\ttfamily void Player\+::aura\+Update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMinion}{Minion}} \&}]{minion\+With\+Aura }\end{DoxyParamCaption})}
+
+
+
+Updates the minions on the board with the given aura. 
+
+\mbox{\Hypertarget{classPlayer_a01a629b66ffbf0f4d035fe0924f895c7}\label{classPlayer_a01a629b66ffbf0f4d035fe0924f895c7}} 
+\index{Player@{Player}!calculateDamageToDeal@{calculateDamageToDeal}}
+\index{calculateDamageToDeal@{calculateDamageToDeal}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{calculateDamageToDeal()}{calculateDamageToDeal()}}
+{\footnotesize\ttfamily int Player\+::calculate\+Damage\+To\+Deal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_abda4c0f24a59155522361079dce5d427}\label{classPlayer_abda4c0f24a59155522361079dce5d427}} 
+\index{Player@{Player}!canAfford@{canAfford}}
+\index{canAfford@{canAfford}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{canAfford()}{canAfford()}}
+{\footnotesize\ttfamily bool Player\+::can\+Afford (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_aaafa17f4897d57427a92857f018597af}\label{classPlayer_aaafa17f4897d57427a92857f018597af}} 
+\index{Player@{Player}!decreaseLevelUpCost@{decreaseLevelUpCost}}
+\index{decreaseLevelUpCost@{decreaseLevelUpCost}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{decreaseLevelUpCost()}{decreaseLevelUpCost()}}
+{\footnotesize\ttfamily void Player\+::decrease\+Level\+Up\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_a8ae79c07291b30ce6cd1d4cba4a310d5}\label{classPlayer_a8ae79c07291b30ce6cd1d4cba4a310d5}} 
+\index{Player@{Player}!getBoard@{getBoard}}
+\index{getBoard@{getBoard}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getBoard()}{getBoard()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $>$ \& Player\+::get\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_a53311978cf4deaaa286dd2562ea6e52b}\label{classPlayer_a53311978cf4deaaa286dd2562ea6e52b}} 
+\index{Player@{Player}!getBuyCost@{getBuyCost}}
+\index{getBuyCost@{getBuyCost}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getBuyCost()}{getBuyCost()}}
+{\footnotesize\ttfamily int Player\+::get\+Buy\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPlayer_a4daa0d548dd6d496deef9ad68fcea83b}\label{classPlayer_a4daa0d548dd6d496deef9ad68fcea83b}} 
+\index{Player@{Player}!getCurrentGold@{getCurrentGold}}
+\index{getCurrentGold@{getCurrentGold}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getCurrentGold()}{getCurrentGold()}}
+{\footnotesize\ttfamily int Player\+::get\+Current\+Gold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPlayer_acd244685d3918d00e84b3118256116aa}\label{classPlayer_acd244685d3918d00e84b3118256116aa}} 
+\index{Player@{Player}!getGraveyard@{getGraveyard}}
+\index{getGraveyard@{getGraveyard}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getGraveyard()}{getGraveyard()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $>$ \& Player\+::get\+Graveyard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_aee8af0a398c6a7875eda27c480c29440}\label{classPlayer_aee8af0a398c6a7875eda27c480c29440}} 
+\index{Player@{Player}!getGraveyard@{getGraveyard}}
+\index{getGraveyard@{getGraveyard}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getGraveyard()}{getGraveyard()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $>$ \& Player\+::get\+Graveyard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPlayer_a66a7d78f6a3ef84130b859bc75c74367}\label{classPlayer_a66a7d78f6a3ef84130b859bc75c74367}} 
+\index{Player@{Player}!getHand@{getHand}}
+\index{getHand@{getHand}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHand()}{getHand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $>$ \& Player\+::get\+Hand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_aa2b3528cf297b3fa9caeb8b754b43ef9}\label{classPlayer_aa2b3528cf297b3fa9caeb8b754b43ef9}} 
+\index{Player@{Player}!getHand@{getHand}}
+\index{getHand@{getHand}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHand()}{getHand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $>$ \& Player\+::get\+Hand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPlayer_a45551f0df13ea240816689e980988f50}\label{classPlayer_a45551f0df13ea240816689e980988f50}} 
+\index{Player@{Player}!getId@{getId}}
+\index{getId@{getId}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily const std\+::string \& Player\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPlayer_ab93588cbd83e73b0ae61db4bc08f32d5}\label{classPlayer_ab93588cbd83e73b0ae61db4bc08f32d5}} 
+\index{Player@{Player}!getIndexOfMinionById@{getIndexOfMinionById}}
+\index{getIndexOfMinionById@{getIndexOfMinionById}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getIndexOfMinionById()}{getIndexOfMinionById()}}
+{\footnotesize\ttfamily int Player\+::get\+Index\+Of\+Minion\+By\+Id (\begin{DoxyParamCaption}\item[{std\+::string}]{minion\+Id }\end{DoxyParamCaption})}
+
+Gets the minion from the board by id 
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classMinion}{Minion}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlayer_a14567328b7eca99577f698642ac0633b}\label{classPlayer_a14567328b7eca99577f698642ac0633b}} 
+\index{Player@{Player}!getLevelUpCost@{getLevelUpCost}}
+\index{getLevelUpCost@{getLevelUpCost}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getLevelUpCost()}{getLevelUpCost()}}
+{\footnotesize\ttfamily int Player\+::get\+Level\+Up\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPlayer_a9c7fb920a5a244f6ba6d1c3c5e7ceb86}\label{classPlayer_a9c7fb920a5a244f6ba6d1c3c5e7ceb86}} 
+\index{Player@{Player}!getMaxGold@{getMaxGold}}
+\index{getMaxGold@{getMaxGold}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getMaxGold()}{getMaxGold()}}
+{\footnotesize\ttfamily int Player\+::get\+Max\+Gold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPlayer_a979d029cea0e1986375e21f87496de41}\label{classPlayer_a979d029cea0e1986375e21f87496de41}} 
+\index{Player@{Player}!getMaxMinionsForTier@{getMaxMinionsForTier}}
+\index{getMaxMinionsForTier@{getMaxMinionsForTier}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getMaxMinionsForTier()}{getMaxMinionsForTier()}}
+{\footnotesize\ttfamily int Player\+::get\+Max\+Minions\+For\+Tier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the maximum amount of minions to purchase for the given tier. 
+
+\mbox{\Hypertarget{classPlayer_adcdbde0eea5983a30e28e38f794926fe}\label{classPlayer_adcdbde0eea5983a30e28e38f794926fe}} 
+\index{Player@{Player}!getMaxMinionsInHand@{getMaxMinionsInHand}}
+\index{getMaxMinionsInHand@{getMaxMinionsInHand}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getMaxMinionsInHand()}{getMaxMinionsInHand()}}
+{\footnotesize\ttfamily const int Player\+::get\+Max\+Minions\+In\+Hand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPlayer_a0b5558fe8c63a9b7c5e3bb0380c8c998}\label{classPlayer_a0b5558fe8c63a9b7c5e3bb0380c8c998}} 
+\index{Player@{Player}!getMaxMinionsOnBoard@{getMaxMinionsOnBoard}}
+\index{getMaxMinionsOnBoard@{getMaxMinionsOnBoard}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getMaxMinionsOnBoard()}{getMaxMinionsOnBoard()}}
+{\footnotesize\ttfamily const int Player\+::get\+Max\+Minions\+On\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPlayer_aa286e8f6d09ca47712fe2d28300e4bab}\label{classPlayer_aa286e8f6d09ca47712fe2d28300e4bab}} 
+\index{Player@{Player}!getMinionFromBoardById@{getMinionFromBoardById}}
+\index{getMinionFromBoardById@{getMinionFromBoardById}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getMinionFromBoardById()}{getMinionFromBoardById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMinion}{Minion}} \& Player\+::get\+Minion\+From\+Board\+By\+Id (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_ac4ba21f6a211800dff51bcea7b9e61b3}\label{classPlayer_ac4ba21f6a211800dff51bcea7b9e61b3}} 
+\index{Player@{Player}!getMinionFromGraveyardById@{getMinionFromGraveyardById}}
+\index{getMinionFromGraveyardById@{getMinionFromGraveyardById}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getMinionFromGraveyardById()}{getMinionFromGraveyardById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMinion}{Minion}} \& Player\+::get\+Minion\+From\+Graveyard\+By\+Id (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_a9b2bfb6b063fad298bfdeb7ab74e8059}\label{classPlayer_a9b2bfb6b063fad298bfdeb7ab74e8059}} 
+\index{Player@{Player}!getMinionPointerFromBoardById@{getMinionPointerFromBoardById}}
+\index{getMinionPointerFromBoardById@{getMinionPointerFromBoardById}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getMinionPointerFromBoardById()}{getMinionPointerFromBoardById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMinion}{Minion}} $\ast$ Player\+::get\+Minion\+Pointer\+From\+Board\+By\+Id (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_a548c3c4307feda9d702f8c4d0d8daa7c}\label{classPlayer_a548c3c4307feda9d702f8c4d0d8daa7c}} 
+\index{Player@{Player}!getName@{getName}}
+\index{getName@{getName}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const std\+::string \& Player\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPlayer_a15b7185dcc10bba4b168fa49033e0ae0}\label{classPlayer_a15b7185dcc10bba4b168fa49033e0ae0}} 
+\index{Player@{Player}!getRefreshCost@{getRefreshCost}}
+\index{getRefreshCost@{getRefreshCost}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getRefreshCost()}{getRefreshCost()}}
+{\footnotesize\ttfamily int Player\+::get\+Refresh\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPlayer_ae5def1b761bf3ca5d684aebd804031ed}\label{classPlayer_ae5def1b761bf3ca5d684aebd804031ed}} 
+\index{Player@{Player}!getStartOfTurnGold@{getStartOfTurnGold}}
+\index{getStartOfTurnGold@{getStartOfTurnGold}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getStartOfTurnGold()}{getStartOfTurnGold()}}
+{\footnotesize\ttfamily int Player\+::get\+Start\+Of\+Turn\+Gold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPlayer_a0918097beb6f16d4bc497e0b4960734e}\label{classPlayer_a0918097beb6f16d4bc497e0b4960734e}} 
+\index{Player@{Player}!getTavernTier@{getTavernTier}}
+\index{getTavernTier@{getTavernTier}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getTavernTier()}{getTavernTier()}}
+{\footnotesize\ttfamily int Player\+::get\+Tavern\+Tier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPlayer_af1e73a050f3c53f715ce81afc0c4a5af}\label{classPlayer_af1e73a050f3c53f715ce81afc0c4a5af}} 
+\index{Player@{Player}!increaseStartOfTurnGold@{increaseStartOfTurnGold}}
+\index{increaseStartOfTurnGold@{increaseStartOfTurnGold}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{increaseStartOfTurnGold()}{increaseStartOfTurnGold()}}
+{\footnotesize\ttfamily void Player\+::increase\+Start\+Of\+Turn\+Gold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_a5bda3bad89f797546360636deb154fbb}\label{classPlayer_a5bda3bad89f797546360636deb154fbb}} 
+\index{Player@{Player}!levelUp@{levelUp}}
+\index{levelUp@{levelUp}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{levelUp()}{levelUp()}}
+{\footnotesize\ttfamily void Player\+::level\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_aba780381600a1001d045d009b7204ed2}\label{classPlayer_aba780381600a1001d045d009b7204ed2}} 
+\index{Player@{Player}!notifyObservers@{notifyObservers}}
+\index{notifyObservers@{notifyObservers}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{notifyObservers()}{notifyObservers()}}
+{\footnotesize\ttfamily void Player\+::notify\+Observers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}}}]{trigger\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method is used to notify the observers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger\+Type} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classPlayerSubject_aa5fb1a5b68e2f048afb554a0d13df27e}{Player\+Subject}}.
+
+\mbox{\Hypertarget{classPlayer_ab035509e1a035f702694c50f60e06b8c}\label{classPlayer_ab035509e1a035f702694c50f60e06b8c}} 
+\index{Player@{Player}!print@{print}}
+\index{print@{print}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Player\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classPlayer_a653c85200f669f61b7a3e8894ae96ecd}\label{classPlayer_a653c85200f669f61b7a3e8894ae96ecd}} 
+\index{Player@{Player}!registerObserver@{registerObserver}}
+\index{registerObserver@{registerObserver}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{registerObserver()}{registerObserver()}}
+{\footnotesize\ttfamily void Player\+::register\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGameObserver}{Game\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method is used to register an observer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classPlayerSubject_a59a9380b473743fbc617952ba438b69b}{Player\+Subject}}.
+
+\mbox{\Hypertarget{classPlayer_ab4bdc5e5b27e92425ec9da8529bb4333}\label{classPlayer_ab4bdc5e5b27e92425ec9da8529bb4333}} 
+\index{Player@{Player}!removeMinionFromBoardById@{removeMinionFromBoardById}}
+\index{removeMinionFromBoardById@{removeMinionFromBoardById}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{removeMinionFromBoardById()}{removeMinionFromBoardById()}}
+{\footnotesize\ttfamily void Player\+::remove\+Minion\+From\+Board\+By\+Id (\begin{DoxyParamCaption}\item[{std\+::string}]{minion\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_af96126997baae47f93b7a1299dc8d3e5}\label{classPlayer_af96126997baae47f93b7a1299dc8d3e5}} 
+\index{Player@{Player}!removeMinionFromBoardByIndex@{removeMinionFromBoardByIndex}}
+\index{removeMinionFromBoardByIndex@{removeMinionFromBoardByIndex}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{removeMinionFromBoardByIndex()}{removeMinionFromBoardByIndex()}}
+{\footnotesize\ttfamily void Player\+::remove\+Minion\+From\+Board\+By\+Index (\begin{DoxyParamCaption}\item[{int}]{minion\+To\+Remove\+Index }\end{DoxyParamCaption})}
+
+
+
+Removes a minion from the board with the given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion\+To\+Remove} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayer_a177a19010c609fe83a66c3e2519c4fda}\label{classPlayer_a177a19010c609fe83a66c3e2519c4fda}} 
+\index{Player@{Player}!removeMinionFromHand@{removeMinionFromHand}}
+\index{removeMinionFromHand@{removeMinionFromHand}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{removeMinionFromHand()}{removeMinionFromHand()}}
+{\footnotesize\ttfamily void Player\+::remove\+Minion\+From\+Hand (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMinion}{Minion}} \&}]{minion }\end{DoxyParamCaption})}
+
+
+
+Removes a minion from the hand. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayer_ae60de3bb969d8a961f84c69491546cd4}\label{classPlayer_ae60de3bb969d8a961f84c69491546cd4}} 
+\index{Player@{Player}!setBoard@{setBoard}}
+\index{setBoard@{setBoard}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setBoard()}{setBoard()}}
+{\footnotesize\ttfamily void Player\+::set\+Board (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $>$}]{minions }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_ac40c93b81a2f25da6a78cd8040601e4f}\label{classPlayer_ac40c93b81a2f25da6a78cd8040601e4f}} 
+\index{Player@{Player}!setCurrentGold@{setCurrentGold}}
+\index{setCurrentGold@{setCurrentGold}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setCurrentGold()}{setCurrentGold()}}
+{\footnotesize\ttfamily void Player\+::set\+Current\+Gold (\begin{DoxyParamCaption}\item[{int}]{current\+Gold }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_a16feb97c8b3d1f56729ed6fd8976f4d1}\label{classPlayer_a16feb97c8b3d1f56729ed6fd8976f4d1}} 
+\index{Player@{Player}!spendGold@{spendGold}}
+\index{spendGold@{spendGold}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{spendGold()}{spendGold()}}
+{\footnotesize\ttfamily void Player\+::spend\+Gold (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_ac28e6e55d68095d0fd71658c98ab50ab}\label{classPlayer_ac28e6e55d68095d0fd71658c98ab50ab}} 
+\index{Player@{Player}!subscribeMinion@{subscribeMinion}}
+\index{subscribeMinion@{subscribeMinion}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{subscribeMinion()}{subscribeMinion()}}
+{\footnotesize\ttfamily void Player\+::subscribe\+Minion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Subscribe a minion to the actions center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classPlayerSubject_a79b74bdb1e3dbf651e6a1c141f4d625b}{Player\+Subject}}.
+
+\mbox{\Hypertarget{classPlayer_a853092f1cfbb1210fc5d56c806b6de8b}\label{classPlayer_a853092f1cfbb1210fc5d56c806b6de8b}} 
+\index{Player@{Player}!subscribeMinionEffect@{subscribeMinionEffect}}
+\index{subscribeMinionEffect@{subscribeMinionEffect}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{subscribeMinionEffect()}{subscribeMinionEffect()}}
+{\footnotesize\ttfamily void Player\+::subscribe\+Minion\+Effect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \&}]{aura\+Effect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Subscribe a minion effect to the actions center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classPlayerSubject_a315d0855833a6dde015b2ce6bb9a4a77}{Player\+Subject}}.
+
+\mbox{\Hypertarget{classPlayer_aedf65d1cd20d9e656f03e58177f0a36a}\label{classPlayer_aedf65d1cd20d9e656f03e58177f0a36a}} 
+\index{Player@{Player}!takeDamage@{takeDamage}}
+\index{takeDamage@{takeDamage}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
+{\footnotesize\ttfamily void Player\+::take\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDamage}{Damage}} \&}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Takes damage from the given damage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIDestructible_a11396344692eee205b81a9492a21a529}{IDestructible}}.
+
+\mbox{\Hypertarget{classPlayer_ae646753762f437385f2ab4d5bf958f37}\label{classPlayer_ae646753762f437385f2ab4d5bf958f37}} 
+\index{Player@{Player}!unregisterObserver@{unregisterObserver}}
+\index{unregisterObserver@{unregisterObserver}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{unregisterObserver()}{unregisterObserver()}}
+{\footnotesize\ttfamily void Player\+::unregister\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGameObserver}{Game\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method is used to unregister an observer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classPlayerSubject_a5f7cf85972a82da0dcf53475356c3068}{Player\+Subject}}.
+
+\mbox{\Hypertarget{classPlayer_ad355e8bf0478436cc9ee3499260d78a0}\label{classPlayer_ad355e8bf0478436cc9ee3499260d78a0}} 
+\index{Player@{Player}!unsubscribeMinion@{unsubscribeMinion}}
+\index{unsubscribeMinion@{unsubscribeMinion}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{unsubscribeMinion()}{unsubscribeMinion()}}
+{\footnotesize\ttfamily void Player\+::unsubscribe\+Minion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Unsubscribe a minion from the actions center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classPlayerSubject_ab42202f297b3f2cf141d605ec7c3cb6f}{Player\+Subject}}.
+
+\mbox{\Hypertarget{classPlayer_a116b4fe297bc1efee38022908b379cb3}\label{classPlayer_a116b4fe297bc1efee38022908b379cb3}} 
+\index{Player@{Player}!unsubscribeMinionEffect@{unsubscribeMinionEffect}}
+\index{unsubscribeMinionEffect@{unsubscribeMinionEffect}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{unsubscribeMinionEffect()}{unsubscribeMinionEffect()}}
+{\footnotesize\ttfamily void Player\+::unsubscribe\+Minion\+Effect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \&}]{aura\+Effect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Unsubscribes a minion effect from the actions center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classPlayerSubject_abd5580d902041d9eba8c863203200d3d}{Player\+Subject}}.
+
+\mbox{\Hypertarget{classPlayer_ae819a578e23623bd1b806511eeeaa758}\label{classPlayer_ae819a578e23623bd1b806511eeeaa758}} 
+\index{Player@{Player}!update@{update}}
+\index{update@{update}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Player\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}}}]{trigger\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method is used to update the observer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+{\em trigger\+Type} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classPlayerObserver_a78859c1ddbc794d0adbbfe37fefea113}{Player\+Observer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/entities/\mbox{\hyperlink{Player_8h}{Player.\+h}}\item 
+cpp\+\_\+library/src/sources/entities/\mbox{\hyperlink{Player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

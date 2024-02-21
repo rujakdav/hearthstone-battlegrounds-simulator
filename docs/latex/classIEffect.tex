@@ -1,0 +1,127 @@
+\hypertarget{classIEffect}{}\doxysection{IEffect Class Reference}
+\label{classIEffect}\index{IEffect@{IEffect}}
+
+
+{\ttfamily \#include $<$IEffect.\+h$>$}
+
+
+
+Inheritance diagram for IEffect\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classIEffect__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IEffect\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=133pt]{classIEffect__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classIEffect_aa70e161ba5c57e8696d759986ad62e7a}{set\+Priority}} (int priority)
+\item 
+\mbox{\hyperlink{classIEffect_add9f57da37baa68d64a6af58a20e5adf}{IEffect}} (const std\+::string \&description, \mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}} trigger\+Type, \mbox{\hyperlink{classSourceCriteria}{Source\+Criteria}} source\+Criteria)
+\item 
+\mbox{\hyperlink{classIEffect_afdc9ab5cc6b7ca0c5c1eb738a8a02a33}{IEffect}} (const std\+::string \&description, \mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}} trigger\+Type, \mbox{\hyperlink{classSourceCriteria}{Source\+Criteria}} source\+Criteria, const std\+::string \&owner\+Id)
+\item 
+int \mbox{\hyperlink{classIEffect_a83aae7f278417448b2b8d324a9409f8d}{get\+Priority}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{classIEffect_a071848919c1ce7ae86eddbf604fcf1cc}{get\+Description}} () const
+\item 
+\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}} \mbox{\hyperlink{classIEffect_a5729acfe50ab102036ea2820e546c68d}{get\+Trigger\+Type}} () const
+\item 
+const \mbox{\hyperlink{classSourceCriteria}{Source\+Criteria}} \& \mbox{\hyperlink{classIEffect_a3c825528cca02bf28ca1f662e1bc0d0e}{get\+Source\+Criteria}} () const
+\item 
+virtual void \mbox{\hyperlink{classIEffect_ab01895fcb62da53fc71c1fc238eb319e}{execute}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, \mbox{\hyperlink{classPhaseController}{Phase\+Controller}} $\ast$game)=0
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \mbox{\hyperlink{classIEffect_a1510e0d622d19d6fbbf8adad35da2788}{clone}} ()=0
+\item 
+virtual \mbox{\hyperlink{classIEffect_a53bd957e1cc3d8c5113d5fd934e285f6}{$\sim$\+IEffect}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIEffect_add9f57da37baa68d64a6af58a20e5adf}\label{classIEffect_add9f57da37baa68d64a6af58a20e5adf}} 
+\index{IEffect@{IEffect}!IEffect@{IEffect}}
+\index{IEffect@{IEffect}!IEffect@{IEffect}}
+\doxysubsubsection{\texorpdfstring{IEffect()}{IEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily IEffect\+::\+IEffect (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{description,  }\item[{\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}}}]{trigger\+Type,  }\item[{\mbox{\hyperlink{classSourceCriteria}{Source\+Criteria}}}]{source\+Criteria }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIEffect_afdc9ab5cc6b7ca0c5c1eb738a8a02a33}\label{classIEffect_afdc9ab5cc6b7ca0c5c1eb738a8a02a33}} 
+\index{IEffect@{IEffect}!IEffect@{IEffect}}
+\index{IEffect@{IEffect}!IEffect@{IEffect}}
+\doxysubsubsection{\texorpdfstring{IEffect()}{IEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily IEffect\+::\+IEffect (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{description,  }\item[{\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}}}]{trigger\+Type,  }\item[{\mbox{\hyperlink{classSourceCriteria}{Source\+Criteria}}}]{source\+Criteria,  }\item[{const std\+::string \&}]{owner\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classIEffect_a53bd957e1cc3d8c5113d5fd934e285f6}\label{classIEffect_a53bd957e1cc3d8c5113d5fd934e285f6}} 
+\index{IEffect@{IEffect}!````~IEffect@{$\sim$IEffect}}
+\index{````~IEffect@{$\sim$IEffect}!IEffect@{IEffect}}
+\doxysubsubsection{\texorpdfstring{$\sim$IEffect()}{~IEffect()}}
+{\footnotesize\ttfamily virtual IEffect\+::$\sim$\+IEffect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIEffect_a1510e0d622d19d6fbbf8adad35da2788}\label{classIEffect_a1510e0d622d19d6fbbf8adad35da2788}} 
+\index{IEffect@{IEffect}!clone@{clone}}
+\index{clone@{clone}!IEffect@{IEffect}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classIEffect}{IEffect}}$>$ IEffect\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classSummonEffect_a4df97f547c7b9af3129fd09cd8fbf52a}{Summon\+Effect}}, \mbox{\hyperlink{classHealEffect_a69b204cfcffb1156272f2b24e248024f}{Heal\+Effect}}, \mbox{\hyperlink{classEnchantmentEffect_a00beb093da0120fa9b97afebf313e158}{Enchantment\+Effect}}, and \mbox{\hyperlink{classDamageEffect_ab849c7f271f3a89e448600deab9f8928}{Damage\+Effect}}.
+
+\mbox{\Hypertarget{classIEffect_ab01895fcb62da53fc71c1fc238eb319e}\label{classIEffect_ab01895fcb62da53fc71c1fc238eb319e}} 
+\index{IEffect@{IEffect}!execute@{execute}}
+\index{execute@{execute}!IEffect@{IEffect}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual void IEffect\+::execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{\mbox{\hyperlink{classPhaseController}{Phase\+Controller}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classSummonEffect_aceb490b06ad1e432516d94f1b97892ff}{Summon\+Effect}}, \mbox{\hyperlink{classHealEffect_a48681e8a9836e2b85532aaa727c61575}{Heal\+Effect}}, \mbox{\hyperlink{classEnchantmentEffect_a9a8e51d10e801be9bebc5379336834d6}{Enchantment\+Effect}}, and \mbox{\hyperlink{classDamageEffect_a96ea0faa6261df89445852c0d74bdef0}{Damage\+Effect}}.
+
+\mbox{\Hypertarget{classIEffect_a071848919c1ce7ae86eddbf604fcf1cc}\label{classIEffect_a071848919c1ce7ae86eddbf604fcf1cc}} 
+\index{IEffect@{IEffect}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!IEffect@{IEffect}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily const std\+::string \& IEffect\+::get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classIEffect_a83aae7f278417448b2b8d324a9409f8d}\label{classIEffect_a83aae7f278417448b2b8d324a9409f8d}} 
+\index{IEffect@{IEffect}!getPriority@{getPriority}}
+\index{getPriority@{getPriority}!IEffect@{IEffect}}
+\doxysubsubsection{\texorpdfstring{getPriority()}{getPriority()}}
+{\footnotesize\ttfamily int IEffect\+::get\+Priority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classIEffect_a3c825528cca02bf28ca1f662e1bc0d0e}\label{classIEffect_a3c825528cca02bf28ca1f662e1bc0d0e}} 
+\index{IEffect@{IEffect}!getSourceCriteria@{getSourceCriteria}}
+\index{getSourceCriteria@{getSourceCriteria}!IEffect@{IEffect}}
+\doxysubsubsection{\texorpdfstring{getSourceCriteria()}{getSourceCriteria()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classSourceCriteria}{Source\+Criteria}} \& IEffect\+::get\+Source\+Criteria (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classIEffect_a5729acfe50ab102036ea2820e546c68d}\label{classIEffect_a5729acfe50ab102036ea2820e546c68d}} 
+\index{IEffect@{IEffect}!getTriggerType@{getTriggerType}}
+\index{getTriggerType@{getTriggerType}!IEffect@{IEffect}}
+\doxysubsubsection{\texorpdfstring{getTriggerType()}{getTriggerType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}} IEffect\+::get\+Trigger\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classIEffect_aa70e161ba5c57e8696d759986ad62e7a}\label{classIEffect_aa70e161ba5c57e8696d759986ad62e7a}} 
+\index{IEffect@{IEffect}!setPriority@{setPriority}}
+\index{setPriority@{setPriority}!IEffect@{IEffect}}
+\doxysubsubsection{\texorpdfstring{setPriority()}{setPriority()}}
+{\footnotesize\ttfamily void IEffect\+::set\+Priority (\begin{DoxyParamCaption}\item[{int}]{priority }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/mechanics/effects/\mbox{\hyperlink{IEffect_8h}{IEffect.\+h}}\item 
+cpp\+\_\+library/src/sources/mechanics/effects/\mbox{\hyperlink{IEffect_8cpp}{IEffect.\+cpp}}\end{DoxyCompactItemize}

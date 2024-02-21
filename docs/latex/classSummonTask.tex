@@ -1,0 +1,87 @@
+\hypertarget{classSummonTask}{}\doxysection{Summon\+Task Class Reference}
+\label{classSummonTask}\index{SummonTask@{SummonTask}}
+
+
+The \mbox{\hyperlink{classSummonTask}{Summon\+Task}} class This class is used to represent a summon task.  
+
+
+
+
+{\ttfamily \#include $<$Summon\+Task.\+h$>$}
+
+
+
+Inheritance diagram for Summon\+Task\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classSummonTask__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Summon\+Task\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classSummonTask__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{classPlayer}{Player}} $\ast$ $>$ \& \mbox{\hyperlink{classSummonTask_a3aa23c2682b7bcb6b99e45c62221ad46}{get\+Players}} () const
+\item 
+const \mbox{\hyperlink{classMinion}{Minion}} \& \mbox{\hyperlink{classSummonTask_ad0eb3883f3a18e8e288e7feba69ccd0a}{get\+Minion\+To\+Summon}} () const
+\item 
+\mbox{\hyperlink{classSummonTask_a0e541345ef4872be8aef94d94bd19d8e}{Summon\+Task}} (const std\+::vector$<$ \mbox{\hyperlink{classPlayer}{Player}} $\ast$ $>$ \&players, const \mbox{\hyperlink{classMinion}{Minion}} \&minion\+To\+Summon)
+\item 
+void \mbox{\hyperlink{classSummonTask_a734f4fb8b873e0dc1ba1286fe561ec7d}{execute}} () override
+\begin{DoxyCompactList}\small\item\em This method is used to execute the task. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classSummonTask}{Summon\+Task}} class This class is used to represent a summon task. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSummonTask_a0e541345ef4872be8aef94d94bd19d8e}\label{classSummonTask_a0e541345ef4872be8aef94d94bd19d8e}} 
+\index{SummonTask@{SummonTask}!SummonTask@{SummonTask}}
+\index{SummonTask@{SummonTask}!SummonTask@{SummonTask}}
+\doxysubsubsection{\texorpdfstring{SummonTask()}{SummonTask()}}
+{\footnotesize\ttfamily Summon\+Task\+::\+Summon\+Task (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classPlayer}{Player}} $\ast$ $>$ \&}]{players,  }\item[{const \mbox{\hyperlink{classMinion}{Minion}} \&}]{minion\+To\+Summon }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSummonTask_a734f4fb8b873e0dc1ba1286fe561ec7d}\label{classSummonTask_a734f4fb8b873e0dc1ba1286fe561ec7d}} 
+\index{SummonTask@{SummonTask}!execute@{execute}}
+\index{execute@{execute}!SummonTask@{SummonTask}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Summon\+Task\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method is used to execute the task. 
+
+
+
+Implements \mbox{\hyperlink{classITask_ab06c42f4b0417bb6d4531566476027cc}{ITask}}.
+
+\mbox{\Hypertarget{classSummonTask_ad0eb3883f3a18e8e288e7feba69ccd0a}\label{classSummonTask_ad0eb3883f3a18e8e288e7feba69ccd0a}} 
+\index{SummonTask@{SummonTask}!getMinionToSummon@{getMinionToSummon}}
+\index{getMinionToSummon@{getMinionToSummon}!SummonTask@{SummonTask}}
+\doxysubsubsection{\texorpdfstring{getMinionToSummon()}{getMinionToSummon()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classMinion}{Minion}} \& Summon\+Task\+::get\+Minion\+To\+Summon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classSummonTask_a3aa23c2682b7bcb6b99e45c62221ad46}\label{classSummonTask_a3aa23c2682b7bcb6b99e45c62221ad46}} 
+\index{SummonTask@{SummonTask}!getPlayers@{getPlayers}}
+\index{getPlayers@{getPlayers}!SummonTask@{SummonTask}}
+\doxysubsubsection{\texorpdfstring{getPlayers()}{getPlayers()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{classPlayer}{Player}} $\ast$ $>$ \& Summon\+Task\+::get\+Players (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/tasks/\mbox{\hyperlink{SummonTask_8h}{Summon\+Task.\+h}}\item 
+cpp\+\_\+library/src/sources/tasks/\mbox{\hyperlink{SummonTask_8cpp}{Summon\+Task.\+cpp}}\end{DoxyCompactItemize}

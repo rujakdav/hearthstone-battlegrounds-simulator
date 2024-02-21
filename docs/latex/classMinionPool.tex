@@ -1,0 +1,147 @@
+\hypertarget{classMinionPool}{}\doxysection{Minion\+Pool Class Reference}
+\label{classMinionPool}\index{MinionPool@{MinionPool}}
+
+
+The \mbox{\hyperlink{classMinionPool}{Minion\+Pool}} class This class is used to store the minions that are available for purchase.  
+
+
+
+
+{\ttfamily \#include $<$Minion\+Pool.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classMinionPool_ad80cec1da15402f9aec7559888e637d8}{get\+Random\+Minion\+Keys\+For\+Tier}} (int amount, int tavern\+Tier) const
+\begin{DoxyCompactList}\small\item\em This method is used to get a random minion key for a tier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMinionPool_a117a8dcccd83615898d94bd04dc42c68}{Minion\+Pool}} ()
+\item 
+void \mbox{\hyperlink{classMinionPool_a0592a7b9b2a40040a53c25b476a5a7f6}{add\+Minions}} (const std\+::string \&card\+Key, int count, int tavern\+Tier)
+\begin{DoxyCompactList}\small\item\em This method is used to add minions to the pool. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMinionPool_a0c179e2bdd66306c5e9b2fe5dcf6ade6}{get\+Minion\+Count}} (const std\+::string \&card\+Key, int tavern\+Tier) const
+\begin{DoxyCompactList}\small\item\em This method is used to get the amount of minions in the pool. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classMinionPool_a14a1b9801ce2532bd92bc7a4e70a51c5}{get\+Available\+Keys\+For\+Tier}} (int tavern\+Tier) const
+\begin{DoxyCompactList}\small\item\em This method is used to get the available keys for a tier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMinionPool_a398e769923653c5dd2cdbc894e6f8730}{print\+Pool}} () const
+\item 
+void \mbox{\hyperlink{classMinionPool_abc1696d724690413bc3b1a378f38ec11}{remove\+Minion}} (const std\+::string \&card\+Key, int tavern\+Tier)
+\begin{DoxyCompactList}\small\item\em This method is used to remove a minion from the pool. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classMinionPool}{Minion\+Pool}} class This class is used to store the minions that are available for purchase. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMinionPool_a117a8dcccd83615898d94bd04dc42c68}\label{classMinionPool_a117a8dcccd83615898d94bd04dc42c68}} 
+\index{MinionPool@{MinionPool}!MinionPool@{MinionPool}}
+\index{MinionPool@{MinionPool}!MinionPool@{MinionPool}}
+\doxysubsubsection{\texorpdfstring{MinionPool()}{MinionPool()}}
+{\footnotesize\ttfamily Minion\+Pool\+::\+Minion\+Pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMinionPool_a0592a7b9b2a40040a53c25b476a5a7f6}\label{classMinionPool_a0592a7b9b2a40040a53c25b476a5a7f6}} 
+\index{MinionPool@{MinionPool}!addMinions@{addMinions}}
+\index{addMinions@{addMinions}!MinionPool@{MinionPool}}
+\doxysubsubsection{\texorpdfstring{addMinions()}{addMinions()}}
+{\footnotesize\ttfamily void Minion\+Pool\+::add\+Minions (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{card\+Key,  }\item[{int}]{count,  }\item[{int}]{tavern\+Tier }\end{DoxyParamCaption})}
+
+
+
+This method is used to add minions to the pool. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card\+Key} & \\
+\hline
+{\em count} & \\
+\hline
+{\em tavern\+Tier} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMinionPool_a14a1b9801ce2532bd92bc7a4e70a51c5}\label{classMinionPool_a14a1b9801ce2532bd92bc7a4e70a51c5}} 
+\index{MinionPool@{MinionPool}!getAvailableKeysForTier@{getAvailableKeysForTier}}
+\index{getAvailableKeysForTier@{getAvailableKeysForTier}!MinionPool@{MinionPool}}
+\doxysubsubsection{\texorpdfstring{getAvailableKeysForTier()}{getAvailableKeysForTier()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Minion\+Pool\+::get\+Available\+Keys\+For\+Tier (\begin{DoxyParamCaption}\item[{int}]{tavern\+Tier }\end{DoxyParamCaption}) const}
+
+
+
+This method is used to get the available keys for a tier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tavern\+Tier} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMinionPool_a0c179e2bdd66306c5e9b2fe5dcf6ade6}\label{classMinionPool_a0c179e2bdd66306c5e9b2fe5dcf6ade6}} 
+\index{MinionPool@{MinionPool}!getMinionCount@{getMinionCount}}
+\index{getMinionCount@{getMinionCount}!MinionPool@{MinionPool}}
+\doxysubsubsection{\texorpdfstring{getMinionCount()}{getMinionCount()}}
+{\footnotesize\ttfamily int Minion\+Pool\+::get\+Minion\+Count (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{card\+Key,  }\item[{int}]{tavern\+Tier }\end{DoxyParamCaption}) const}
+
+
+
+This method is used to get the amount of minions in the pool. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card\+Key} & \\
+\hline
+{\em tavern\+Tier} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMinionPool_ad80cec1da15402f9aec7559888e637d8}\label{classMinionPool_ad80cec1da15402f9aec7559888e637d8}} 
+\index{MinionPool@{MinionPool}!getRandomMinionKeysForTier@{getRandomMinionKeysForTier}}
+\index{getRandomMinionKeysForTier@{getRandomMinionKeysForTier}!MinionPool@{MinionPool}}
+\doxysubsubsection{\texorpdfstring{getRandomMinionKeysForTier()}{getRandomMinionKeysForTier()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Minion\+Pool\+::get\+Random\+Minion\+Keys\+For\+Tier (\begin{DoxyParamCaption}\item[{int}]{amount,  }\item[{int}]{tavern\+Tier }\end{DoxyParamCaption}) const}
+
+
+
+This method is used to get a random minion key for a tier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tavern\+Tier} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMinionPool_a398e769923653c5dd2cdbc894e6f8730}\label{classMinionPool_a398e769923653c5dd2cdbc894e6f8730}} 
+\index{MinionPool@{MinionPool}!printPool@{printPool}}
+\index{printPool@{printPool}!MinionPool@{MinionPool}}
+\doxysubsubsection{\texorpdfstring{printPool()}{printPool()}}
+{\footnotesize\ttfamily void Minion\+Pool\+::print\+Pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classMinionPool_abc1696d724690413bc3b1a378f38ec11}\label{classMinionPool_abc1696d724690413bc3b1a378f38ec11}} 
+\index{MinionPool@{MinionPool}!removeMinion@{removeMinion}}
+\index{removeMinion@{removeMinion}!MinionPool@{MinionPool}}
+\doxysubsubsection{\texorpdfstring{removeMinion()}{removeMinion()}}
+{\footnotesize\ttfamily void Minion\+Pool\+::remove\+Minion (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{card\+Key,  }\item[{int}]{tavern\+Tier }\end{DoxyParamCaption})}
+
+
+
+This method is used to remove a minion from the pool. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card\+Key} & \\
+\hline
+{\em tavern\+Tier} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/repository/\mbox{\hyperlink{MinionPool_8h}{Minion\+Pool.\+h}}\item 
+cpp\+\_\+library/src/sources/repository/\mbox{\hyperlink{MinionPool_8cpp}{Minion\+Pool.\+cpp}}\end{DoxyCompactItemize}

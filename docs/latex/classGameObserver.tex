@@ -1,0 +1,137 @@
+\hypertarget{classGameObserver}{}\doxysection{Game\+Observer Class Reference}
+\label{classGameObserver}\index{GameObserver@{GameObserver}}
+
+
+{\ttfamily \#include $<$Game\+Observer.\+h$>$}
+
+
+
+Inheritance diagram for Game\+Observer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGameObserver__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classGameObserver_a129e0880982e61047cf15af689b66a53}{update}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, \mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}} trigger\+Type, \mbox{\hyperlink{classPlayer}{Player}} $\ast$player)=0
+\begin{DoxyCompactList}\small\item\em update This method is called when a trigger is activated \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classGameObserver_a71ebe53dc42703c841cdd1f51d35a818}{subscribe\+Minion}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion)=0
+\begin{DoxyCompactList}\small\item\em This method is used to subscribe a minion to the actions center. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classGameObserver_aa46caf28fe940d84f11eff5725b4f25c}{unsubscribe\+Minion}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion)=0
+\begin{DoxyCompactList}\small\item\em This method is used to unsubscribe a minion from the actions center. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classGameObserver_a3bd7232fbf585271bc1c235c9dae8e3b}{subscribe\+Minion\+Effect}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \&aura\+Effect)=0
+\begin{DoxyCompactList}\small\item\em This method is used to subscribe a minion effect to the actions center. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classGameObserver_ae67818733e0cf5858e7a707034992dbb}{unsubscribe\+Minion\+Effect}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \&aura\+Effect)=0
+\begin{DoxyCompactList}\small\item\em This method is used to unsubscribe a minion effect from the actions center. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGameObserver_a71ebe53dc42703c841cdd1f51d35a818}\label{classGameObserver_a71ebe53dc42703c841cdd1f51d35a818}} 
+\index{GameObserver@{GameObserver}!subscribeMinion@{subscribeMinion}}
+\index{subscribeMinion@{subscribeMinion}!GameObserver@{GameObserver}}
+\doxysubsubsection{\texorpdfstring{subscribeMinion()}{subscribeMinion()}}
+{\footnotesize\ttfamily virtual void Game\+Observer\+::subscribe\+Minion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This method is used to subscribe a minion to the actions center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classRecruitPhaseController_ac07d26d6eb5767f115503ff9d257273f}{Recruit\+Phase\+Controller}}, and \mbox{\hyperlink{classCombatPhaseController_ae11e913176bcee8f7c723f59fdb11267}{Combat\+Phase\+Controller}}.
+
+\mbox{\Hypertarget{classGameObserver_a3bd7232fbf585271bc1c235c9dae8e3b}\label{classGameObserver_a3bd7232fbf585271bc1c235c9dae8e3b}} 
+\index{GameObserver@{GameObserver}!subscribeMinionEffect@{subscribeMinionEffect}}
+\index{subscribeMinionEffect@{subscribeMinionEffect}!GameObserver@{GameObserver}}
+\doxysubsubsection{\texorpdfstring{subscribeMinionEffect()}{subscribeMinionEffect()}}
+{\footnotesize\ttfamily virtual void Game\+Observer\+::subscribe\+Minion\+Effect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \&}]{aura\+Effect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This method is used to subscribe a minion effect to the actions center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classCombatPhaseController_aa56af3498dafdb471c4ea728dcedc7ed}{Combat\+Phase\+Controller}}.
+
+\mbox{\Hypertarget{classGameObserver_aa46caf28fe940d84f11eff5725b4f25c}\label{classGameObserver_aa46caf28fe940d84f11eff5725b4f25c}} 
+\index{GameObserver@{GameObserver}!unsubscribeMinion@{unsubscribeMinion}}
+\index{unsubscribeMinion@{unsubscribeMinion}!GameObserver@{GameObserver}}
+\doxysubsubsection{\texorpdfstring{unsubscribeMinion()}{unsubscribeMinion()}}
+{\footnotesize\ttfamily virtual void Game\+Observer\+::unsubscribe\+Minion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This method is used to unsubscribe a minion from the actions center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classRecruitPhaseController_ad8bb19f49052329808ae192e3b5acb9c}{Recruit\+Phase\+Controller}}, and \mbox{\hyperlink{classCombatPhaseController_ab429f1c24b09d2df8e3c940771035d6c}{Combat\+Phase\+Controller}}.
+
+\mbox{\Hypertarget{classGameObserver_ae67818733e0cf5858e7a707034992dbb}\label{classGameObserver_ae67818733e0cf5858e7a707034992dbb}} 
+\index{GameObserver@{GameObserver}!unsubscribeMinionEffect@{unsubscribeMinionEffect}}
+\index{unsubscribeMinionEffect@{unsubscribeMinionEffect}!GameObserver@{GameObserver}}
+\doxysubsubsection{\texorpdfstring{unsubscribeMinionEffect()}{unsubscribeMinionEffect()}}
+{\footnotesize\ttfamily virtual void Game\+Observer\+::unsubscribe\+Minion\+Effect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \&}]{aura\+Effect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This method is used to unsubscribe a minion effect from the actions center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classCombatPhaseController_aba118b3b1067d154e4c9967d7b5ee4da}{Combat\+Phase\+Controller}}.
+
+\mbox{\Hypertarget{classGameObserver_a129e0880982e61047cf15af689b66a53}\label{classGameObserver_a129e0880982e61047cf15af689b66a53}} 
+\index{GameObserver@{GameObserver}!update@{update}}
+\index{update@{update}!GameObserver@{GameObserver}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Game\+Observer\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}}}]{trigger\+Type,  }\item[{\mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+update This method is called when a trigger is activated 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger\+Type} & The type of the trigger \\
+\hline
+{\em player} & The player that activated the trigger \\
+\hline
+{\em trigger\+Type} & The type of the trigger \\
+\hline
+{\em player} & The player that activated the trigger \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classRecruitPhaseController_a95b71d55348556e57ca6ca892b6a739c}{Recruit\+Phase\+Controller}}, and \mbox{\hyperlink{classCombatPhaseController_abaec52a34059f922b64724288c49d6fc}{Combat\+Phase\+Controller}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/messaging/observer/\mbox{\hyperlink{GameObserver_8h}{Game\+Observer.\+h}}\end{DoxyCompactItemize}

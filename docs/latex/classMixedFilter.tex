@@ -1,0 +1,130 @@
+\hypertarget{classMixedFilter}{}\doxysection{Mixed\+Filter Class Reference}
+\label{classMixedFilter}\index{MixedFilter@{MixedFilter}}
+
+
+The \mbox{\hyperlink{classMixedFilter}{Mixed\+Filter}} class This class is used to filter both minions and players.  
+
+
+
+
+{\ttfamily \#include $<$Mixed\+Filter.\+h$>$}
+
+
+
+Inheritance diagram for Mixed\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classMixedFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mixed\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classMixedFilter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMixedFilter_a3590f8c09fa670f170a6403517af17c6}{Mixed\+Filter}} (std\+::function$<$ bool(const \mbox{\hyperlink{classMinion}{Minion}} \&)$>$ minion\+Filter, std\+::function$<$ bool(const \mbox{\hyperlink{classPlayer}{Player}} \&)$>$ player\+Filter)
+\item 
+bool \mbox{\hyperlink{classMixedFilter_a79a081f8b9fdfd5ded7004618bfefc26}{is\+Valid}} (const \mbox{\hyperlink{classMinion}{Minion}} \&minion) const override
+\begin{DoxyCompactList}\small\item\em Is the minion valid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMixedFilter_a6997327e8327a05137045aa7d9cb2d18}{is\+Valid}} (const \mbox{\hyperlink{classPlayer}{Player}} \&player) const override
+\begin{DoxyCompactList}\small\item\em Is the player valid. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMixedFilter_ad5aaa8bc70e394aac0e2e0b7c0ecaedc}{Mixed\+Filter}} (const \mbox{\hyperlink{classMixedFilter}{Mixed\+Filter}} \&other)
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIFilter}{IFilter}} $>$ \mbox{\hyperlink{classMixedFilter_a00ac8fb198f5014c2ee0cbe8330345e3}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Clones the filter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classMixedFilter}{Mixed\+Filter}} class This class is used to filter both minions and players. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMixedFilter_a3590f8c09fa670f170a6403517af17c6}\label{classMixedFilter_a3590f8c09fa670f170a6403517af17c6}} 
+\index{MixedFilter@{MixedFilter}!MixedFilter@{MixedFilter}}
+\index{MixedFilter@{MixedFilter}!MixedFilter@{MixedFilter}}
+\doxysubsubsection{\texorpdfstring{MixedFilter()}{MixedFilter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Mixed\+Filter\+::\+Mixed\+Filter (\begin{DoxyParamCaption}\item[{std\+::function$<$ bool(const \mbox{\hyperlink{classMinion}{Minion}} \&)$>$}]{minion\+Filter,  }\item[{std\+::function$<$ bool(const \mbox{\hyperlink{classPlayer}{Player}} \&)$>$}]{player\+Filter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMixedFilter_ad5aaa8bc70e394aac0e2e0b7c0ecaedc}\label{classMixedFilter_ad5aaa8bc70e394aac0e2e0b7c0ecaedc}} 
+\index{MixedFilter@{MixedFilter}!MixedFilter@{MixedFilter}}
+\index{MixedFilter@{MixedFilter}!MixedFilter@{MixedFilter}}
+\doxysubsubsection{\texorpdfstring{MixedFilter()}{MixedFilter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Mixed\+Filter\+::\+Mixed\+Filter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMixedFilter}{Mixed\+Filter}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMixedFilter_a00ac8fb198f5014c2ee0cbe8330345e3}\label{classMixedFilter_a00ac8fb198f5014c2ee0cbe8330345e3}} 
+\index{MixedFilter@{MixedFilter}!clone@{clone}}
+\index{clone@{clone}!MixedFilter@{MixedFilter}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIFilter}{IFilter}} $>$ Mixed\+Filter\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clones the filter. 
+
+\begin{DoxyReturn}{Returns}
+std\+::unique\+\_\+ptr$<$\+IFilter$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIFilter_a858935fd30dcd696e5c03fde20db115a}{IFilter}}.
+
+\mbox{\Hypertarget{classMixedFilter_a79a081f8b9fdfd5ded7004618bfefc26}\label{classMixedFilter_a79a081f8b9fdfd5ded7004618bfefc26}} 
+\index{MixedFilter@{MixedFilter}!isValid@{isValid}}
+\index{isValid@{isValid}!MixedFilter@{MixedFilter}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Mixed\+Filter\+::is\+Valid (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMinion}{Minion}} \&}]{minion }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Is the minion valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the minion is valid 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIFilter_aef04e6110f3d5c624c4c29cb53684503}{IFilter}}.
+
+\mbox{\Hypertarget{classMixedFilter_a6997327e8327a05137045aa7d9cb2d18}\label{classMixedFilter_a6997327e8327a05137045aa7d9cb2d18}} 
+\index{MixedFilter@{MixedFilter}!isValid@{isValid}}
+\index{isValid@{isValid}!MixedFilter@{MixedFilter}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Mixed\+Filter\+::is\+Valid (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPlayer}{Player}} \&}]{player }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Is the player valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the player is valid 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIFilter_a3a90cd6907255023fde498dcfc68edc0}{IFilter}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/mechanics/common/criterias/filters/\mbox{\hyperlink{MixedFilter_8h}{Mixed\+Filter.\+h}}\item 
+cpp\+\_\+library/src/sources/mechanics/common/criterias/filters/\mbox{\hyperlink{MixedFilter_8cpp}{Mixed\+Filter.\+cpp}}\end{DoxyCompactItemize}

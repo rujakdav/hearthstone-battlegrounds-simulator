@@ -1,0 +1,130 @@
+\hypertarget{classPlayerFilter}{}\doxysection{Player\+Filter Class Reference}
+\label{classPlayerFilter}\index{PlayerFilter@{PlayerFilter}}
+
+
+The \mbox{\hyperlink{classPlayerFilter}{Player\+Filter}} class This class is used to filter players.  
+
+
+
+
+{\ttfamily \#include $<$Player\+Filter.\+h$>$}
+
+
+
+Inheritance diagram for Player\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classPlayerFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Player\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classPlayerFilter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayerFilter_afbe88cd353219694d47fdfe595203670}{Player\+Filter}} (std\+::function$<$ bool(const \mbox{\hyperlink{classPlayer}{Player}} \&)$>$ filter\+Function)
+\item 
+bool \mbox{\hyperlink{classPlayerFilter_ad1c7a926cf784128bafdbbfa22a26d64}{is\+Valid}} (const \mbox{\hyperlink{classMinion}{Minion}} \&minion) const override
+\begin{DoxyCompactList}\small\item\em Is the minion valid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPlayerFilter_afbffb75fcf239f8c83cb687d69118fc4}{is\+Valid}} (const \mbox{\hyperlink{classPlayer}{Player}} \&player) const override
+\begin{DoxyCompactList}\small\item\em Is the player valid. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayerFilter_a1a4b6f0577e344aca8bc4c7f4f077163}{Player\+Filter}} (const \mbox{\hyperlink{classPlayerFilter}{Player\+Filter}} \&other)
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIFilter}{IFilter}} $>$ \mbox{\hyperlink{classPlayerFilter_aa505accec6b4f575e3c0a985b79bf874}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Clones the filter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPlayerFilter}{Player\+Filter}} class This class is used to filter players. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlayerFilter_afbe88cd353219694d47fdfe595203670}\label{classPlayerFilter_afbe88cd353219694d47fdfe595203670}} 
+\index{PlayerFilter@{PlayerFilter}!PlayerFilter@{PlayerFilter}}
+\index{PlayerFilter@{PlayerFilter}!PlayerFilter@{PlayerFilter}}
+\doxysubsubsection{\texorpdfstring{PlayerFilter()}{PlayerFilter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Player\+Filter\+::\+Player\+Filter (\begin{DoxyParamCaption}\item[{std\+::function$<$ bool(const \mbox{\hyperlink{classPlayer}{Player}} \&)$>$}]{filter\+Function }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayerFilter_a1a4b6f0577e344aca8bc4c7f4f077163}\label{classPlayerFilter_a1a4b6f0577e344aca8bc4c7f4f077163}} 
+\index{PlayerFilter@{PlayerFilter}!PlayerFilter@{PlayerFilter}}
+\index{PlayerFilter@{PlayerFilter}!PlayerFilter@{PlayerFilter}}
+\doxysubsubsection{\texorpdfstring{PlayerFilter()}{PlayerFilter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Player\+Filter\+::\+Player\+Filter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPlayerFilter}{Player\+Filter}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlayerFilter_aa505accec6b4f575e3c0a985b79bf874}\label{classPlayerFilter_aa505accec6b4f575e3c0a985b79bf874}} 
+\index{PlayerFilter@{PlayerFilter}!clone@{clone}}
+\index{clone@{clone}!PlayerFilter@{PlayerFilter}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIFilter}{IFilter}} $>$ Player\+Filter\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clones the filter. 
+
+\begin{DoxyReturn}{Returns}
+std\+::unique\+\_\+ptr$<$\+IFilter$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIFilter_a858935fd30dcd696e5c03fde20db115a}{IFilter}}.
+
+\mbox{\Hypertarget{classPlayerFilter_ad1c7a926cf784128bafdbbfa22a26d64}\label{classPlayerFilter_ad1c7a926cf784128bafdbbfa22a26d64}} 
+\index{PlayerFilter@{PlayerFilter}!isValid@{isValid}}
+\index{isValid@{isValid}!PlayerFilter@{PlayerFilter}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Player\+Filter\+::is\+Valid (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMinion}{Minion}} \&}]{minion }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Is the minion valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the minion is valid 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIFilter_aef04e6110f3d5c624c4c29cb53684503}{IFilter}}.
+
+\mbox{\Hypertarget{classPlayerFilter_afbffb75fcf239f8c83cb687d69118fc4}\label{classPlayerFilter_afbffb75fcf239f8c83cb687d69118fc4}} 
+\index{PlayerFilter@{PlayerFilter}!isValid@{isValid}}
+\index{isValid@{isValid}!PlayerFilter@{PlayerFilter}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Player\+Filter\+::is\+Valid (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPlayer}{Player}} \&}]{player }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Is the player valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the player is valid 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIFilter_a3a90cd6907255023fde498dcfc68edc0}{IFilter}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/mechanics/common/criterias/filters/\mbox{\hyperlink{PlayerFilter_8h}{Player\+Filter.\+h}}\item 
+cpp\+\_\+library/src/sources/mechanics/common/criterias/filters/\mbox{\hyperlink{PlayerFilter_8cpp}{Player\+Filter.\+cpp}}\end{DoxyCompactItemize}

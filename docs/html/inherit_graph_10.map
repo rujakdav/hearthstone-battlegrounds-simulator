@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classIArmored.html" title=" " alt="" coords="25,5,108,32"/>
+<area shape="rect" id="node2" href="$classPlayer.html" title="The Player class represents a player in the game." alt="" coords="178,81,241,108"/>
+<area shape="rect" id="node3" href="$classICard.html" title="The ICard class This class is used to represent a card." alt="" coords="39,208,95,235"/>
+<area shape="rect" id="node4" href="$classMinion.html" title=" " alt="" coords="176,233,243,260"/>
+<area shape="rect" id="node5" href="$classICombative.html" title="The ICombative class This class is used to represent the combative behavior of entities." alt="" coords="18,259,115,285"/>
+<area shape="rect" id="node6" href="$classIDestructible.html" title="The IDestructible class This class is used to represent an entity that can take damage." alt="" coords="14,157,119,184"/>
+<area shape="rect" id="node7" href="$classMinionSubject.html" title="The MinionSubject class This class is used to implement the observer pattern between minions and play..." alt="" coords="9,309,124,336"/>
+<area shape="rect" id="node8" href="$classPlayerObserver.html" title="The PlayerObserver class This class is used to implement the observer pattern between minions and pla..." alt="" coords="5,56,128,83"/>
+<area shape="rect" id="node9" href="$classPlayerSubject.html" title="The PlayerSubject class This class is used to implement the observer pattern between players and game..." alt="" coords="11,107,122,133"/>
+</map>

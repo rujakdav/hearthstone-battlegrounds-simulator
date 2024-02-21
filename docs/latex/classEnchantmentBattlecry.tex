@@ -1,0 +1,146 @@
+\hypertarget{classEnchantmentBattlecry}{}\doxysection{Enchantment\+Battlecry Class Reference}
+\label{classEnchantmentBattlecry}\index{EnchantmentBattlecry@{EnchantmentBattlecry}}
+
+
+The \mbox{\hyperlink{classEnchantmentBattlecry}{Enchantment\+Battlecry}} class This class is used to represent an enchantment battlecry.  
+
+
+
+
+{\ttfamily \#include $<$Enchantment\+Battlecry.\+h$>$}
+
+
+
+Inheritance diagram for Enchantment\+Battlecry\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classEnchantmentBattlecry__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Enchantment\+Battlecry\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classEnchantmentBattlecry__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classEnchantment}{Enchantment}} \& \mbox{\hyperlink{classEnchantmentBattlecry_a8128986dff4002a678f12591f95ef688}{get\+Enchantment}} () const
+\item 
+\mbox{\hyperlink{classEnchantmentBattlecry_ab7dd9668f2c18fa22ce523d978b3fbd9}{Enchantment\+Battlecry}} (const std\+::string \&description, const \mbox{\hyperlink{classBattlecryTargetCriteria}{Battlecry\+Target\+Criteria}} \&target\+Criteria, const \mbox{\hyperlink{classEnchantment}{Enchantment}} \&enchantment)
+\item 
+void \mbox{\hyperlink{classEnchantmentBattlecry_acc82148fe2a5d67c717b438e4f38b3d7}{execute}} (\mbox{\hyperlink{classRecruitPhaseController}{Recruit\+Phase\+Controller}} $\ast$game) override
+\begin{DoxyCompactList}\small\item\em Executes the battlecry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnchantmentBattlecry_a38a379ceb0048932b5c0f1f4563f74da}{set\+Targets}} (std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $\ast$ $>$ targets) override
+\begin{DoxyCompactList}\small\item\em Sets the minion targets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnchantmentBattlecry_aa04eab28281f38bdd5b1ec5af1b0871a}{set\+Targets}} (\mbox{\hyperlink{classPlayer}{Player}} $\ast$player) override
+\begin{DoxyCompactList}\small\item\em Sets the player targets. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIBattlecry}{IBattlecry}} $>$ \mbox{\hyperlink{classEnchantmentBattlecry_ae84304028ee4a9ebd55f5b621f8e052e}{clone}} () override
+\begin{DoxyCompactList}\small\item\em Clones the battlecry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classEnchantmentBattlecry}{Enchantment\+Battlecry}} class This class is used to represent an enchantment battlecry. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEnchantmentBattlecry_ab7dd9668f2c18fa22ce523d978b3fbd9}\label{classEnchantmentBattlecry_ab7dd9668f2c18fa22ce523d978b3fbd9}} 
+\index{EnchantmentBattlecry@{EnchantmentBattlecry}!EnchantmentBattlecry@{EnchantmentBattlecry}}
+\index{EnchantmentBattlecry@{EnchantmentBattlecry}!EnchantmentBattlecry@{EnchantmentBattlecry}}
+\doxysubsubsection{\texorpdfstring{EnchantmentBattlecry()}{EnchantmentBattlecry()}}
+{\footnotesize\ttfamily Enchantment\+Battlecry\+::\+Enchantment\+Battlecry (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{description,  }\item[{const \mbox{\hyperlink{classBattlecryTargetCriteria}{Battlecry\+Target\+Criteria}} \&}]{target\+Criteria,  }\item[{const \mbox{\hyperlink{classEnchantment}{Enchantment}} \&}]{enchantment }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEnchantmentBattlecry_ae84304028ee4a9ebd55f5b621f8e052e}\label{classEnchantmentBattlecry_ae84304028ee4a9ebd55f5b621f8e052e}} 
+\index{EnchantmentBattlecry@{EnchantmentBattlecry}!clone@{clone}}
+\index{clone@{clone}!EnchantmentBattlecry@{EnchantmentBattlecry}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIBattlecry}{IBattlecry}} $>$ Enchantment\+Battlecry\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clones the battlecry. 
+
+\begin{DoxyReturn}{Returns}
+std\+::unique\+\_\+ptr$<$\+IBattlecry$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIBattlecry_ae362fb061ac974aac8a4a07c4821ec45}{IBattlecry}}.
+
+\mbox{\Hypertarget{classEnchantmentBattlecry_acc82148fe2a5d67c717b438e4f38b3d7}\label{classEnchantmentBattlecry_acc82148fe2a5d67c717b438e4f38b3d7}} 
+\index{EnchantmentBattlecry@{EnchantmentBattlecry}!execute@{execute}}
+\index{execute@{execute}!EnchantmentBattlecry@{EnchantmentBattlecry}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Enchantment\+Battlecry\+::execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRecruitPhaseController}{Recruit\+Phase\+Controller}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the battlecry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIBattlecry_a3036d10e8d56fea6446fcdaf87aa31b6}{IBattlecry}}.
+
+\mbox{\Hypertarget{classEnchantmentBattlecry_a8128986dff4002a678f12591f95ef688}\label{classEnchantmentBattlecry_a8128986dff4002a678f12591f95ef688}} 
+\index{EnchantmentBattlecry@{EnchantmentBattlecry}!getEnchantment@{getEnchantment}}
+\index{getEnchantment@{getEnchantment}!EnchantmentBattlecry@{EnchantmentBattlecry}}
+\doxysubsubsection{\texorpdfstring{getEnchantment()}{getEnchantment()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classEnchantment}{Enchantment}} \& Enchantment\+Battlecry\+::get\+Enchantment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classEnchantmentBattlecry_aa04eab28281f38bdd5b1ec5af1b0871a}\label{classEnchantmentBattlecry_aa04eab28281f38bdd5b1ec5af1b0871a}} 
+\index{EnchantmentBattlecry@{EnchantmentBattlecry}!setTargets@{setTargets}}
+\index{setTargets@{setTargets}!EnchantmentBattlecry@{EnchantmentBattlecry}}
+\doxysubsubsection{\texorpdfstring{setTargets()}{setTargets()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Enchantment\+Battlecry\+::set\+Targets (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the player targets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIBattlecry_a09ffb76cfd3d78cfa33d999a0a2037d3}{IBattlecry}}.
+
+\mbox{\Hypertarget{classEnchantmentBattlecry_a38a379ceb0048932b5c0f1f4563f74da}\label{classEnchantmentBattlecry_a38a379ceb0048932b5c0f1f4563f74da}} 
+\index{EnchantmentBattlecry@{EnchantmentBattlecry}!setTargets@{setTargets}}
+\index{setTargets@{setTargets}!EnchantmentBattlecry@{EnchantmentBattlecry}}
+\doxysubsubsection{\texorpdfstring{setTargets()}{setTargets()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Enchantment\+Battlecry\+::set\+Targets (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $\ast$ $>$}]{targets }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the minion targets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em targets} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIBattlecry_a649aaacebebe89941c1fd9e74d22a79a}{IBattlecry}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/mechanics/battlecries/\mbox{\hyperlink{EnchantmentBattlecry_8h}{Enchantment\+Battlecry.\+h}}\item 
+cpp\+\_\+library/src/sources/mechanics/battlecries/\mbox{\hyperlink{EnchantmentBattlecry_8cpp}{Enchantment\+Battlecry.\+cpp}}\end{DoxyCompactItemize}

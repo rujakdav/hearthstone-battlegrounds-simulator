@@ -1,0 +1,117 @@
+\hypertarget{classDamageTask}{}\doxysection{Damage\+Task Class Reference}
+\label{classDamageTask}\index{DamageTask@{DamageTask}}
+
+
+The \mbox{\hyperlink{classDamageTask}{Damage\+Task}} class This class is used to represent a damage task.  
+
+
+
+
+{\ttfamily \#include $<$Damage\+Task.\+h$>$}
+
+
+
+Inheritance diagram for Damage\+Task\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classDamageTask__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Damage\+Task\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classDamageTask__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDamageTask_a61e476360e3b6a3949a2a2e4e2f196a2}{Damage\+Task}} (const std\+::vector$<$ \mbox{\hyperlink{classIDestructible}{IDestructible}} $\ast$ $>$ \&\mbox{\hyperlink{classDamageTask_a02b903bd5b894f4dc36e4326844ae432}{targets}}, \mbox{\hyperlink{classDamage}{Damage}} \&\mbox{\hyperlink{classDamageTask_a81c07b5c33045906da2a4fa50e46c6a3}{damage}})
+\item 
+\mbox{\hyperlink{classDamageTask_a651dd71e4f64a0959b33c64fdfa649cd}{Damage\+Task}} (\mbox{\hyperlink{classIDestructible}{IDestructible}} $\ast$target, \mbox{\hyperlink{classDamage}{Damage}} \&\mbox{\hyperlink{classDamageTask_a81c07b5c33045906da2a4fa50e46c6a3}{damage}})
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{classIDestructible}{IDestructible}} $\ast$ $>$ \& \mbox{\hyperlink{classDamageTask_a60c4527bf7eb5d5dde4fa690fce9fab0}{get\+Targets}} () const
+\item 
+\mbox{\hyperlink{classDamage}{Damage}} \& \mbox{\hyperlink{classDamageTask_ab655854844f0a77c73c42d423e3070ab}{get\+Damage}} () const
+\item 
+void \mbox{\hyperlink{classDamageTask_acaf9eb769b6d5a5f50037b6f214ff215}{execute}} () override
+\begin{DoxyCompactList}\small\item\em This method is used to execute the task. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classIDestructible}{IDestructible}} $\ast$ $>$ \mbox{\hyperlink{classDamageTask_a02b903bd5b894f4dc36e4326844ae432}{targets}}
+\item 
+\mbox{\hyperlink{classDamage}{Damage}} \& \mbox{\hyperlink{classDamageTask_a81c07b5c33045906da2a4fa50e46c6a3}{damage}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classDamageTask}{Damage\+Task}} class This class is used to represent a damage task. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDamageTask_a61e476360e3b6a3949a2a2e4e2f196a2}\label{classDamageTask_a61e476360e3b6a3949a2a2e4e2f196a2}} 
+\index{DamageTask@{DamageTask}!DamageTask@{DamageTask}}
+\index{DamageTask@{DamageTask}!DamageTask@{DamageTask}}
+\doxysubsubsection{\texorpdfstring{DamageTask()}{DamageTask()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Damage\+Task\+::\+Damage\+Task (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classIDestructible}{IDestructible}} $\ast$ $>$ \&}]{targets,  }\item[{\mbox{\hyperlink{classDamage}{Damage}} \&}]{damage }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDamageTask_a651dd71e4f64a0959b33c64fdfa649cd}\label{classDamageTask_a651dd71e4f64a0959b33c64fdfa649cd}} 
+\index{DamageTask@{DamageTask}!DamageTask@{DamageTask}}
+\index{DamageTask@{DamageTask}!DamageTask@{DamageTask}}
+\doxysubsubsection{\texorpdfstring{DamageTask()}{DamageTask()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Damage\+Task\+::\+Damage\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIDestructible}{IDestructible}} $\ast$}]{target,  }\item[{\mbox{\hyperlink{classDamage}{Damage}} \&}]{damage }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDamageTask_acaf9eb769b6d5a5f50037b6f214ff215}\label{classDamageTask_acaf9eb769b6d5a5f50037b6f214ff215}} 
+\index{DamageTask@{DamageTask}!execute@{execute}}
+\index{execute@{execute}!DamageTask@{DamageTask}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Damage\+Task\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method is used to execute the task. 
+
+
+
+Implements \mbox{\hyperlink{classITask_ab06c42f4b0417bb6d4531566476027cc}{ITask}}.
+
+\mbox{\Hypertarget{classDamageTask_ab655854844f0a77c73c42d423e3070ab}\label{classDamageTask_ab655854844f0a77c73c42d423e3070ab}} 
+\index{DamageTask@{DamageTask}!getDamage@{getDamage}}
+\index{getDamage@{getDamage}!DamageTask@{DamageTask}}
+\doxysubsubsection{\texorpdfstring{getDamage()}{getDamage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDamage}{Damage}} \& Damage\+Task\+::get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classDamageTask_a60c4527bf7eb5d5dde4fa690fce9fab0}\label{classDamageTask_a60c4527bf7eb5d5dde4fa690fce9fab0}} 
+\index{DamageTask@{DamageTask}!getTargets@{getTargets}}
+\index{getTargets@{getTargets}!DamageTask@{DamageTask}}
+\doxysubsubsection{\texorpdfstring{getTargets()}{getTargets()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{classIDestructible}{IDestructible}} $\ast$ $>$ \& Damage\+Task\+::get\+Targets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classDamageTask_a81c07b5c33045906da2a4fa50e46c6a3}\label{classDamageTask_a81c07b5c33045906da2a4fa50e46c6a3}} 
+\index{DamageTask@{DamageTask}!damage@{damage}}
+\index{damage@{damage}!DamageTask@{DamageTask}}
+\doxysubsubsection{\texorpdfstring{damage}{damage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDamage}{Damage}}\& Damage\+Task\+::damage}
+
+The damage to be dealt \mbox{\Hypertarget{classDamageTask_a02b903bd5b894f4dc36e4326844ae432}\label{classDamageTask_a02b903bd5b894f4dc36e4326844ae432}} 
+\index{DamageTask@{DamageTask}!targets@{targets}}
+\index{targets@{targets}!DamageTask@{DamageTask}}
+\doxysubsubsection{\texorpdfstring{targets}{targets}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classIDestructible}{IDestructible}} $\ast$$>$ Damage\+Task\+::targets}
+
+The targets 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/tasks/\mbox{\hyperlink{DamageTask_8h}{Damage\+Task.\+h}}\item 
+cpp\+\_\+library/src/sources/tasks/\mbox{\hyperlink{DamageTask_8cpp}{Damage\+Task.\+cpp}}\end{DoxyCompactItemize}

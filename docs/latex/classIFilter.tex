@@ -1,0 +1,112 @@
+\hypertarget{classIFilter}{}\doxysection{IFilter Class Reference}
+\label{classIFilter}\index{IFilter@{IFilter}}
+
+
+The \mbox{\hyperlink{classIFilter}{IFilter}} class This class is used to represent a filter.  
+
+
+
+
+{\ttfamily \#include $<$IFilter.\+h$>$}
+
+
+
+Inheritance diagram for IFilter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classIFilter__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classIFilter_aef04e6110f3d5c624c4c29cb53684503}{is\+Valid}} (const \mbox{\hyperlink{classMinion}{Minion}} \&minion) const =0
+\begin{DoxyCompactList}\small\item\em Is the minion valid. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIFilter_a3a90cd6907255023fde498dcfc68edc0}{is\+Valid}} (const \mbox{\hyperlink{classPlayer}{Player}} \&player) const =0
+\begin{DoxyCompactList}\small\item\em Is the player valid. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIFilter}{IFilter}} $>$ \mbox{\hyperlink{classIFilter_a858935fd30dcd696e5c03fde20db115a}{clone}} () const =0
+\begin{DoxyCompactList}\small\item\em Clones the filter. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classIFilter_a1bd80b0c38074a091c7980054f4bbd4c}{$\sim$\+IFilter}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classIFilter}{IFilter}} class This class is used to represent a filter. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIFilter_a1bd80b0c38074a091c7980054f4bbd4c}\label{classIFilter_a1bd80b0c38074a091c7980054f4bbd4c}} 
+\index{IFilter@{IFilter}!````~IFilter@{$\sim$IFilter}}
+\index{````~IFilter@{$\sim$IFilter}!IFilter@{IFilter}}
+\doxysubsubsection{\texorpdfstring{$\sim$IFilter()}{~IFilter()}}
+{\footnotesize\ttfamily virtual IFilter\+::$\sim$\+IFilter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIFilter_a858935fd30dcd696e5c03fde20db115a}\label{classIFilter_a858935fd30dcd696e5c03fde20db115a}} 
+\index{IFilter@{IFilter}!clone@{clone}}
+\index{clone@{clone}!IFilter@{IFilter}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classIFilter}{IFilter}}$>$ IFilter\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Clones the filter. 
+
+\begin{DoxyReturn}{Returns}
+std\+::unique\+\_\+ptr$<$\+IFilter$>$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classPlayerFilter_aa505accec6b4f575e3c0a985b79bf874}{Player\+Filter}}, \mbox{\hyperlink{classMixedFilter_a00ac8fb198f5014c2ee0cbe8330345e3}{Mixed\+Filter}}, and \mbox{\hyperlink{classMinionFilter_a6138396b5e87d98afab1e835487781b4}{Minion\+Filter}}.
+
+\mbox{\Hypertarget{classIFilter_aef04e6110f3d5c624c4c29cb53684503}\label{classIFilter_aef04e6110f3d5c624c4c29cb53684503}} 
+\index{IFilter@{IFilter}!isValid@{isValid}}
+\index{isValid@{isValid}!IFilter@{IFilter}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool IFilter\+::is\+Valid (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMinion}{Minion}} \&}]{minion }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Is the minion valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the minion is valid 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classPlayerFilter_ad1c7a926cf784128bafdbbfa22a26d64}{Player\+Filter}}, \mbox{\hyperlink{classMixedFilter_a79a081f8b9fdfd5ded7004618bfefc26}{Mixed\+Filter}}, and \mbox{\hyperlink{classMinionFilter_a615c21baacf2a9465510a68f54e58a1c}{Minion\+Filter}}.
+
+\mbox{\Hypertarget{classIFilter_a3a90cd6907255023fde498dcfc68edc0}\label{classIFilter_a3a90cd6907255023fde498dcfc68edc0}} 
+\index{IFilter@{IFilter}!isValid@{isValid}}
+\index{isValid@{isValid}!IFilter@{IFilter}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual bool IFilter\+::is\+Valid (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPlayer}{Player}} \&}]{player }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Is the player valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the player is valid 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classPlayerFilter_afbffb75fcf239f8c83cb687d69118fc4}{Player\+Filter}}, \mbox{\hyperlink{classMixedFilter_a6997327e8327a05137045aa7d9cb2d18}{Mixed\+Filter}}, and \mbox{\hyperlink{classMinionFilter_ab9619afb6674ba8814b03c2667a84a39}{Minion\+Filter}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/mechanics/common/criterias/filters/\mbox{\hyperlink{IFilter_8h}{IFilter.\+h}}\end{DoxyCompactItemize}

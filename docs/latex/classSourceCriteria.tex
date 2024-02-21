@@ -1,0 +1,85 @@
+\hypertarget{classSourceCriteria}{}\doxysection{Source\+Criteria Class Reference}
+\label{classSourceCriteria}\index{SourceCriteria@{SourceCriteria}}
+
+
+The \mbox{\hyperlink{classSourceCriteria}{Source\+Criteria}} class This class is used to filter trigger sources.  
+
+
+
+
+{\ttfamily \#include $<$Source\+Criteria.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSourceCriteria_a9fbf2be6310be77c88aa1c8ccf568928}{Source\+Criteria}} (\mbox{\hyperlink{triggerSource_8h_ae6f743c7e5d43e15c6b5e7736b0731f3}{Trigger\+Source}} trigger\+Source, const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIFilter}{IFilter}} $>$ filter)
+\item 
+\mbox{\hyperlink{classSourceCriteria_af5e07ede29237addb364dfb1a71ac0ee}{Source\+Criteria}} (const \mbox{\hyperlink{classSourceCriteria}{Source\+Criteria}} \&other)
+\item 
+\mbox{\hyperlink{classSourceCriteria_ae6230e965b1831bd2b19161c3dafb21c}{Source\+Criteria}} (\mbox{\hyperlink{triggerSource_8h_ae6f743c7e5d43e15c6b5e7736b0731f3}{Trigger\+Source}} trigger\+Source)
+\item 
+\mbox{\hyperlink{triggerSource_8h_ae6f743c7e5d43e15c6b5e7736b0731f3}{Trigger\+Source}} \mbox{\hyperlink{classSourceCriteria_addfd0fee1594291b2d866d48d67301ea}{get\+Trigger\+Source}} () const
+\item 
+bool \mbox{\hyperlink{classSourceCriteria_acaa6b33d622c9a2c690504d21d693339}{apply\+Filter}} (const \mbox{\hyperlink{classMinion}{Minion}} \&minion) const
+\item 
+bool \mbox{\hyperlink{classSourceCriteria_ab4db36b7bf3d99a6a5b64e50f85f9ac7}{apply\+Filter}} (const \mbox{\hyperlink{classPlayer}{Player}} \&player) const
+\item 
+bool \mbox{\hyperlink{classSourceCriteria_a02fc57fd235997b0e4865d465dc76abb}{check\+Trigger\+Validity}} (const \mbox{\hyperlink{classMinion}{Minion}} $\ast$base\+Minion, const \mbox{\hyperlink{classMinion}{Minion}} $\ast$effect\+Minion) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classSourceCriteria}{Source\+Criteria}} class This class is used to filter trigger sources. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSourceCriteria_a9fbf2be6310be77c88aa1c8ccf568928}\label{classSourceCriteria_a9fbf2be6310be77c88aa1c8ccf568928}} 
+\index{SourceCriteria@{SourceCriteria}!SourceCriteria@{SourceCriteria}}
+\index{SourceCriteria@{SourceCriteria}!SourceCriteria@{SourceCriteria}}
+\doxysubsubsection{\texorpdfstring{SourceCriteria()}{SourceCriteria()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Source\+Criteria\+::\+Source\+Criteria (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{triggerSource_8h_ae6f743c7e5d43e15c6b5e7736b0731f3}{Trigger\+Source}}}]{trigger\+Source,  }\item[{const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIFilter}{IFilter}} $>$}]{filter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSourceCriteria_af5e07ede29237addb364dfb1a71ac0ee}\label{classSourceCriteria_af5e07ede29237addb364dfb1a71ac0ee}} 
+\index{SourceCriteria@{SourceCriteria}!SourceCriteria@{SourceCriteria}}
+\index{SourceCriteria@{SourceCriteria}!SourceCriteria@{SourceCriteria}}
+\doxysubsubsection{\texorpdfstring{SourceCriteria()}{SourceCriteria()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Source\+Criteria\+::\+Source\+Criteria (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSourceCriteria}{Source\+Criteria}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSourceCriteria_ae6230e965b1831bd2b19161c3dafb21c}\label{classSourceCriteria_ae6230e965b1831bd2b19161c3dafb21c}} 
+\index{SourceCriteria@{SourceCriteria}!SourceCriteria@{SourceCriteria}}
+\index{SourceCriteria@{SourceCriteria}!SourceCriteria@{SourceCriteria}}
+\doxysubsubsection{\texorpdfstring{SourceCriteria()}{SourceCriteria()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Source\+Criteria\+::\+Source\+Criteria (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{triggerSource_8h_ae6f743c7e5d43e15c6b5e7736b0731f3}{Trigger\+Source}}}]{trigger\+Source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSourceCriteria_acaa6b33d622c9a2c690504d21d693339}\label{classSourceCriteria_acaa6b33d622c9a2c690504d21d693339}} 
+\index{SourceCriteria@{SourceCriteria}!applyFilter@{applyFilter}}
+\index{applyFilter@{applyFilter}!SourceCriteria@{SourceCriteria}}
+\doxysubsubsection{\texorpdfstring{applyFilter()}{applyFilter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Source\+Criteria\+::apply\+Filter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMinion}{Minion}} \&}]{minion }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classSourceCriteria_ab4db36b7bf3d99a6a5b64e50f85f9ac7}\label{classSourceCriteria_ab4db36b7bf3d99a6a5b64e50f85f9ac7}} 
+\index{SourceCriteria@{SourceCriteria}!applyFilter@{applyFilter}}
+\index{applyFilter@{applyFilter}!SourceCriteria@{SourceCriteria}}
+\doxysubsubsection{\texorpdfstring{applyFilter()}{applyFilter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Source\+Criteria\+::apply\+Filter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPlayer}{Player}} \&}]{player }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classSourceCriteria_a02fc57fd235997b0e4865d465dc76abb}\label{classSourceCriteria_a02fc57fd235997b0e4865d465dc76abb}} 
+\index{SourceCriteria@{SourceCriteria}!checkTriggerValidity@{checkTriggerValidity}}
+\index{checkTriggerValidity@{checkTriggerValidity}!SourceCriteria@{SourceCriteria}}
+\doxysubsubsection{\texorpdfstring{checkTriggerValidity()}{checkTriggerValidity()}}
+{\footnotesize\ttfamily bool Source\+Criteria\+::check\+Trigger\+Validity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{base\+Minion,  }\item[{const \mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{effect\+Minion }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classSourceCriteria_addfd0fee1594291b2d866d48d67301ea}\label{classSourceCriteria_addfd0fee1594291b2d866d48d67301ea}} 
+\index{SourceCriteria@{SourceCriteria}!getTriggerSource@{getTriggerSource}}
+\index{getTriggerSource@{getTriggerSource}!SourceCriteria@{SourceCriteria}}
+\doxysubsubsection{\texorpdfstring{getTriggerSource()}{getTriggerSource()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{triggerSource_8h_ae6f743c7e5d43e15c6b5e7736b0731f3}{Trigger\+Source}} Source\+Criteria\+::get\+Trigger\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/mechanics/common/criterias/source/\mbox{\hyperlink{SourceCriteria_8h}{Source\+Criteria.\+h}}\item 
+cpp\+\_\+library/src/sources/mechanics/common/criterias/source/\mbox{\hyperlink{SourceCriteria_8cpp}{Source\+Criteria.\+cpp}}\end{DoxyCompactItemize}

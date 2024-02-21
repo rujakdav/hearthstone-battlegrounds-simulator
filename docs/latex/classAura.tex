@@ -1,0 +1,93 @@
+\hypertarget{classAura}{}\doxysection{Aura Class Reference}
+\label{classAura}\index{Aura@{Aura}}
+
+
+The \mbox{\hyperlink{classAura}{Aura}} class This class is used to represent an aura.  
+
+
+
+
+{\ttfamily \#include $<$Aura.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \& \mbox{\hyperlink{classAura_a86190c6d8ef325cedce5cbc850f8ff3d}{get\+Owner\+Id}} () const
+\item 
+void \mbox{\hyperlink{classAura_a8e23cd2e09ac181f69a5d1116b370a03}{set\+Owner\+Id}} (const std\+::string \&owner\+Id)
+\item 
+const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classEnchantment}{Enchantment}} $>$ \& \mbox{\hyperlink{classAura_abdee6a0074705bc4cffe689f312d07ee}{get\+Enchantment}} () const
+\item 
+const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \& \mbox{\hyperlink{classAura_a6e95f0461624d3109b8e53cc91e3e6eb}{get\+Effect}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{classAura_a0b5bcf972e08c74a14bfb989b6ae7982}{get\+Name}} () const
+\item 
+\mbox{\hyperlink{classAura_a522a6b8042f371599c8946bfc10a0130}{Aura}} (std\+::string name, \mbox{\hyperlink{classEnchantment}{Enchantment}} ench)
+\item 
+\mbox{\hyperlink{classAura_a62b1501dc009fe04d4d38707bf325bc6}{Aura}} (std\+::string name, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ eff)
+\item 
+\mbox{\hyperlink{classAura_a395027a0d2fe3416ad8e1bad2e03d608}{Aura}} (const \mbox{\hyperlink{classAura}{Aura}} \&aura)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classAura}{Aura}} class This class is used to represent an aura. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAura_a522a6b8042f371599c8946bfc10a0130}\label{classAura_a522a6b8042f371599c8946bfc10a0130}} 
+\index{Aura@{Aura}!Aura@{Aura}}
+\index{Aura@{Aura}!Aura@{Aura}}
+\doxysubsubsection{\texorpdfstring{Aura()}{Aura()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Aura\+::\+Aura (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{\mbox{\hyperlink{classEnchantment}{Enchantment}}}]{ench }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAura_a62b1501dc009fe04d4d38707bf325bc6}\label{classAura_a62b1501dc009fe04d4d38707bf325bc6}} 
+\index{Aura@{Aura}!Aura@{Aura}}
+\index{Aura@{Aura}!Aura@{Aura}}
+\doxysubsubsection{\texorpdfstring{Aura()}{Aura()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Aura\+::\+Aura (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$}]{eff }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAura_a395027a0d2fe3416ad8e1bad2e03d608}\label{classAura_a395027a0d2fe3416ad8e1bad2e03d608}} 
+\index{Aura@{Aura}!Aura@{Aura}}
+\index{Aura@{Aura}!Aura@{Aura}}
+\doxysubsubsection{\texorpdfstring{Aura()}{Aura()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Aura\+::\+Aura (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAura}{Aura}} \&}]{aura }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAura_a6e95f0461624d3109b8e53cc91e3e6eb}\label{classAura_a6e95f0461624d3109b8e53cc91e3e6eb}} 
+\index{Aura@{Aura}!getEffect@{getEffect}}
+\index{getEffect@{getEffect}!Aura@{Aura}}
+\doxysubsubsection{\texorpdfstring{getEffect()}{getEffect()}}
+{\footnotesize\ttfamily const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \& Aura\+::get\+Effect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classAura_abdee6a0074705bc4cffe689f312d07ee}\label{classAura_abdee6a0074705bc4cffe689f312d07ee}} 
+\index{Aura@{Aura}!getEnchantment@{getEnchantment}}
+\index{getEnchantment@{getEnchantment}!Aura@{Aura}}
+\doxysubsubsection{\texorpdfstring{getEnchantment()}{getEnchantment()}}
+{\footnotesize\ttfamily const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classEnchantment}{Enchantment}} $>$ \& Aura\+::get\+Enchantment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classAura_a0b5bcf972e08c74a14bfb989b6ae7982}\label{classAura_a0b5bcf972e08c74a14bfb989b6ae7982}} 
+\index{Aura@{Aura}!getName@{getName}}
+\index{getName@{getName}!Aura@{Aura}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const std\+::string \& Aura\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classAura_a86190c6d8ef325cedce5cbc850f8ff3d}\label{classAura_a86190c6d8ef325cedce5cbc850f8ff3d}} 
+\index{Aura@{Aura}!getOwnerId@{getOwnerId}}
+\index{getOwnerId@{getOwnerId}!Aura@{Aura}}
+\doxysubsubsection{\texorpdfstring{getOwnerId()}{getOwnerId()}}
+{\footnotesize\ttfamily const std\+::string \& Aura\+::get\+Owner\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classAura_a8e23cd2e09ac181f69a5d1116b370a03}\label{classAura_a8e23cd2e09ac181f69a5d1116b370a03}} 
+\index{Aura@{Aura}!setOwnerId@{setOwnerId}}
+\index{setOwnerId@{setOwnerId}!Aura@{Aura}}
+\doxysubsubsection{\texorpdfstring{setOwnerId()}{setOwnerId()}}
+{\footnotesize\ttfamily void Aura\+::set\+Owner\+Id (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{owner\+Id }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/mechanics/auras/\mbox{\hyperlink{Aura_8h}{Aura.\+h}}\item 
+cpp\+\_\+library/src/sources/mechanics/auras/\mbox{\hyperlink{Aura_8cpp}{Aura.\+cpp}}\end{DoxyCompactItemize}

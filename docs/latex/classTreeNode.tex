@@ -1,0 +1,108 @@
+\hypertarget{classTreeNode}{}\doxysection{Tree\+Node Class Reference}
+\label{classTreeNode}\index{TreeNode@{TreeNode}}
+
+
+The \mbox{\hyperlink{classTreeNode}{Tree\+Node}} class This class is used to store the tree of effects.  
+
+
+
+
+{\ttfamily \#include $<$Tree\+Node.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTreeNode_a948be167e2f06af980621ede31b6cfe8}{Tree\+Node}} (\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}} trigger)
+\item 
+\mbox{\hyperlink{classTreeNode_a94ac51a7829ae2c7b86c991405dd3f83}{Tree\+Node}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ effect, \mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, \mbox{\hyperlink{classPhaseController}{Phase\+Controller}} $\ast$game)
+\item 
+\mbox{\hyperlink{classTreeNode_a65df28c045366bad4a432ec5cf7f6ffc}{Tree\+Node}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIBattlecry}{IBattlecry}} $>$ battlecry, \mbox{\hyperlink{classRecruitPhaseController}{Recruit\+Phase\+Controller}} $\ast$recruit\+Phase\+Controller)
+\item 
+void \mbox{\hyperlink{classTreeNode_a7609d7306592e6bf55d2076002ce10af}{add\+Child}} (\mbox{\hyperlink{classTreeNode}{Tree\+Node}} $\ast$tree\+Node)
+\begin{DoxyCompactList}\small\item\em add\+Child Adds a child to the node \end{DoxyCompactList}\item 
+const std\+::vector$<$ \mbox{\hyperlink{classTreeNode}{Tree\+Node}} $\ast$ $>$ \& \mbox{\hyperlink{classTreeNode_a777c9e3bf4fb30842929f383e1f14663}{get\+Children}} () const
+\item 
+bool \mbox{\hyperlink{classTreeNode_a3923eaa6daf62523122f8a7ebf7119e0}{is\+Visited}} () const
+\item 
+void \mbox{\hyperlink{classTreeNode_a2cfa59d208e7925cc298313d79dd1887}{set\+Visited}} (bool visit)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::variant$<$ \mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}}, std\+::tuple$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$, \mbox{\hyperlink{classMinion}{Minion}} $\ast$, \mbox{\hyperlink{classPhaseController}{Phase\+Controller}} $\ast$ $>$, std\+::tuple$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIBattlecry}{IBattlecry}} $>$, \mbox{\hyperlink{classRecruitPhaseController}{Recruit\+Phase\+Controller}} $\ast$ $>$ $>$ \mbox{\hyperlink{classTreeNode_a1103090930d454458187ca8ac8774146}{data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classTreeNode}{Tree\+Node}} class This class is used to store the tree of effects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTreeNode_a948be167e2f06af980621ede31b6cfe8}\label{classTreeNode_a948be167e2f06af980621ede31b6cfe8}} 
+\index{TreeNode@{TreeNode}!TreeNode@{TreeNode}}
+\index{TreeNode@{TreeNode}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{TreeNode()}{TreeNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Tree\+Node\+::\+Tree\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}}}]{trigger }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTreeNode_a94ac51a7829ae2c7b86c991405dd3f83}\label{classTreeNode_a94ac51a7829ae2c7b86c991405dd3f83}} 
+\index{TreeNode@{TreeNode}!TreeNode@{TreeNode}}
+\index{TreeNode@{TreeNode}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{TreeNode()}{TreeNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Tree\+Node\+::\+Tree\+Node (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$}]{effect,  }\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{\mbox{\hyperlink{classPhaseController}{Phase\+Controller}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTreeNode_a65df28c045366bad4a432ec5cf7f6ffc}\label{classTreeNode_a65df28c045366bad4a432ec5cf7f6ffc}} 
+\index{TreeNode@{TreeNode}!TreeNode@{TreeNode}}
+\index{TreeNode@{TreeNode}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{TreeNode()}{TreeNode()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Tree\+Node\+::\+Tree\+Node (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIBattlecry}{IBattlecry}} $>$}]{battlecry,  }\item[{\mbox{\hyperlink{classRecruitPhaseController}{Recruit\+Phase\+Controller}} $\ast$}]{recruit\+Phase\+Controller }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTreeNode_a7609d7306592e6bf55d2076002ce10af}\label{classTreeNode_a7609d7306592e6bf55d2076002ce10af}} 
+\index{TreeNode@{TreeNode}!addChild@{addChild}}
+\index{addChild@{addChild}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{addChild()}{addChild()}}
+{\footnotesize\ttfamily void Tree\+Node\+::add\+Child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTreeNode}{Tree\+Node}} $\ast$}]{tree\+Node }\end{DoxyParamCaption})}
+
+
+
+add\+Child Adds a child to the node 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree\+Node} & The child to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTreeNode_a777c9e3bf4fb30842929f383e1f14663}\label{classTreeNode_a777c9e3bf4fb30842929f383e1f14663}} 
+\index{TreeNode@{TreeNode}!getChildren@{getChildren}}
+\index{getChildren@{getChildren}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{getChildren()}{getChildren()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{classTreeNode}{Tree\+Node}} $\ast$ $>$ \& Tree\+Node\+::get\+Children (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classTreeNode_a3923eaa6daf62523122f8a7ebf7119e0}\label{classTreeNode_a3923eaa6daf62523122f8a7ebf7119e0}} 
+\index{TreeNode@{TreeNode}!isVisited@{isVisited}}
+\index{isVisited@{isVisited}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{isVisited()}{isVisited()}}
+{\footnotesize\ttfamily bool Tree\+Node\+::is\+Visited (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classTreeNode_a2cfa59d208e7925cc298313d79dd1887}\label{classTreeNode_a2cfa59d208e7925cc298313d79dd1887}} 
+\index{TreeNode@{TreeNode}!setVisited@{setVisited}}
+\index{setVisited@{setVisited}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{setVisited()}{setVisited()}}
+{\footnotesize\ttfamily void Tree\+Node\+::set\+Visited (\begin{DoxyParamCaption}\item[{bool}]{visit }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTreeNode_a1103090930d454458187ca8ac8774146}\label{classTreeNode_a1103090930d454458187ca8ac8774146}} 
+\index{TreeNode@{TreeNode}!data@{data}}
+\index{data@{data}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily std\+::variant$<$\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}}, std\+::tuple$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classIEffect}{IEffect}}$>$, \mbox{\hyperlink{classMinion}{Minion}} $\ast$, \mbox{\hyperlink{classPhaseController}{Phase\+Controller}} $\ast$$>$, std\+::tuple$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classIBattlecry}{IBattlecry}}$>$, \mbox{\hyperlink{classRecruitPhaseController}{Recruit\+Phase\+Controller}} $\ast$$>$ $>$ Tree\+Node\+::data}
+
+The data stored in the node 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/mechanics/common/tree/\mbox{\hyperlink{TreeNode_8h}{Tree\+Node.\+h}}\item 
+cpp\+\_\+library/src/sources/mechanics/common/tree/\mbox{\hyperlink{TreeNode_8cpp}{Tree\+Node.\+cpp}}\end{DoxyCompactItemize}

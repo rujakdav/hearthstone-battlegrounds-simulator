@@ -1,0 +1,9 @@
+<map id="IOwned" name="IOwned">
+<area shape="rect" id="node1" title="The IOwned class This class is used to store data about the owner of a card." alt="" coords="198,5,269,32"/>
+<area shape="rect" id="node2" href="$classEnchantment.html" title=" " alt="" coords="125,80,233,107"/>
+<area shape="rect" id="node3" href="$classIEffect.html" title=" " alt="" coords="257,80,319,107"/>
+<area shape="rect" id="node4" href="$classDamageEffect.html" title=" " alt="" coords="5,155,120,181"/>
+<area shape="rect" id="node5" href="$classEnchantmentEffect.html" title=" " alt="" coords="145,155,290,181"/>
+<area shape="rect" id="node6" href="$classHealEffect.html" title=" " alt="" coords="314,155,403,181"/>
+<area shape="rect" id="node7" href="$classSummonEffect.html" title=" " alt="" coords="428,155,545,181"/>
+</map>

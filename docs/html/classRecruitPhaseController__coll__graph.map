@@ -1,0 +1,6 @@
+<map id="RecruitPhaseController" name="RecruitPhaseController">
+<area shape="rect" id="node1" title="The RecruitPhaseController class This class is used to control the recruit phase." alt="" coords="24,185,195,212"/>
+<area shape="rect" id="node2" href="$classGameObserver.html" title=" " alt="" coords="5,109,125,136"/>
+<area shape="rect" id="node3" href="$classPhaseController.html" title="The PhaseController class This class is used to control the phases." alt="" coords="149,109,275,136"/>
+<area shape="rect" id="node4" href="$classTreeNode.html" title="The TreeNode class This class is used to store the tree of effects." alt="" coords="171,5,253,32"/>
+</map>

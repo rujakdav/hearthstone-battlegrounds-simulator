@@ -1,0 +1,205 @@
+\hypertarget{classRecruitPhaseController}{}\doxysection{Recruit\+Phase\+Controller Class Reference}
+\label{classRecruitPhaseController}\index{RecruitPhaseController@{RecruitPhaseController}}
+
+
+The \mbox{\hyperlink{classRecruitPhaseController}{Recruit\+Phase\+Controller}} class This class is used to control the recruit phase.  
+
+
+
+
+{\ttfamily \#include $<$Recruit\+Phase\+Controller.\+h$>$}
+
+
+
+Inheritance diagram for Recruit\+Phase\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classRecruitPhaseController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Recruit\+Phase\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classRecruitPhaseController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRecruitPhaseController_a6676caea8473415d073cf21c8defdded}{Recruit\+Phase\+Controller}} (\mbox{\hyperlink{classPlayer}{Player}} $\ast$player, \mbox{\hyperlink{classMinionPool}{Minion\+Pool}} $\ast$minion\+Pool, int current\+Turn)
+\item 
+\mbox{\hyperlink{classPlayer}{Player}} $\ast$ \mbox{\hyperlink{classRecruitPhaseController_afbcc0de8718591ee2837965c8d84dc5e}{get\+Friendly\+Player}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion) override
+\begin{DoxyCompactList}\small\item\em Returns the friendly player of the given minion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{Player}} $\ast$ \mbox{\hyperlink{classRecruitPhaseController_a802666e451e8d781e0c36a3d482d2f95}{get\+Enemy\+Player}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion) override
+\begin{DoxyCompactList}\small\item\em Returns the enemy player of the given minion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRecruitPhaseController_a00e5407ade7e21b77af6df415edcacaf}{init}} () override
+\item 
+void \mbox{\hyperlink{classRecruitPhaseController_a90a00ed88707d068495300d2d0d6f578}{update}} (\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}} trigger\+Type)
+\item 
+void \mbox{\hyperlink{classRecruitPhaseController_a95b71d55348556e57ca6ca892b6a739c}{update}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, \mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}} trigger\+Type, \mbox{\hyperlink{classPlayer}{Player}} $\ast$player) override
+\begin{DoxyCompactList}\small\item\em update This method is called when a trigger is activated \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRecruitPhaseController_ac07d26d6eb5767f115503ff9d257273f}{subscribe\+Minion}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion) override
+\begin{DoxyCompactList}\small\item\em This method is used to subscribe a minion to the actions center. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRecruitPhaseController_ad8bb19f49052329808ae192e3b5acb9c}{unsubscribe\+Minion}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion) override
+\begin{DoxyCompactList}\small\item\em This method is used to unsubscribe a minion from the actions center. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRecruitPhaseController_aebeb58f8cf52226ba49064d0d7a4f311}{begin\+Turn}} ()
+\begin{DoxyCompactList}\small\item\em Starts the recruit phase. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classRecruitPhaseController}{Recruit\+Phase\+Controller}} class This class is used to control the recruit phase. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRecruitPhaseController_a6676caea8473415d073cf21c8defdded}\label{classRecruitPhaseController_a6676caea8473415d073cf21c8defdded}} 
+\index{RecruitPhaseController@{RecruitPhaseController}!RecruitPhaseController@{RecruitPhaseController}}
+\index{RecruitPhaseController@{RecruitPhaseController}!RecruitPhaseController@{RecruitPhaseController}}
+\doxysubsubsection{\texorpdfstring{RecruitPhaseController()}{RecruitPhaseController()}}
+{\footnotesize\ttfamily Recruit\+Phase\+Controller\+::\+Recruit\+Phase\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{classMinionPool}{Minion\+Pool}} $\ast$}]{minion\+Pool,  }\item[{int}]{current\+Turn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRecruitPhaseController_aebeb58f8cf52226ba49064d0d7a4f311}\label{classRecruitPhaseController_aebeb58f8cf52226ba49064d0d7a4f311}} 
+\index{RecruitPhaseController@{RecruitPhaseController}!beginTurn@{beginTurn}}
+\index{beginTurn@{beginTurn}!RecruitPhaseController@{RecruitPhaseController}}
+\doxysubsubsection{\texorpdfstring{beginTurn()}{beginTurn()}}
+{\footnotesize\ttfamily void Recruit\+Phase\+Controller\+::begin\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the recruit phase. 
+
+\mbox{\Hypertarget{classRecruitPhaseController_a802666e451e8d781e0c36a3d482d2f95}\label{classRecruitPhaseController_a802666e451e8d781e0c36a3d482d2f95}} 
+\index{RecruitPhaseController@{RecruitPhaseController}!getEnemyPlayer@{getEnemyPlayer}}
+\index{getEnemyPlayer@{getEnemyPlayer}!RecruitPhaseController@{RecruitPhaseController}}
+\doxysubsubsection{\texorpdfstring{getEnemyPlayer()}{getEnemyPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{Player}} $\ast$ Recruit\+Phase\+Controller\+::get\+Enemy\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the enemy player of the given minion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Player$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classPhaseController_a492d0142359a88efd03d5b8a2f49b360}{Phase\+Controller}}.
+
+\mbox{\Hypertarget{classRecruitPhaseController_afbcc0de8718591ee2837965c8d84dc5e}\label{classRecruitPhaseController_afbcc0de8718591ee2837965c8d84dc5e}} 
+\index{RecruitPhaseController@{RecruitPhaseController}!getFriendlyPlayer@{getFriendlyPlayer}}
+\index{getFriendlyPlayer@{getFriendlyPlayer}!RecruitPhaseController@{RecruitPhaseController}}
+\doxysubsubsection{\texorpdfstring{getFriendlyPlayer()}{getFriendlyPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{Player}} $\ast$ Recruit\+Phase\+Controller\+::get\+Friendly\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the friendly player of the given minion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Player$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classPhaseController_a3799aac4d9c64d9c65989e4f98540cdb}{Phase\+Controller}}.
+
+\mbox{\Hypertarget{classRecruitPhaseController_a00e5407ade7e21b77af6df415edcacaf}\label{classRecruitPhaseController_a00e5407ade7e21b77af6df415edcacaf}} 
+\index{RecruitPhaseController@{RecruitPhaseController}!init@{init}}
+\index{init@{init}!RecruitPhaseController@{RecruitPhaseController}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Recruit\+Phase\+Controller\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classPhaseController_a83cabfa8add7e2c09dd35b8c07c6b258}{Phase\+Controller}}.
+
+\mbox{\Hypertarget{classRecruitPhaseController_ac07d26d6eb5767f115503ff9d257273f}\label{classRecruitPhaseController_ac07d26d6eb5767f115503ff9d257273f}} 
+\index{RecruitPhaseController@{RecruitPhaseController}!subscribeMinion@{subscribeMinion}}
+\index{subscribeMinion@{subscribeMinion}!RecruitPhaseController@{RecruitPhaseController}}
+\doxysubsubsection{\texorpdfstring{subscribeMinion()}{subscribeMinion()}}
+{\footnotesize\ttfamily void Recruit\+Phase\+Controller\+::subscribe\+Minion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method is used to subscribe a minion to the actions center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classGameObserver_a71ebe53dc42703c841cdd1f51d35a818}{Game\+Observer}}.
+
+\mbox{\Hypertarget{classRecruitPhaseController_ad8bb19f49052329808ae192e3b5acb9c}\label{classRecruitPhaseController_ad8bb19f49052329808ae192e3b5acb9c}} 
+\index{RecruitPhaseController@{RecruitPhaseController}!unsubscribeMinion@{unsubscribeMinion}}
+\index{unsubscribeMinion@{unsubscribeMinion}!RecruitPhaseController@{RecruitPhaseController}}
+\doxysubsubsection{\texorpdfstring{unsubscribeMinion()}{unsubscribeMinion()}}
+{\footnotesize\ttfamily void Recruit\+Phase\+Controller\+::unsubscribe\+Minion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method is used to unsubscribe a minion from the actions center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minion} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classGameObserver_aa46caf28fe940d84f11eff5725b4f25c}{Game\+Observer}}.
+
+\mbox{\Hypertarget{classRecruitPhaseController_a95b71d55348556e57ca6ca892b6a739c}\label{classRecruitPhaseController_a95b71d55348556e57ca6ca892b6a739c}} 
+\index{RecruitPhaseController@{RecruitPhaseController}!update@{update}}
+\index{update@{update}!RecruitPhaseController@{RecruitPhaseController}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Recruit\+Phase\+Controller\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}}}]{trigger\+Type,  }\item[{\mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+update This method is called when a trigger is activated 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger\+Type} & The type of the trigger \\
+\hline
+{\em player} & The player that activated the trigger \\
+\hline
+{\em trigger\+Type} & The type of the trigger \\
+\hline
+{\em player} & The player that activated the trigger \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classGameObserver_a129e0880982e61047cf15af689b66a53}{Game\+Observer}}.
+
+\mbox{\Hypertarget{classRecruitPhaseController_a90a00ed88707d068495300d2d0d6f578}\label{classRecruitPhaseController_a90a00ed88707d068495300d2d0d6f578}} 
+\index{RecruitPhaseController@{RecruitPhaseController}!update@{update}}
+\index{update@{update}!RecruitPhaseController@{RecruitPhaseController}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Recruit\+Phase\+Controller\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}}}]{trigger\+Type }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/controllers/phases/\mbox{\hyperlink{RecruitPhaseController_8h}{Recruit\+Phase\+Controller.\+h}}\item 
+cpp\+\_\+library/src/sources/controllers/phases/\mbox{\hyperlink{RecruitPhaseController_8cpp}{Recruit\+Phase\+Controller.\+cpp}}\end{DoxyCompactItemize}

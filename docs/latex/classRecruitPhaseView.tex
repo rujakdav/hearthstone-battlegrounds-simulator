@@ -1,0 +1,188 @@
+\hypertarget{classRecruitPhaseView}{}\doxysection{Recruit\+Phase\+View Class Reference}
+\label{classRecruitPhaseView}\index{RecruitPhaseView@{RecruitPhaseView}}
+
+
+The \mbox{\hyperlink{classRecruitPhaseView}{Recruit\+Phase\+View}} class This class is used to represent the recruit phase view.  
+
+
+
+
+{\ttfamily \#include $<$Recruit\+Phase\+View.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classRecruitPhaseView_ab4ff71b8e83f5f4cf1ac9e38bcdd526f}{display\+Recruit\+Phase\+Info}} (const \mbox{\hyperlink{classPlayer}{Player}} $\ast$player, const std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $>$ $\ast$minions\+To\+Purchase)
+\begin{DoxyCompactList}\small\item\em display\+Recruit\+Phase\+Info This method is used to display the recruit phase info \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRecruitPhaseView_a4654ebf83d4a7a51dfe2673012b264a3}{display\+Options}} (\mbox{\hyperlink{classPlayer}{Player}} $\ast$player)
+\item 
+void \mbox{\hyperlink{classRecruitPhaseView_aafd0ceef2f012c638814aca7612eeefd}{display\+Player\+Info}} (const \mbox{\hyperlink{classPlayer}{Player}} $\ast$player)
+\item 
+void \mbox{\hyperlink{classRecruitPhaseView_a5b46e8ccebd1a5606409533fe4a4d113}{display\+Minions\+In\+Hand}} (const \mbox{\hyperlink{classPlayer}{Player}} $\ast$player)
+\begin{DoxyCompactList}\small\item\em This method is used to display the minion info. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRecruitPhaseView_a87ccc83def7a947f1867c325f6e86c91}{display\+Minions\+To\+Purchase}} (const std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $>$ $\ast$minions\+To\+Purchase)
+\begin{DoxyCompactList}\small\item\em This method is used to display the minions to purchase. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classRecruitPhaseView_acc4c1656b7c4149eb25ecd50a72e3291}{get\+Sufficient\+Funds\+Info}} (int cost, const \mbox{\hyperlink{classPlayer}{Player}} $\ast$player)
+\begin{DoxyCompactList}\small\item\em This method is used to display the sufficient funds info. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRecruitPhaseView_ab3578b66ebe3e3730594203ca34e22cf}{display\+Board}} (\mbox{\hyperlink{classPlayer}{Player}} $\ast$player)
+\begin{DoxyCompactList}\small\item\em This method is used to display the board of the player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classRecruitPhaseView_a90e9de2ea4270d493703c715037c3997}{display\+Choose\+Targets\+Info}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to display the choose targets info. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classRecruitPhaseView_a0e60535ff5b714667b51a2f6606fc62b}{display\+Error}} (const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em This method is used to display the error. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classRecruitPhaseView_a958f2a8aebfc41d209785f1aebadedb5}{board\+To\+Display}} (const std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $\ast$ $>$ vector\+To\+Display)
+\begin{DoxyCompactList}\small\item\em This method is used to display the board of minions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classRecruitPhaseView}{Recruit\+Phase\+View}} class This class is used to represent the recruit phase view. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRecruitPhaseView_a958f2a8aebfc41d209785f1aebadedb5}\label{classRecruitPhaseView_a958f2a8aebfc41d209785f1aebadedb5}} 
+\index{RecruitPhaseView@{RecruitPhaseView}!boardToDisplay@{boardToDisplay}}
+\index{boardToDisplay@{boardToDisplay}!RecruitPhaseView@{RecruitPhaseView}}
+\doxysubsubsection{\texorpdfstring{boardToDisplay()}{boardToDisplay()}}
+{\footnotesize\ttfamily void Recruit\+Phase\+View\+::board\+To\+Display (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $\ast$ $>$}]{vector\+To\+Display }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method is used to display the board of minions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector\+To\+Display} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRecruitPhaseView_ab3578b66ebe3e3730594203ca34e22cf}\label{classRecruitPhaseView_ab3578b66ebe3e3730594203ca34e22cf}} 
+\index{RecruitPhaseView@{RecruitPhaseView}!displayBoard@{displayBoard}}
+\index{displayBoard@{displayBoard}!RecruitPhaseView@{RecruitPhaseView}}
+\doxysubsubsection{\texorpdfstring{displayBoard()}{displayBoard()}}
+{\footnotesize\ttfamily void Recruit\+Phase\+View\+::display\+Board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+
+
+This method is used to display the board of the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRecruitPhaseView_a90e9de2ea4270d493703c715037c3997}\label{classRecruitPhaseView_a90e9de2ea4270d493703c715037c3997}} 
+\index{RecruitPhaseView@{RecruitPhaseView}!displayChooseTargetsInfo@{displayChooseTargetsInfo}}
+\index{displayChooseTargetsInfo@{displayChooseTargetsInfo}!RecruitPhaseView@{RecruitPhaseView}}
+\doxysubsubsection{\texorpdfstring{displayChooseTargetsInfo()}{displayChooseTargetsInfo()}}
+{\footnotesize\ttfamily void Recruit\+Phase\+View\+::display\+Choose\+Targets\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method is used to display the choose targets info. 
+
+\mbox{\Hypertarget{classRecruitPhaseView_a0e60535ff5b714667b51a2f6606fc62b}\label{classRecruitPhaseView_a0e60535ff5b714667b51a2f6606fc62b}} 
+\index{RecruitPhaseView@{RecruitPhaseView}!displayError@{displayError}}
+\index{displayError@{displayError}!RecruitPhaseView@{RecruitPhaseView}}
+\doxysubsubsection{\texorpdfstring{displayError()}{displayError()}}
+{\footnotesize\ttfamily void Recruit\+Phase\+View\+::display\+Error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method is used to display the error. 
+
+\mbox{\Hypertarget{classRecruitPhaseView_a5b46e8ccebd1a5606409533fe4a4d113}\label{classRecruitPhaseView_a5b46e8ccebd1a5606409533fe4a4d113}} 
+\index{RecruitPhaseView@{RecruitPhaseView}!displayMinionsInHand@{displayMinionsInHand}}
+\index{displayMinionsInHand@{displayMinionsInHand}!RecruitPhaseView@{RecruitPhaseView}}
+\doxysubsubsection{\texorpdfstring{displayMinionsInHand()}{displayMinionsInHand()}}
+{\footnotesize\ttfamily void Recruit\+Phase\+View\+::display\+Minions\+In\+Hand (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+
+
+This method is used to display the minion info. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRecruitPhaseView_a87ccc83def7a947f1867c325f6e86c91}\label{classRecruitPhaseView_a87ccc83def7a947f1867c325f6e86c91}} 
+\index{RecruitPhaseView@{RecruitPhaseView}!displayMinionsToPurchase@{displayMinionsToPurchase}}
+\index{displayMinionsToPurchase@{displayMinionsToPurchase}!RecruitPhaseView@{RecruitPhaseView}}
+\doxysubsubsection{\texorpdfstring{displayMinionsToPurchase()}{displayMinionsToPurchase()}}
+{\footnotesize\ttfamily void Recruit\+Phase\+View\+::display\+Minions\+To\+Purchase (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $>$ $\ast$}]{minions\+To\+Purchase }\end{DoxyParamCaption})}
+
+
+
+This method is used to display the minions to purchase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minions\+To\+Purchase} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRecruitPhaseView_a4654ebf83d4a7a51dfe2673012b264a3}\label{classRecruitPhaseView_a4654ebf83d4a7a51dfe2673012b264a3}} 
+\index{RecruitPhaseView@{RecruitPhaseView}!displayOptions@{displayOptions}}
+\index{displayOptions@{displayOptions}!RecruitPhaseView@{RecruitPhaseView}}
+\doxysubsubsection{\texorpdfstring{displayOptions()}{displayOptions()}}
+{\footnotesize\ttfamily void Recruit\+Phase\+View\+::display\+Options (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+@\+Brief Displays the options of recruit phase 
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRecruitPhaseView_aafd0ceef2f012c638814aca7612eeefd}\label{classRecruitPhaseView_aafd0ceef2f012c638814aca7612eeefd}} 
+\index{RecruitPhaseView@{RecruitPhaseView}!displayPlayerInfo@{displayPlayerInfo}}
+\index{displayPlayerInfo@{displayPlayerInfo}!RecruitPhaseView@{RecruitPhaseView}}
+\doxysubsubsection{\texorpdfstring{displayPlayerInfo()}{displayPlayerInfo()}}
+{\footnotesize\ttfamily void Recruit\+Phase\+View\+::display\+Player\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+@\+Brief Displays the player info 
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRecruitPhaseView_ab4ff71b8e83f5f4cf1ac9e38bcdd526f}\label{classRecruitPhaseView_ab4ff71b8e83f5f4cf1ac9e38bcdd526f}} 
+\index{RecruitPhaseView@{RecruitPhaseView}!displayRecruitPhaseInfo@{displayRecruitPhaseInfo}}
+\index{displayRecruitPhaseInfo@{displayRecruitPhaseInfo}!RecruitPhaseView@{RecruitPhaseView}}
+\doxysubsubsection{\texorpdfstring{displayRecruitPhaseInfo()}{displayRecruitPhaseInfo()}}
+{\footnotesize\ttfamily void Recruit\+Phase\+View\+::display\+Recruit\+Phase\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{player,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classMinion}{Minion}} $>$ $\ast$}]{minions\+To\+Purchase }\end{DoxyParamCaption})}
+
+
+
+display\+Recruit\+Phase\+Info This method is used to display the recruit phase info 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+{\em minions\+To\+Purchase} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRecruitPhaseView_acc4c1656b7c4149eb25ecd50a72e3291}\label{classRecruitPhaseView_acc4c1656b7c4149eb25ecd50a72e3291}} 
+\index{RecruitPhaseView@{RecruitPhaseView}!getSufficientFundsInfo@{getSufficientFundsInfo}}
+\index{getSufficientFundsInfo@{getSufficientFundsInfo}!RecruitPhaseView@{RecruitPhaseView}}
+\doxysubsubsection{\texorpdfstring{getSufficientFundsInfo()}{getSufficientFundsInfo()}}
+{\footnotesize\ttfamily std\+::string Recruit\+Phase\+View\+::get\+Sufficient\+Funds\+Info (\begin{DoxyParamCaption}\item[{int}]{cost,  }\item[{const \mbox{\hyperlink{classPlayer}{Player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+
+
+This method is used to display the sufficient funds info. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cost} & \\
+\hline
+{\em player} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/views/\mbox{\hyperlink{RecruitPhaseView_8h}{Recruit\+Phase\+View.\+h}}\item 
+cpp\+\_\+library/src/sources/views/\mbox{\hyperlink{RecruitPhaseView_8cpp}{Recruit\+Phase\+View.\+cpp}}\end{DoxyCompactItemize}

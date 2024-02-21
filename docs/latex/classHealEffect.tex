@@ -1,0 +1,71 @@
+\hypertarget{classHealEffect}{}\doxysection{Heal\+Effect Class Reference}
+\label{classHealEffect}\index{HealEffect@{HealEffect}}
+
+
+{\ttfamily \#include $<$Heal\+Effect.\+h$>$}
+
+
+
+Inheritance diagram for Heal\+Effect\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{classHealEffect__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Heal\+Effect\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{classHealEffect__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHealEffect_a0ad5aad30d3826c7b3bb94de9925906f}{Heal\+Effect}} (const std\+::string \&description, \mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}} trigger\+Type, \mbox{\hyperlink{classSourceCriteria}{Source\+Criteria}} source\+Criteria, const \mbox{\hyperlink{classHealEffectData}{Heal\+Effect\+Data}} \&data)
+\item 
+void \mbox{\hyperlink{classHealEffect_a48681e8a9836e2b85532aaa727c61575}{execute}} (\mbox{\hyperlink{classMinion}{Minion}} $\ast$minion, \mbox{\hyperlink{classPhaseController}{Phase\+Controller}} $\ast$game) override
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ \mbox{\hyperlink{classHealEffect_a69b204cfcffb1156272f2b24e248024f}{clone}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHealEffect_a0ad5aad30d3826c7b3bb94de9925906f}\label{classHealEffect_a0ad5aad30d3826c7b3bb94de9925906f}} 
+\index{HealEffect@{HealEffect}!HealEffect@{HealEffect}}
+\index{HealEffect@{HealEffect}!HealEffect@{HealEffect}}
+\doxysubsubsection{\texorpdfstring{HealEffect()}{HealEffect()}}
+{\footnotesize\ttfamily Heal\+Effect\+::\+Heal\+Effect (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{description,  }\item[{\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}}}]{trigger\+Type,  }\item[{\mbox{\hyperlink{classSourceCriteria}{Source\+Criteria}}}]{source\+Criteria,  }\item[{const \mbox{\hyperlink{classHealEffectData}{Heal\+Effect\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHealEffect_a69b204cfcffb1156272f2b24e248024f}\label{classHealEffect_a69b204cfcffb1156272f2b24e248024f}} 
+\index{HealEffect@{HealEffect}!clone@{clone}}
+\index{clone@{clone}!HealEffect@{HealEffect}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classIEffect}{IEffect}} $>$ Heal\+Effect\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIEffect_a1510e0d622d19d6fbbf8adad35da2788}{IEffect}}.
+
+\mbox{\Hypertarget{classHealEffect_a48681e8a9836e2b85532aaa727c61575}\label{classHealEffect_a48681e8a9836e2b85532aaa727c61575}} 
+\index{HealEffect@{HealEffect}!execute@{execute}}
+\index{execute@{execute}!HealEffect@{HealEffect}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Heal\+Effect\+::execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMinion}{Minion}} $\ast$}]{minion,  }\item[{\mbox{\hyperlink{classPhaseController}{Phase\+Controller}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIEffect_ab01895fcb62da53fc71c1fc238eb319e}{IEffect}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/mechanics/effects/\mbox{\hyperlink{HealEffect_8h}{Heal\+Effect.\+h}}\item 
+cpp\+\_\+library/src/sources/mechanics/effects/\mbox{\hyperlink{HealEffect_8cpp}{Heal\+Effect.\+cpp}}\end{DoxyCompactItemize}

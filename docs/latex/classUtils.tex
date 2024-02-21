@@ -1,0 +1,129 @@
+\hypertarget{classUtils}{}\doxysection{Utils Class Reference}
+\label{classUtils}\index{Utils@{Utils}}
+
+
+The \mbox{\hyperlink{classUtils}{Utils}} class This class is used to provide utility functions.  
+
+
+
+
+{\ttfamily \#include $<$Utils.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classUtils_a5e4099ca6fdd5d1a4f4cdf7356e09d17}{print\+Tree}} (\mbox{\hyperlink{classTreeNode}{Tree\+Node}} $\ast$node) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classUtils_af21e0f0c846ecb20468f5e31f3b02b41}{get\+Random\+Number}} (int lower, int higher)
+\begin{DoxyCompactList}\small\item\em This method is used to get a random number between lower and higher bounds. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classUtils_ab9b786dc2d2b7b0a8ddec799a9b77b63}{get\+Random\+Number\+From\+Array}} (const std\+::vector$<$ int $>$ \&arr)
+\begin{DoxyCompactList}\small\item\em This method is used to get a random number from an array. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\static std\+::vector$<$ T $>$ \mbox{\hyperlink{classUtils_affe6167b44a417e7c404a5a3a5562f8c}{Get\+NElements}} (const std\+::vector$<$ T $>$ \&input\+Vector, int n)
+\begin{DoxyCompactList}\small\item\em This method is used to get a random element from a vector. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classUtils_a86d971dcd328b879c621ca082610439f}{get\+Trigger\+Type\+String}} (\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}} type)
+\item 
+static std\+::string \mbox{\hyperlink{classUtils_a94b6389a09d8d47d0a6f9efd3ea4809f}{get\+Minion\+Type\+String}} (\mbox{\hyperlink{minionType_8h_ab076d75dd251fea18d48b2d6b246f298}{Minion\+Type}} minion\+Type)
+\item 
+static std\+::string \mbox{\hyperlink{classUtils_aaf86ded5471c70b151c9840368063fef}{get\+Trigger\+Targets\+String}} (\mbox{\hyperlink{EffectTargets_8h_a61e9d4e998d8a80856b4b747f930be29}{Effect\+Targets}} target)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classUtils}{Utils}} class This class is used to provide utility functions. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUtils_a94b6389a09d8d47d0a6f9efd3ea4809f}\label{classUtils_a94b6389a09d8d47d0a6f9efd3ea4809f}} 
+\index{Utils@{Utils}!getMinionTypeString@{getMinionTypeString}}
+\index{getMinionTypeString@{getMinionTypeString}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{getMinionTypeString()}{getMinionTypeString()}}
+{\footnotesize\ttfamily std\+::string Utils\+::get\+Minion\+Type\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{minionType_8h_ab076d75dd251fea18d48b2d6b246f298}{Minion\+Type}}}]{minion\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classUtils_affe6167b44a417e7c404a5a3a5562f8c}\label{classUtils_affe6167b44a417e7c404a5a3a5562f8c}} 
+\index{Utils@{Utils}!GetNElements@{GetNElements}}
+\index{GetNElements@{GetNElements}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{GetNElements()}{GetNElements()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static std\+::vector$<$T$>$ Utils\+::\+Get\+NElements (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ T $>$ \&}]{input\+Vector,  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+This method is used to get a random element from a vector. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the vector \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Vector} & The vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The random element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtils_af21e0f0c846ecb20468f5e31f3b02b41}\label{classUtils_af21e0f0c846ecb20468f5e31f3b02b41}} 
+\index{Utils@{Utils}!getRandomNumber@{getRandomNumber}}
+\index{getRandomNumber@{getRandomNumber}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{getRandomNumber()}{getRandomNumber()}}
+{\footnotesize\ttfamily int Utils\+::get\+Random\+Number (\begin{DoxyParamCaption}\item[{int}]{lower,  }\item[{int}]{higher }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method is used to get a random number between lower and higher bounds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lower} & The lower bound \\
+\hline
+{\em higher} & The higher bound \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The random number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtils_ab9b786dc2d2b7b0a8ddec799a9b77b63}\label{classUtils_ab9b786dc2d2b7b0a8ddec799a9b77b63}} 
+\index{Utils@{Utils}!getRandomNumberFromArray@{getRandomNumberFromArray}}
+\index{getRandomNumberFromArray@{getRandomNumberFromArray}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{getRandomNumberFromArray()}{getRandomNumberFromArray()}}
+{\footnotesize\ttfamily int Utils\+::get\+Random\+Number\+From\+Array (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{arr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method is used to get a random number from an array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & The array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The random number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtils_aaf86ded5471c70b151c9840368063fef}\label{classUtils_aaf86ded5471c70b151c9840368063fef}} 
+\index{Utils@{Utils}!getTriggerTargetsString@{getTriggerTargetsString}}
+\index{getTriggerTargetsString@{getTriggerTargetsString}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{getTriggerTargetsString()}{getTriggerTargetsString()}}
+{\footnotesize\ttfamily std\+::string Utils\+::get\+Trigger\+Targets\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{EffectTargets_8h_a61e9d4e998d8a80856b4b747f930be29}{Effect\+Targets}}}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classUtils_a86d971dcd328b879c621ca082610439f}\label{classUtils_a86d971dcd328b879c621ca082610439f}} 
+\index{Utils@{Utils}!getTriggerTypeString@{getTriggerTypeString}}
+\index{getTriggerTypeString@{getTriggerTypeString}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{getTriggerTypeString()}{getTriggerTypeString()}}
+{\footnotesize\ttfamily std\+::string Utils\+::get\+Trigger\+Type\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{triggerType_8h_a59b7f49353f2a99b6c22d2eaae0fe9e9}{Trigger\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classUtils_a5e4099ca6fdd5d1a4f4cdf7356e09d17}\label{classUtils_a5e4099ca6fdd5d1a4f4cdf7356e09d17}} 
+\index{Utils@{Utils}!printTree@{printTree}}
+\index{printTree@{printTree}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{printTree()}{printTree()}}
+{\footnotesize\ttfamily void Utils\+::print\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTreeNode}{Tree\+Node}} $\ast$}]{node }\end{DoxyParamCaption}) const}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp\+\_\+library/src/headers/utils/\mbox{\hyperlink{Utils_8h}{Utils.\+h}}\item 
+cpp\+\_\+library/src/sources/utils/\mbox{\hyperlink{Utils_8cpp}{Utils.\+cpp}}\end{DoxyCompactItemize}

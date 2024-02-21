@@ -1,0 +1,7 @@
+<map id="Minion" name="Minion">
+<area shape="rect" id="node1" title=" " alt="" coords="168,80,235,107"/>
+<area shape="rect" id="node2" href="$classICard.html" title="The ICard class This class is used to represent a card." alt="" coords="5,5,61,32"/>
+<area shape="rect" id="node3" href="$classIDestructible.html" title="The IDestructible class This class is used to represent an entity that can take damage." alt="" coords="86,5,191,32"/>
+<area shape="rect" id="node4" href="$classICombative.html" title="The ICombative class This class is used to represent the combative behavior of entities." alt="" coords="215,5,313,32"/>
+<area shape="rect" id="node5" href="$classMinionSubject.html" title="The MinionSubject class This class is used to implement the observer pattern between minions and play..." alt="" coords="337,5,452,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="RecruitPhaseController" name="RecruitPhaseController">
+<area shape="rect" id="node1" title="The RecruitPhaseController class This class is used to control the recruit phase." alt="" coords="53,80,224,107"/>
+<area shape="rect" id="node2" href="$classGameObserver.html" title=" " alt="" coords="5,5,125,32"/>
+<area shape="rect" id="node3" href="$classPhaseController.html" title="The PhaseController class This class is used to control the phases." alt="" coords="149,5,275,32"/>
+</map>
